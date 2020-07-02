@@ -2,7 +2,7 @@ const keystone = require('keystone');
 
 const { Types } = keystone.Field;
 
-const Footer = new keystone.List('Footers');
+const Footer = new keystone.List('Footers', {nocreate: true});
 
 Footer.add({
     Address: { type: Types.Text, required: true, initial: true, index : true},
