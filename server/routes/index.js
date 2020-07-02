@@ -20,7 +20,7 @@ module.exports = (app) => {
     });
   });
 
-  app.get('/api/about', (req, res) => {
+  app.get('/api/aboutus', (req, res) => {
     About.model.find((err, itens) => {
       if(err){
         return res.apiError('database error', err);
