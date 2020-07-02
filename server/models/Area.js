@@ -1,8 +1,12 @@
 const keystone = require('keystone');
 
 const { Types } = keystone.Field;
-
-const Area = new keystone.List('Areas');
+// Primeiro iremos criar a lista no banco de dados.
+const Area = new keystone.List('Areas', 
+    {
+        map : {name : 'Title'},
+    }
+    );
 
 Area.add({
     Title: { type: Types.Text, required: true, initial: true, index : true},
