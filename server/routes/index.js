@@ -3,6 +3,7 @@ const keystone = require('keystone');
 const cors = require('cors');
 
 const Example = keystone.list('Examples');
+const About = keystone.List("AboutUs");
 
 module.exports = (app) => {
   app.use(cors());
@@ -15,6 +16,16 @@ module.exports = (app) => {
     Example.model.find((err, items) => {
       if (err) return res.apiError('database error', err);
       res.send(items);
+    });
+  });
+
+  app.get('/api/about', (req, res) => {
+    About.model.find((err, itens) => {
+      if(err){
+        return res.apiError('database error', err);
+      }else{
+        res.send(itens);
+      }
     });
   });
 };
