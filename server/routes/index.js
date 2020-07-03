@@ -12,12 +12,14 @@ module.exports = (app) => {
     res.sendFile(path.join(__dirname, '../public/index.html'));
   });
 
+  // Criando a rota para a tabela 'Areas'.
   app.get('/api/areas', (req, res) => {
     Area.model.find((err, items) => {
       if (err) return res.apiError('database error', err);
       res.send(items);
     });
   });
+  // Criando a rota para a tabela 'Footers'.
   app.get('/api/footers', (req, res) => {
     Footer.model.find((err, items) => {
       if (err) return res.apiError('database error', err);
