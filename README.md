@@ -31,7 +31,7 @@ Must be simple and show briefly what you just did.
 
 ### Pull Requests
 1. _commit_ the changes on your branch
-2. Go to the original branch (develo) with `git checkout develop`
+2. Go to the original branch (develop) with `git checkout develop`
 3. Run `git push origin "your-branch"`
 
 Use this template for the pull request body:
