@@ -4,6 +4,7 @@ const { Types } = keystone.Field;
 // Alocando uma nova tabela no banco de dados.
 const Area = new keystone.List('Areas', 
     {
+        autokey: { path: 'slug', from: 'Title', unique: true },
         map : {name : 'Title'}, // mapeando para remover o 'id', tornando algo mais fluído para a admin UI
     }
     );
