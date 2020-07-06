@@ -1,13 +1,14 @@
 const path = require('path');
 const keystone = require('keystone');
 const cors = require('cors');
-
-
+const Banner = keystone.list('Banners');
+const PostToBlog = keystone.list('PostToBlogs');
 const Area = keystone.list('Areas')
 const Footer = keystone.list('Footers')
 const Example = keystone.list('Examples');
 const About = keystone.list("AboutUs");
 const Testimony = keystone.list("Testimonies");
+
 
 
 module.exports = (app) => {
@@ -24,6 +25,7 @@ module.exports = (app) => {
       res.send(items);
     });
   });
+ 
   // Criando a rota para a tabela 'Footers'.
   app.get('/api/footers', (req, res) => {
     Footer.model.find((err, items) => {
@@ -32,6 +34,19 @@ module.exports = (app) => {
     });
   });
 
+  app.get('/api/banners', (req, res) => {
+    Banner.model.find((err, items) => {
+      if (err) return res.apiError('database error', err);
+      res.send(items);
+    });  
+  });
+
+  app.get('/api/posttoblog', (req, res) => {
+    PostToBlog.model.find((err, items) => {
+      if (err) return res.apiError('database error', err);
+      res.send(items);
+    });
+  });
   app.get('/api/aboutus', (req, res) => {
     About.model.find((err, itens) => {
       if(err){
@@ -53,3 +68,4 @@ module.exports = (app) => {
   });
 
 };
+
