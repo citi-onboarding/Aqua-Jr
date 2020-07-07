@@ -12,7 +12,8 @@ const Area = new keystone.List('Areas',
 // Adicionando campos a esta tabela.
 Area.add({
     Title: { type: Types.Text, required: true, initial: true, index : true},
-    text: { type: Types.Text, required: true, initial: true},
+    Text: { type: Types.Text, required: true, initial: true},
+    Category: {type: Types.Text, required: true, initial: true}
 })
 
 Area.register();
