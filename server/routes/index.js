@@ -3,9 +3,8 @@ const keystone = require('keystone');
 const cors = require('cors');
 const Banner = keystone.list('Banners');
 const PostToBlog = keystone.list('PostToBlogs');
-const Area = keystone.list('Areas')
-const Footer = keystone.list('Footers')
-const Example = keystone.list('Examples');
+const Area = keystone.list('Areas');
+const Footer = keystone.list('Footers');
 const About = keystone.list("AboutUs");
 const Testimony = keystone.list("Testimonies");
 
