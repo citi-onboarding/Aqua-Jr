@@ -15,6 +15,7 @@ Footer.add({
     Title: { type: Types.Text, required: true, initial: true},
     Address: { type: Types.Text, required: true, initial: true},
     Phone: { type: Types.Number, required: true, initial: true},
+    Email: {type: Types.Email, required: true, initial: true},
     SocialMedia1: { type: Types.Url, required: true, initial: true},
     SocialMedia2: { type: Types.Url, required: true, initial: true},
     SocialMedia3: { type: Types.Url, required: true, initial: true},
