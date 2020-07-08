@@ -1,7 +1,14 @@
 import React from "react";
 import axios from "axios";
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
+import Service from "../Service";
+
+import img from "./imgTest.png";
 
 import "./ExpertiseArea.css";
+
 
 let db = [];
 
@@ -58,11 +65,13 @@ function ExpertiseArea() {
         })}
       </div>
       <div className="services">
-        {services.map((item, index)=>{
+			<Slider dots={true} infinite={true} arrows={true} slidesToShow={1} slidesToScroll={1} centerMode={true} focusOnSelect={true}>
+				{services.map((item, index)=>{
 					return(
-					<div key={index}>{item.Title}</div>
+						<Service key={index} img={img} title={item.Title} text={item.Text}/>
 					);
 				})}
+			</Slider>
       </div>
       <div className="dots"></div>
     </section>
