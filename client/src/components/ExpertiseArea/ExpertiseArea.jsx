@@ -5,8 +5,6 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import Service from "../Service";
 
-import img from "./imgTest.png";
-
 import "./ExpertiseArea.css";
 
 
@@ -68,7 +66,7 @@ function ExpertiseArea() {
 			<Slider dots={true} infinite={true} arrows={true} slidesToShow={1} slidesToScroll={1} centerMode={true} focusOnSelect={true}>
 				{services.map((item, index)=>{
 					return(
-						<Service key={index} img={img} title={item.Title} text={item.Text}/>
+						<Service key={index} img={item.image.url} title={item.Title} text={item.Text}/>
 					);
 				})}
 			</Slider>
