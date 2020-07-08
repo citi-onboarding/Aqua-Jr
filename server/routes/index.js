@@ -7,6 +7,7 @@ const Area = keystone.list('Areas');
 const Footer = keystone.list('Footers');
 const About = keystone.list("AboutUs");
 const Testimony = keystone.list("Testimonies");
+const Value = keystone.list("Values");
 
 
 
@@ -46,6 +47,7 @@ module.exports = (app) => {
       res.send(items);
     });
   });
+
   app.get('/api/aboutus', (req, res) => {
     About.model.find((err, itens) => {
       if(err){
@@ -58,6 +60,16 @@ module.exports = (app) => {
 
   app.get('/api/testimony', (req, res) => {
     Testimony.model.find((err, itens) => {
+      if(err){
+        return res.apiError('database error', err);
+      }else{
+        res.send(itens);
+      }
+    });
+  });
+
+  app.get('/api/values', (req, res) => {
+    Value.model.find((err, itens) => {
       if(err){
         return res.apiError('database error', err);
       }else{
