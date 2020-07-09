@@ -4,6 +4,7 @@ import ExpertiseArea from "./ExpertiseArea";
 import Footer from './Footer';
 import PostToBlog from './PostToBlog';
 import Newsletter from './Newsletter';
+import Testimony from './Testimony';
 
 export {
   Example,
@@ -12,4 +13,5 @@ export {
   Footer,
   PostToBlog,
   Newsletter,
+  Testimony,
 };
