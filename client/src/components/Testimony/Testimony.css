@@ -1,13 +1,18 @@
-
+.Body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 .Body .Head {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
+
 .Slider {
     background-color: green;
-    
 }
 .Card-body {
     background-color: #00222d;
@@ -19,14 +24,38 @@
     align-items: center;
     flex-direction: column;
 }
+.texts {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 50%;
+    }
+.Slider {
+    height: 90%;
+    width: 90%;
+}
 .Card-body img {
-    margin-left: 40%;
+    height: 157px;
+    width: 157px;
+    margin: auto;
+}
+
+.Card-body .Testimony {
+    color: white;
 }
 
 .Card-body .name {
-    justify-self: end;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
 }
-
+.slick-prev:before, .slick-next:before {
+    color: black !important;
+}
 
 
 

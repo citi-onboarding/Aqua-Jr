@@ -28,7 +28,27 @@ function Testimony() {
     centerPadding: "400px",
 
   }
-
+  function SampleNextArrow(props) {
+    const { className, style, onClick } = props;
+    return (
+      <div
+        className={className}
+        style={{ ...style, display: "block", background: "red" }}
+        onClick={onClick}
+      />
+    );
+  }
+  
+  function SamplePrevArrow(props) {
+    const { className, style, onClick } = props;
+    return (
+      <div
+        className={className}
+        style={{ ...style, display: "block", background: "green" }}
+        onClick={onClick}
+      />
+    );
+  }
   return (
     
 <div className="Body">
@@ -36,15 +56,24 @@ function Testimony() {
         <h1>Depoimentos</h1>
         <p>Nos conheça por nossos parceiros</p>
       </div>
-      <Slider {...settings}>
-      {Testimonys?.map(({ _id, text, image, name }) => (
+
+      <Slider className= 'Slider' {...settings}>
+      {Testimonys?.map(({ _id, text, image, name, occupation }) => (
         <div key={_id} className="Card-body">
           <img src={image?.url} alt="Imagem de Exemplo"/>
-          <p>{text}</p>
-          
+
+          <div className="texts">
+          <div className="Testimony">
+            <p>{text}</p>
+          </div>
+
           <div className="name">
             <p>{name}</p>
+            <p>{occupation}</p>
           </div>
+
+          </div>
+
         </div>
       ))}
       </Slider>
