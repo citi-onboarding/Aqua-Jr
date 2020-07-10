@@ -1,3 +1,9 @@
+.background {
+    background-image: url("fundo.svg");
+    background-size: 100vw;
+    background-repeat: no-repeat;
+    height: 65vw;
+    }
 .Body{
     display: flex;
     justify-content: center;
@@ -5,15 +11,13 @@
     flex-direction: column;
 }
 .Body .Head {
+    margin-top: 5%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
-.Slider {
-    background-color: green;
-}
 .Card-body {
     background-color: #00222d;
     border-radius: 15%;
@@ -46,6 +50,7 @@
 
 .Card-body .name {
     width: 100%;
+    border-radius: 10%;
     background-color: white;
     display: flex;
     justify-content: center;
@@ -53,8 +58,13 @@
     flex-direction: column;
     
 }
+
 .slick-prev:before, .slick-next:before {
     color: black !important;
+}
+.slick-arrow {
+margin-top: 19%;
+
 }
 
 
