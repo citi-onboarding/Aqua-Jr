@@ -1,0 +1,159 @@
+/* Importing the font from google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Assistant&family=Catamaran:wght@700&display=swap');
+
+/* defining variables */
+:root{
+    --proportion: calc( 100vw / 1920);
+}
+
+/* style for the whole component */
+.ExpertiseArea{
+    background-color: #EAEAEA;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    height: calc(824 * var(--proportion));
+    overflow: hidden;
+}
+
+/* TITLE */
+/* style for the title of the component "Áreas de atuação" */
+.ExpertiseArea h2{
+    font-family: 'Catamaran', sans-serif;
+    color: #00222D;
+    font-size: calc(46 * var(--proportion));
+    margin: 0;
+}
+
+/* CATEGORIES */
+/* styles for the div that contains all categories button */
+.ExpertiseArea .categories{
+    display: flex;
+}
+
+/* Style for the buttons itself */
+.ExpertiseArea .categories button{
+    margin: 0 calc(27.5 * var(--proportion));
+    background-color: white;
+    box-shadow: 1px 2px 10px 1px rgba(0, 0, 0, 0.2);
+    height: calc(62 * var(--proportion));
+    width: calc(234 * var(--proportion));
+    border-radius: calc(12 * var(--proportion));
+    font-family: 'Catamaran', sans-serif;
+    font-size: calc(26 * var(--proportion));
+    outline: none;
+    border: none;
+}
+
+/* Style for when the mouse is on top of the button */
+.ExpertiseArea .categories button:hover{
+    background-color: #00506E;
+    color: white;
+}
+
+/* Style for when a button is selected */
+.ExpertiseArea .categories button.selected{
+    background-color: #00506E;
+    color: white;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+}
+
+/* SERVICES */
+/* style for the div that contains the slick */
+.ExpertiseArea .services{
+    height: calc(585 * var(--proportion));
+    width: 100vw;
+    margin-bottom: calc(15 * var(--proportion));
+}
+
+/* Style for the slick itself */
+.ExpertiseArea .services .Slider {
+    width: 100vw;
+    height: calc(526 * var(--proportion));
+    overflow: visible;
+}
+
+/* ARROWS */
+/* Style for the left arrow */
+.ExpertiseArea .services .Slider .slick-prev{
+    left: 20vw;
+    z-index: 1;
+    height: calc(39.46 * var(--proportion));
+    width: calc(22.56 * var(--proportion));
+    content: url("prevArrow.svg");
+    padding: 0;
+}
+
+/* this is just to take off a symbol that is implemented by default*/
+.ExpertiseArea .services .Slider .slick-prev::before{
+    content: none;
+}
+
+/* Style for the right arrow */
+.ExpertiseArea .services .Slider .slick-next{
+    right: 20vw;
+    z-index: 1;
+    content: none;
+    height: calc(39.46 * var(--proportion));
+    width: calc(22.56 * var(--proportion));
+    content: url("nextArrow.svg");
+    transform: scale(1.5) translateY(-10px);
+}
+
+/* this is just to take off a symbol that is implemented by default*/
+.ExpertiseArea .services .Slider .slick-next::before{
+    content: none;
+}
+
+/* SLIDER ITSELF */
+/* style of the div inside, the slider, that contains all the services */
+.ExpertiseArea .services .Slider .slick-list{
+    height: calc(526 * var(--proportion));
+    overflow: visible;
+}
+
+/* style for the service card that is in the middle */
+.ExpertiseArea .services .Slider .slick-list .slick-current .Service{
+    opacity: 100%;
+}
+
+/* DOTS */
+/* style for the div that contains both the dots and the dot container */
+.ExpertiseArea .services .Slider .slick-dots{
+    bottom: calc(-80 * var(--proportion));
+    display: flex;
+    justify-content: center;
+}
+
+/* style for the dot container */
+.ExpertiseArea .services .Slider .slick-dots .dot-container{
+    height: calc(28 * var(--proportion));
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: calc(16 * var(--proportion));
+    display: flex;
+    align-items: center;
+    padding: 0 5px;
+}
+
+/* style for the dots */
+.ExpertiseArea .services .Slider .slick-dots .dot-container li{
+    background-color: #F8F8F8;
+    height: calc(16 * var(--proportion));
+    width: calc(16 * var(--proportion));
+    border-radius: 50%;
+    margin: 0 calc(8 * var(--proportion));
+    box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.5);
+}
+
+/* Style for the selected dot */
+.ExpertiseArea .services .Slider .slick-dots .dot-container .slick-active{
+    background-color: #00506E;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+}
+
+/* this is just to take off a symbol that is implemented by default*/
+.slick-dots li button:before{
+    content: none;
+}
