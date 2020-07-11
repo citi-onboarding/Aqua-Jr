@@ -17,31 +17,67 @@ function Testimony() {
     loadTestimonys();
   }, []);
 
+  function SamplePrevtArrow(props) {
+    const { className, style, onClick } = props;
+    return (
+      <div
+        className={className}
+        style={{ ...style, display: "block", background: "red"}}
+        onClick={onClick}
+      />
+    );
+  }
+  
+  function SampleNextArrow(props) {
+    const { className, style, onClick } = props;
+    return (
+      <div
+        className={className}
+        onClick={onClick}
+      >
+          <button type="button">
+          <span className="credits"></span>
+          </button>
+
+      </div>
+    );
+  };
+  
+  function next() {
+    Slider.slider.slickNext();
+  }
 
   let settings = {
     infinite: true, 
+    focusOnSelect: true,
     speed: 500,
+    centerPadding: "30%",
     arrows: true,
     slideToShow: 3,
     slideToScroll: 1,
     dots: true,
     centerMode: true,
+    nextArrow: <SampleNextArrow/>,
     appendDots: dots => (
+
       <div
         style={{
           borderRadius: "10px",
-          padding: "10px",
+          padding: "0px",
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
+          marginTop: "10vw",
         }}
       >
+      <div>
+        <button>Voltar</button>
+      </div>
+        <ul style={{ margin: "0px" }}> {dots} </ul>
+
         <div>
-          <button>voltar</button>
-        </div>
-        <ul style={{ margin: "1px" }}> {dots} </ul>
-        <div>
-          <button>Proximo</button>
+        <button onClick= {next()} type="button">
+          </button>
         </div>
       </div>
     ),
@@ -69,9 +105,7 @@ function Testimony() {
                         <p>{name}</p>
                         <p>{occupation}</p>
                     </div>
-
                     </div>
-
                     </div>
                 ))}
                 </Slider>

@@ -10,6 +10,22 @@
     align-items: center;
     flex-direction: column;
 }
+.next {
+    background-image: url('arrow.svg');
+    background-repeat: no-repeat;
+}
+button{
+    border: none;
+    background: #EBEBEB
+}
+span.credits {
+    background: url('arrow.svg') no-repeat top left;
+    background-size: contain;
+    cursor: pointer;
+    display: inline-block;
+    height: 15px;
+    width: 10px;
+}
 .Body .Head {
     margin-top: 5%;
     display: flex;
