@@ -1,0 +1,46 @@
+.PostToBlogElement{
+    background-color: #f8f8f8;
+    border-radius: 48pt;
+    height: 100%;
+    max-height: 221.6pt;
+    width: 100%;
+    max-width: 255pt;
+    margin:100pt 9.6pt 15pt 9.6pt;
+    z-index: 1;
+    box-shadow: 5px 5px 15px #00222D40;
+
+}
+
+.ElementImage img{
+    height: 100%;
+    max-height: 128pt;
+    width: 100%;
+    max-width: 255pt;
+    z-index: 0;
+    border-radius: 48pt 48pt 0 0;
+    margin-bottom: 0;
+} 
+
+h2{
+    font-family: 'Catamaran', sans-serif;
+    font-weight: 700;
+    color: #00222D;
+    font-size: 19.2pt;
+    padding-bottom: 14.4pt;
+}
+
+p{
+    font-family: 'Assistant', sans-serif;
+    font-size: 12pt;
+    color: #00222D7E;
+    font-weight: bold;
+    padding-top: 8pt;
+    margin-bottom: 0;
+    margin-top: 0;
+
+}
+
+h2,p{
+    padding-left: 21.6pt;
+    margin: none;
+}
