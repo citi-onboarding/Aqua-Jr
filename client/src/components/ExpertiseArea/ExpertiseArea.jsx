@@ -10,6 +10,8 @@ import "./ExpertiseArea.css";
 // this let is created outside the function cause I don't want it to be rewritten every time the component is rendered
 let db = [];
 
+let cont = 0;
+
 // Creating the components for the next and previous arrow
 function NextArrow(props) {
   return <div className={props.className} onClick={props.onClick} />;
@@ -23,6 +25,7 @@ function PrevArrow(props) {
 const settings = {
   dots: true,
   infinite: false,
+  initialSlide: 0,
   arrows: true,
   slidesToShow: 1,
   slidesToScroll: 1,
@@ -30,17 +33,40 @@ const settings = {
   centerMode: true,
   focusOnSelect: true,
   centerPadding: "20%",
+  autoplay: false,
+  autoplaySpeed: 3000,
+  pauseOnHover: false,
   appendDots: (dots) => (
     <div>
+      <PrevArrow className="slick-prev" onClick={()=>{
+        document.querySelector(".slick-prev.slick-arrow").click();
+      }}/>
       <ul className="dot-container"> {dots} </ul>
+      <NextArrow className="slick-next" onClick={()=>{
+        document.querySelector(".slick-next.slick-arrow").click();
+      }}/>
     </div>
   ),
   nextArrow: <NextArrow />,
   prevArrow: <PrevArrow />,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        infinite: false,
+        centerPadding: "0",
+      }
+    }
+  ]
 };
+
+if(document.querySelector(".slick-prev.slick-arrow")){
+  document.querySelector(".slick-prev.slick-arrow").click();
+}
 
 // the function that will return this component
 function ExpertiseArea() {
+  cont++;
   const [categories, setCategories] = React.useState([]);
   const [services, setServices] = React.useState([]);
   const [selected, setSelected] = React.useState("");

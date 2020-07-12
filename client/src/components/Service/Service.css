@@ -5,6 +5,7 @@
 :root{
     /* proportion from the mokup */
     --proportion: calc( 100vw / 1920);
+    --proportion-mobile: calc( 100vw / 414);
 }
 
 /* styles for the card */
@@ -20,6 +21,7 @@
     justify-content: flex-start;
     align-items: flex-start;
     opacity: 50%;
+    transition: 1s;
     margin-left: 8vw;
 }
 
@@ -55,4 +57,27 @@
     margin-bottom: calc(49 * var(--proportion));
     color: #00222D;
     font-size: calc(22 * var(--proportion));
+}
+
+/* Styles for the mobile version */
+@media only screen and (max-width: 1024px) {
+    .Service{
+        height: calc(364 * var(--proportion-mobile));
+        width: calc(342 * var(--proportion-mobile));
+        border-radius: calc(60 * var(--proportion-mobile));
+        opacity: 100%;
+    }
+
+    .Service h3{
+        margin-right: calc(20.45 * var(--proportion-mobile));
+        margin-left: calc(20.45 * var(--proportion-mobile));
+        font-size: calc(20 * var(--proportion-mobile));
+    }
+
+    .Service p{
+    margin-right: calc(20.45 * var(--proportion-mobile));
+    margin-left: calc(20.45 * var(--proportion-mobile));
+    margin-bottom: calc(46 * var(--proportion-mobile));
+    font-size: calc(14 * var(--proportion-mobile));
+    }
 }
