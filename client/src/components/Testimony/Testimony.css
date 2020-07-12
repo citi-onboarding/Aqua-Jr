@@ -135,3 +135,7 @@
         }
 
 }
+.slick-next:before {
+    content: none;
+    display: none;
+}
