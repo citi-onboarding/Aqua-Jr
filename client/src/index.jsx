@@ -2,13 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 import {
-  Example,
+  CallToBlog
 } from './components';
 
 function App() {
   return (
     <section className="app">
-      <Example />
+      <CallToBlog />
     </section>
   );
 }

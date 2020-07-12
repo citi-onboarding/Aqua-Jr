@@ -12,11 +12,12 @@
     .CallToBlog{
         display: flex;
         width: 100vw;
-        height: 460px;
+        height: calc(460 * var(--proportion-mobile));
         background-color: rgb(29, 175, 233);
         background-image: url("ilustracao.svg");
         background-repeat: no-repeat;
-        background-position-y: top;
+        background-position-y: bottom;
+        background-size: contain;
         color: #F8F8F8;
         align-items: center;
         justify-content: center;
@@ -55,5 +56,6 @@
         font-size: calc(18 * var(--proportion-mobile));
         font-family: 'Catamaran', sans-serif;
         margin-top: calc(64 * var(--proportion-mobile));
+        outline: none;
     }
 }
