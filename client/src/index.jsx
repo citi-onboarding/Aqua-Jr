@@ -6,6 +6,7 @@ import {
   CallToBlog,
   ExpertiseArea, 
   Footer,
+  PostToBlog,
 } from './components';
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
   
   return (
     <section className="app">
+      <PostToBlog />
       <CallToBlog />
       <ExpertiseArea />
       <div className="FooterComponent">
