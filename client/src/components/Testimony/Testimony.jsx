@@ -37,6 +37,17 @@ function Testimony() {
     slideToScroll: 1,
     dots: true,
     centerMode: true,
+    responsive: [
+      {
+        breakpoint: 1025,
+        settings: {
+          slideToShow: 1,
+          slideToScroll: 1,
+          centerMode: false
+        }
+
+      },
+    ],
     appendDots: dots => (
 
       <div

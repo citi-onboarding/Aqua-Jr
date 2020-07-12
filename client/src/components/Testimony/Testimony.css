@@ -1,12 +1,14 @@
+@import url('<link href="https://fonts.googleapis.com/css2?family=Assistant&family=Catamaran:wght@700&display=swap" rel="stylesheet">');
 :root{
     --proportion: calc( 100vw / 1920);
     --proportion-mobile: calc( 100vw / 414);
 }
+
 .background {
-    background-image: url("fundo.svg");
-    background-size: 100vw;
-    background-repeat: no-repeat;
     height: 65vw;
+    background-image: url("fundo.svg");
+    background-repeat: no-repeat;
+    background-size: cover, cover;
     }
 .Body-Testimony{
     display: flex;
@@ -23,6 +25,7 @@
 	padding: 0 8px;
 	box-sizing: border-box;
  }
+
 .Slide-Testimony .slick-prev {
     content: url('arrow-back.svg');
     position: static;
@@ -52,11 +55,17 @@
     align-items: center;
     flex-direction: column;
 }
+.Body-Testimony .Head-Testimony h1 {
+    font-family: 'Catamaran', sans-serif;
+}
 
+.Body-Testimony .Head-Testimony p {
+    font-family: 'Assistant', sans-serif;
+}
 .Slide-Testimony .Card-body {
     background-color: #00506E;
     border-radius: 15%;
-    height: 500px;
+    height: 600px;
     width: 500px;
     display: flex;
     justify-content: center;
@@ -64,6 +73,7 @@
     flex-direction: column;
 }
 .Slide-Testimony .texts {
+    font-family: 'Assistant', sans-serif;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -78,6 +88,7 @@
     width: 157px;
     border-radius: 50%;
     margin: auto;
+    margin-top: 10%;
 }
 
 .Slide-Testimony .Card-body .Testimony {
