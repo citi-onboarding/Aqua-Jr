@@ -10,6 +10,7 @@
     background-repeat: no-repeat;
     background-size: cover, cover;
     }
+
 .Body-Testimony{
     display: flex;
     justify-content: center;
@@ -109,4 +110,28 @@
 .Slide-Testimony .slick-prev:before{
     content: none;
     display: none;
+}
+@media only screen and (max-width: 1025px) {
+    .background { 
+        height: 1000px;
+        background-image: url("fundo-mobile.svg");
+        background-repeat: no-repeat;
+        background-size: cover, cover;
+        }
+        .Body-Testimony .Head-Testimony {
+            margin-top: 10%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+}
+@media only screen and (max-width: 800px) {
+    .background {
+        height: 900px;
+        background-image: url("fundo-mobile.svg");
+        background-repeat: no-repeat;
+        background-size: cover, cover;
+        }
+
 }
