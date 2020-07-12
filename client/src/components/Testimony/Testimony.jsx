@@ -17,47 +17,26 @@ function Testimony() {
     loadTestimonys();
   }, []);
 
-  function SamplePrevtArrow(props) {
-    const { className, style, onClick } = props;
-    return (
-      <div
-        className={className}
-        style={{ ...style, display: "block", background: "red"}}
-        onClick={onClick}
-      />
-    );
+  function NextArrow(props) {
+    return <div className={props.className} onClick={props.onClick} />;
   }
   
-  function SampleNextArrow(props) {
-    const { className, style, onClick } = props;
-    return (
-      <div
-        className={className}
-        onClick={onClick}
-      >
-          <button type="button">
-          <span className="credits"></span>
-          </button>
+  function PrevArrow(props) {
+    return <div className={props.className} onClick={props.onClick} />;
+  }
 
-      </div>
-    );
-  };
-  
-  function next() {
-    Slider.slider.slickNext();
-  }
 
   let settings = {
     infinite: true, 
     focusOnSelect: true,
     speed: 500,
+    initialSlide: 0,
     centerPadding: "30%",
     arrows: true,
     slideToShow: 3,
     slideToScroll: 1,
     dots: true,
     centerMode: true,
-    nextArrow: <SampleNextArrow/>,
     appendDots: dots => (
 
       <div
@@ -70,28 +49,32 @@ function Testimony() {
           marginTop: "10vw",
         }}
       >
-      <div>
-        <button>Voltar</button>
-      </div>
+      <PrevArrow className="slick-prev" onClick={()=>{
+        document.querySelector(".slick-prev.slick-arrow").click();
+      }}/>
         <ul style={{ margin: "0px" }}> {dots} </ul>
 
-        <div>
-        <button onClick= {next()} type="button">
-          </button>
-        </div>
+        <NextArrow className="slick-next" onClick={()=>{
+        document.querySelector(".slick-next.slick-arrow").click();
+      }}/>
+      
       </div>
     ),
+    nextArrow: <NextArrow />,
+    prevArrow: <PrevArrow />,
   };
-
+  if(document.querySelector(".slick-prev.slick-arrow")){
+    document.querySelector(".slick-prev.slick-arrow").click();
+  }
   return (
         <div className="background">  
-            <div className="Body">
-                <div className="Head">
+            <div className="Body-Testimony">
+                <div className="Head-Testimony">
                     <h1>Depoimentos</h1>
                     <p>Nos conheça por nossos parceiros</p>
                 </div>
 
-                <Slider className= 'Slider' {...settings}>
+                <Slider className= 'Slide-Testimony' {...settings}>
                 {Testimonys?.map(({ _id, text, image, name, occupation }) => (
                     <div key={_id} className="Card-body">
                     <img src={image?.url} alt="Imagem de Exemplo"/>

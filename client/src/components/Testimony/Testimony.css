@@ -1,40 +1,41 @@
+:root{
+    --proportion: calc( 100vw / 1920);
+    --proportion-mobile: calc( 100vw / 414);
+}
 .background {
     background-image: url("fundo.svg");
     background-size: 100vw;
     background-repeat: no-repeat;
     height: 65vw;
     }
-.Body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-.next {
-    background-image: url('arrow.svg');
-    background-repeat: no-repeat;
-}
-button{
-    border: none;
-    background: #EBEBEB
-}
-span.credits {
-    background: url('arrow.svg') no-repeat top left;
-    background-size: contain;
-    cursor: pointer;
-    display: inline-block;
-    height: 15px;
-    width: 10px;
-}
-.Body .Head {
-    margin-top: 5%;
+.Body-Testimony{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
-.Card-body {
+.Slide-Testimony .slick-next {
+    content: url('arrow.svg');
+    position: static;
+    transform: scale(1.5) translateY(1px);
+    cursor: pointer;
+    display: inline-block;
+    height: calc(39.46 * var(--proportion));
+    width: calc(22.56 * var(--proportion));
+}
+
+
+.Body-Testimony .Head-Testimony {
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+}
+
+.Slide-Testimony .Card-body {
     background-color: #00222d;
     border-radius: 15%;
     height: 500px;
@@ -44,27 +45,27 @@ span.credits {
     align-items: center;
     flex-direction: column;
 }
-.texts {
+.Slide-Testimony .texts {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 50%;
     }
-.Slider {
+.Slide-Testimony {
     height: 90%;
     width: 90%;
 }
-.Card-body img {
+.Slide-Testimony .Card-body img {
     height: 157px;
     width: 157px;
     margin: auto;
 }
 
-.Card-body .Testimony {
+.Slide-Testimony .Card-body .Testimony {
     color: white;
 }
 
-.Card-body .name {
+.Slide-Testimony .Card-body .name {
     width: 100%;
     border-radius: 10%;
     background-color: white;
@@ -75,16 +76,6 @@ span.credits {
     
 }
 
-.slick-prev:before, .slick-next:before {
-    color: black !important;
+.Slide-Testimony .slick-prev:before, .slick-next:before {
+    content: none;
 }
-.slick-arrow {
-margin-top: 19%;
-
-}
-
-
-
-
-
-
