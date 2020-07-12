@@ -13,7 +13,8 @@ const Area = new keystone.List('Areas',
 Area.add({
     Title: { type: Types.Text, required: true, initial: true, index : true},
     Text: { type: Types.Text, required: true, initial: true},
-    Category: {type: Types.Text, required: true, initial: true}
+    Category: {type: Types.Text, required: true, initial: true},
+    image:{ type: Types.CloudinaryImage ,initial: true, required: true }
 })
 
 Area.register();
