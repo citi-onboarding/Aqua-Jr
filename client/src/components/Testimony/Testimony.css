@@ -15,8 +15,27 @@
     flex-direction: column;
 }
 
+.Slide-Testimony .slick-arrow.slick-prev{
+    display: none;
+}
+
+.Slide-Testimony .slick-slide {
+	padding: 0 8px;
+	box-sizing: border-box;
+ }
+.Slide-Testimony .slick-prev {
+    content: url('arrow-back.svg');
+    position: static;
+    transform: scale(1.5) translateY(1px);
+    cursor: pointer;
+    display: inline-block;
+    height: calc(30 * var(--proportion));
+    width: calc(20 * var(--proportion));
+
+}
 .Slide-Testimony .slick-next {
     content: url('arrow.svg');
+    margin-left: 3%;
     position: static;
     transform: scale(1.5) translateY(1px);
     cursor: pointer;
@@ -31,12 +50,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
     flex-direction: column;
 }
 
 .Slide-Testimony .Card-body {
-    background-color: #00222d;
+    background-color: #00506E;
     border-radius: 15%;
     height: 500px;
     width: 500px;
@@ -58,6 +76,7 @@
 .Slide-Testimony .Card-body img {
     height: 157px;
     width: 157px;
+    border-radius: 50%;
     margin: auto;
 }
 
@@ -76,6 +95,7 @@
     
 }
 
-.Slide-Testimony .slick-prev:before, .slick-next:before {
+.Slide-Testimony .slick-prev:before{
     content: none;
+    display: none;
 }

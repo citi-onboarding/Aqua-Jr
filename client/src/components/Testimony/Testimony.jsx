@@ -46,7 +46,7 @@ function Testimony() {
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
-          marginTop: "10vw",
+          marginTop: "15vw",
         }}
       >
       <PrevArrow className="slick-prev" onClick={()=>{
@@ -60,8 +60,7 @@ function Testimony() {
       
       </div>
     ),
-    nextArrow: <NextArrow />,
-    prevArrow: <PrevArrow />,
+
   };
   if(document.querySelector(".slick-prev.slick-arrow")){
     document.querySelector(".slick-prev.slick-arrow").click();
