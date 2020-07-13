@@ -77,7 +77,7 @@ function Testimony() {
     document.querySelector(".slick-prev.slick-arrow").click();
   }
   return (
-        <div className="background">  
+        <div className="background-Testimony">  
             <div className="Body-Testimony">
                 <div className="Head-Testimony">
                     <h1>Depoimentos</h1>
