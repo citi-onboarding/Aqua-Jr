@@ -20,27 +20,31 @@ function PostToBlog(){
 
 
     let settings = {
+        arrows: true,
         dots: true,
         infinite: true,
         speed: 500,
         arrow: true,
         slidesToShow: 3,
         slidesToScroll:1,
+        appendDots: dots => (
+            <div>
+                <ul>{ dots }</ul>
+            </div>
+        )
     };
     return (
         <main className="PostToBlogSlick">
             <div className="PostToBlogCard">
-                <Slider {...settings}>  
+                <Slider {...settings} className="Slider">  
                     {elements.map((PostToBlogCard) =>{
                         return(
-                            <div>
                                 <PostToBlogElement
                                     title = {PostToBlogCard.title}
                                     category = {PostToBlogCard.category}
                                     image = {PostToBlogCard.image}
                                 /> 
 
-                            </div>
                             
                         );
 
