@@ -4,7 +4,7 @@
     --proportion: calc( 100vw / 1920);
 }
 
-.background {
+.background-Testimony {
     height: 65vw;
     background-image: url("fundo.svg");
     background-repeat: no-repeat;
@@ -116,7 +116,7 @@
 }
 /* responsivity */
 @media only screen and (max-width: 1025px) {
-    .background { 
+    .background-Testimony { 
         height: 1000px;
         background-image: url("fundo-mobile.svg");
         background-repeat: no-repeat;
@@ -139,7 +139,7 @@
     }
 }
 @media only screen and (max-width: 600px) {
-    .background {
+    .background-Testimony {
         height: 900px;
         background-image: url("fundo-mobile.svg");
         background-repeat: no-repeat;
