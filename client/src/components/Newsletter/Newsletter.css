@@ -1,0 +1,10 @@
+.Body-Newsletter {
+    background: url(fundo-newsletter.svg);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 26vw;
+}
+.Form-Newsletter {
+    margin-right: 7%;
+}
