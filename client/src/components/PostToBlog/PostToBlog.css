@@ -2,6 +2,13 @@
     --proportion: calc( 100vw / 1920);
 }
 
+.PostToBlog{
+    background-image: url('./onda1 (1).svg');
+    height: calc( 600 * var(--proportion));
+    background-repeat: no-repeat;
+    background-position-y: 185px;
+}
+
 .PostToBlogSlick{
     width: calc( 830 * var(--proportion));
     overflow: visible;

@@ -29,11 +29,13 @@
     width: calc(820 * var(--proportion));
     padding-left: calc(120 * var(--proportion));
 }
-.Footer .TopLine{
+
+.TopLine{
     display: flex;
     justify-content: space-around;
     flex-direction: row;
     align-items: center;
+    padding-top: calc(25 * var(--proportion));
 }
 
 h2{
@@ -67,11 +69,13 @@ h2{
     font-family: 'Barlow', sans-serif;
     font-weight: 400;
     font-size: calc(20 * var(--proportion));
+    padding-right:calc(131 * var(--proportion));
 }
 .BottomLine .CITiRights{
     font-family: 'Assistant', sans-serif;
     font-weight: normal;
     font-size: calc(16 * var(--proportion));
+    padding-left:calc(132 * var(--proportion));
 }
 
 
@@ -161,4 +165,7 @@ h2{
         padding-top: calc(40 * var(--proportionM));
     }
 }
+
+
+
 
