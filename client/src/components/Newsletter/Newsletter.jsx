@@ -1,13 +1,10 @@
 import React, { useState, useEffect } from "react";
 
 import './Newsletter.css';
-let value = 'a'
+let value = ''
+
 function Newsletter() {
 
-    const handleChange = (e) => {
-        value = e.target.value;
-        alert(value)
-    }
     return (
     <div className= "Body-Newsletter">
 
@@ -21,9 +18,9 @@ function Newsletter() {
         </div>
 
 
-        <form className= "Form-Newsletter" onSubmit={handleChange} >
+        <form className= "Form-Newsletter" >
 
-            <input name="Email" placeholder = "E-mail"/>
+            <input name="Email" value={value} onChangeCapture={handleChange} placeholder = "E-mail"/>
 
             <button type= "submit" >Inscreva-se</button>
         </form>
