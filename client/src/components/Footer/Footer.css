@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@400;700&family=Barlow:wght@400;700&family=Catamaran:wght@700&display=swap');
+
+
+:root{
+    --proportion: calc( 100vw / 1920);
+}
+
+.Footer{
+    background-color: #00222D;
+    height: calc(239 * var(--proportion));
+}
+
+.TopLine{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    padding-top: calc(25 * var(--proportion));
+}
+
+h2{
+    font-family: 'Catamaran', sans-serif;
+    font-size: calc(24 * var(--proportion));
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+.TopLine p{
+    font-family: 'Assistant', sans-serif;
+    font-size: calc(18 * var(--proportion));
+    font-weight: 400;
+    color: #FFFFFF;
+
+}
+
+.BottomLine p{
+    color: #FFFFFF;
+    margin-top: 20px;
+}
+
+.BottomLine{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: baseline;
+    margin-top: calc(15 * var(--proportion));
+}
+.BottomLine .MadeWith{
+    font-family: 'Barlow', sans-serif;
+    font-weight: 400;
+    font-size: calc(20 * var(--proportion));
+    padding-right:calc(131 * var(--proportion));
+}
+.BottomLine .CITiRights{
+    font-family: 'Assistant', sans-serif;
+    font-weight: normal;
+    font-size: calc(16 * var(--proportion));
+    padding-left:calc(132 * var(--proportion));
+}
+
+
+.SocialMedia img{
+    height: calc(37 * var(--proportion));
+    width: calc(37 * var(--proportion));
+}
+
+.SocialMedia{
+    display: flex;
+    justify-content: space-between;
+    width: calc(138 * var(--proportion));
+    padding-bottom: 25px;
+}
+
+
+@media(max-width: 1024px){
+    .TopLine h2{
+        font-size: calc(16 * var(--proportion));
+    }
+
+    .TopLine p{
+        font-size: calc(14 * var(--proportion));
+    }
+
+    .Footer .TopLine .Adress p{
+        width: calc(36 * var(--proportion));
+        margin-top: 0;
+    }
+    
+    .Footer{
+        display: flex;
+        align-items: center;
+        flex-flow: column wrap;
+        width: 100%;
+        height: calc(239 * var(--proportion));
+    }
+
+    .Footer .TopLine{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-flow: column wrap;
+    }
+
+    .Adress{
+        order: 0;
+    }
+
+    .Phone{
+        order: 1;
+    }
+
+    .SocialMedia{
+        order: 2;
+    }
+
+    .Email{
+        order: 3;
+    }
+}
+
