@@ -3,19 +3,37 @@
 
 :root{
     --proportion: calc( 100vw / 1920);
+    --proportionM: calc( 100vw / 414);
 }
 
 .Footer{
     background-color: #00222D;
     height: calc(239 * var(--proportion));
+    padding-top: calc(38 * var(--proportion));
+    padding-bottom: calc(45 * var(--proportion));
+    padding-left: calc(140 * var(--proportion));
+    padding-right: calc(140 * var(--proportion));
 }
 
-.TopLine{
+.TopOne{
+    display: flex;
+    justify-content: space-between;
+    width: calc(820 * var(--proportion));
+    padding-right: calc(200 * var(--proportion));
+}
+
+.TopTwo{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: calc(820 * var(--proportion));
+    padding-left: calc(120 * var(--proportion));
+}
+.Footer .TopLine{
     display: flex;
     justify-content: space-around;
     flex-direction: row;
     align-items: center;
-    padding-top: calc(25 * var(--proportion));
 }
 
 h2{
@@ -35,7 +53,7 @@ h2{
 
 .BottomLine p{
     color: #FFFFFF;
-    margin-top: 20px;
+    margin-top: calc(20 * var(--proportion));
 }
 
 .BottomLine{
@@ -43,25 +61,24 @@ h2{
     justify-content: space-between;
     flex-direction: row;
     align-items: baseline;
-    margin-top: calc(15 * var(--proportion));
+    margin-top: calc(70 * var(--proportion));
 }
 .BottomLine .MadeWith{
     font-family: 'Barlow', sans-serif;
     font-weight: 400;
     font-size: calc(20 * var(--proportion));
-    padding-right:calc(131 * var(--proportion));
 }
 .BottomLine .CITiRights{
     font-family: 'Assistant', sans-serif;
     font-weight: normal;
     font-size: calc(16 * var(--proportion));
-    padding-left:calc(132 * var(--proportion));
 }
 
 
 .SocialMedia img{
     height: calc(37 * var(--proportion));
     width: calc(37 * var(--proportion));
+    margin-top: calc(20 * var(--proportion));
 }
 
 .SocialMedia{
@@ -69,52 +86,79 @@ h2{
     justify-content: space-between;
     width: calc(138 * var(--proportion));
     padding-bottom: 25px;
+    padding-left: calc(510* var(--proportion));
 }
 
 
+
+
+
+
+
+
+
+
 @media(max-width: 1024px){
-    .TopLine h2{
-        font-size: calc(16 * var(--proportion));
-    }
-
-    .TopLine p{
-        font-size: calc(14 * var(--proportion));
-    }
-
-    .Footer .TopLine .Adress p{
-        width: calc(36 * var(--proportion));
-        margin-top: 0;
+    .Footer{
+        height: calc(239 * var(--proportionM));
     }
     
-    .Footer{
+    .TopOne{
         display: flex;
-        align-items: center;
-        flex-flow: column wrap;
-        width: 100%;
-        height: calc(239 * var(--proportion));
+        flex-direction: column;
     }
 
-    .Footer .TopLine{
+    .TopTwo{
         display: flex;
+        flex-direction: column-reverse;
+        align-items: flex-end;
+        padding-right: 0;
+    }
+
+    .TopTwo h2, .TopTwo p{
+        text-align: right;
+    }
+
+    .BottomLine{
+        display: flex;
+        flex-direction: column;
         align-items: center;
-        justify-content: center;
-        flex-flow: column wrap;
+        margin-top: calc(10 * var(--proportionM));
     }
 
-    .Adress{
-        order: 0;
+    .BottomLine p{
+        margin-top: calc(10 * var(--proportionM));
+        margin-bottom: 0;
     }
 
-    .Phone{
-        order: 1;
+    .Footer p{
+        font-size: calc(14 * var(--proportionM));
+        margin-top: calc(8 * var(--proportionM));
+        color: #EAEAEA;
+    }
+    
+    .Footer h2{
+        font-size: calc(16 * var(--proportionM));
+        margin-bottom: 0;
+    }
+
+    .SocialMedia img{
+        height: calc(23 * var(--proportionM));
+        width: calc(23 * var(--proportionM));
+        padding-left: calc(10 * var(--proportionM));
     }
 
     .SocialMedia{
-        order: 2;
+        width: calc(100 * var(--proportionM));
+        padding-right: calc(100 * var(--proportionM));
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: calc(10 * var(--proportionM));
+        padding-bottom: calc(5 * var(--proportionM));
     }
 
-    .Email{
-        order: 3;
+    .E-mail{
+        padding-top: calc(40 * var(--proportionM));
     }
 }
 
