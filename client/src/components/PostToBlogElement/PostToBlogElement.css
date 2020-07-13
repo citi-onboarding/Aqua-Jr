@@ -10,8 +10,10 @@
     width: calc( 255 * var(--proportion));
     margin:100pt 9.6pt 15pt 9.6pt;
     z-index: 1;
-    box-shadow: 5px 5px 15px #00222D40;
+    box-shadow: 0 5px 10px #00222D40;
     overflow: visible;
+    position: relative;
+    bottom: 50px;
 
 }
 

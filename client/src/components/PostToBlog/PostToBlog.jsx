@@ -44,20 +44,13 @@ function PostToBlog(){
                                     category = {PostToBlogCard.category}
                                     image = {PostToBlogCard.image}
                                 /> 
-
-                            
                         );
 
                     })}
-                </Slider> 
-                  
+                </Slider>    
             </div>
-
-            
         </main>
     );
 }
-
-
 
 export default PostToBlog;

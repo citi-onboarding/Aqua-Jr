@@ -23,7 +23,9 @@ function App() {
   
   return (
     <section className="app">
+      <div className="PostToBlog">
       <PostToBlog />
+      </div>
       <CallToBlog />
       <ExpertiseArea />
       <div className="FooterComponent">
@@ -39,7 +41,6 @@ function App() {
             />
           );
         })}
-
       </div>
     </section>
   );

@@ -8,6 +8,7 @@
 }
 
 
+
 .slick-dots{
     display: flex;
     justify-content: center;
@@ -27,6 +28,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+    bottom: 40px;
 }
 
 
@@ -56,11 +59,23 @@
 }
 
 .slick-prev, .slick-next{
-    background-color: black;
+    height: calc( 55* var(--proportion));
+    width: calc( 34 * var(--proportion));
 }
 
-.slick-active{
-    height: calc( 277 * var(--proportion));
+.slick-prev{
+    background: url("./Icon ionic-ios-arrow-back (2).svg") no-repeat center;
+    right: 50px;
+}
+
+.slick-next{
+    background: url("./Icon ionic-ios-arrow-back (2).svg") no-repeat center;
+    transform: rotate(180deg);
+}
+
+.slick-next .slick-active{
+    background: url("./Icon ionic-ios-arrow-back.svg") no-repeat center;
+    transform: rotate(180deg);
 }
 
 
