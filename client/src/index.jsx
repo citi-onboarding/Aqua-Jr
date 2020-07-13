@@ -8,6 +8,7 @@ import {
   ExpertiseArea, 
   Footer,
   PostToBlog,
+  Newsletter,
 } from './components';
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
       </div>
       <CallToBlog />
       <ExpertiseArea />
+      <Newsletter />
       <div className="FooterComponent">
         { footerInfo.map ((FooterComponent) =>{
           return(
@@ -42,6 +44,7 @@ function App() {
           );
         })}
       </div>
+ 
     </section>
   );
 }
