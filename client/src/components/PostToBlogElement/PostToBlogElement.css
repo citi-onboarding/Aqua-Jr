@@ -51,8 +51,16 @@ h2,p{
     margin: none;
 }
 
+.slick-next{
+    right: calc( -65 * var(--proportion));
+}
 
-@media (max-width: 1024px){
+.slick-prev{
+    left: calc( -65 * var(--proportion));
+}
+
+
+@media (max-width: 1025px){
     .PostToBlogElement{
         height: calc( 226.48 * var(--proportionM));
         width: calc( 219.45 * var(--proportionM));

@@ -12,7 +12,6 @@
 
 .PostToBlogSlick{
     width: calc( 830 * var(--proportion));
-    overflow: visible;
 }
 
 
@@ -91,22 +90,24 @@
     height: calc( 39.34 * var(--proportion));
     width: calc( 22.49 * var(--proportion));
     top: calc(200 * var(--proportion));
-    margin-left: calc(60 * var(--proportion));
+    padding-right: calc(100 * var(--proportion));
 }
 
 
 
 
-@media(max-width: 1024px){
+@media(max-width: 1025px){
 
-    .Slider{
-        width: 90%;
+    .PostToBlogSlick{
+        width: calc( 220 * var(--proportionM));
+        overflow: visible;
     }
     
     .PostToBlog{
         width: 100%;
         height: calc( 326.96 * var(--proportionM));
         background-position-y: calc( 200 * var(--proportionM));
+        overflow: visible;
     }
 
     .slick-dots ul{
@@ -132,7 +133,7 @@
         height: calc(30 * var(--proportionM));
         width: calc(17 * var(--proportionM));
         content: url("./ArrowGray.svg");
-        top:calc(76 * var(--proportionM));
+        top:calc(64 * var(--proportionM));
     }
 
     .slick-prev:hover{
@@ -145,7 +146,7 @@
         width: calc(17 * var(--proportionM));
         content: url("./ArrowBlue.svg");
         transform: rotate(180deg);
-        top:calc(59.5 * var(--proportionM));
+        top:calc(50 * var(--proportionM));
     }
 
 
