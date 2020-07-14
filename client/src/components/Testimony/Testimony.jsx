@@ -88,13 +88,13 @@ function Testimony() {
 
                 <Slider className= 'Slide-Testimony' {...settings}>
                 {Testimonys?.map(({ _id, text, image, name, occupation }) => (
-                  <div key={_id} className="Card-body">
+                  <div key={_id} className="Card-body" style= {{display: "flex"}}>
 
 
-                    
+                    <div className="content">
                     <img src={image?.url} alt="Imagem de Exemplo"/>
 
-                    <div className="texts">
+
                       <div className="Testimony">
                           <p>{text}</p>
                       </div>
@@ -104,7 +104,8 @@ function Testimony() {
                           <p>{occupation}</p>
                       </div>
                     </div>
-                  </div>
+                    
+                    </div>
 
                 ))}
                 </Slider>

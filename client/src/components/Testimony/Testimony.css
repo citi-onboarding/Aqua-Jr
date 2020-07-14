@@ -3,7 +3,7 @@
 
 :root{
     --proportion: calc( 100vw / 1920);
-    --proportion-mobile: calc(100vw / 1920);
+    --proportion-mobile: calc(100vw / 414);
 }
 
 .slick-dots {
@@ -86,27 +86,30 @@
     opacity: 0.7;
     width: calc(535* var(--proportion));
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
     flex-direction: column;
-}¨
+}
+
+.Slide-Testimony .Card-body .content {
+    display: flex;
+    font-family: 'Assistant', sans-serif;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-size: calc(16 * var(--proportion))
+}
+
 li .sslick-active{
     color: blue;
 }
+
 .Slide-Testimony .slick-active .Card-body{
     opacity: 1;
 }
-.Slide-Testimony .texts {
-    height: 62%;
-    overflow: hidden;
-    font-family: 'Assistant', sans-serif;
-    display: flex;
-    margin-top: 5%;
-    flex-direction: column;
-    justify-content: space-between;
-    }
-.Slide-Testimony .texts .Testimony{
+.Slide-Testimony .Testimony{
     height: calc(134 * var(--proportion));
+    margin: 0% 5%;
 }
 .slick-prev {
     margin-right: 2%;
@@ -116,11 +119,10 @@ li .sslick-active{
     height: 92%;
     width: 92%;
 }
-.Slide-Testimony .Card-body img {
+.Slide-Testimony .Card-body .content img {
     height: calc(157 * var(--proportion));
     width: calc(157 * var(--proportion));
     border-radius: 50%;
-    margin: auto;
     margin-top: 10%;
 }
 
@@ -128,12 +130,10 @@ li .sslick-active{
     color: white;
 }
 
-.Slide-Testimony .Card-body .name {
+.Slide-Testimony .Card-body .content .name {
     height: 25%;
-    width: 87%;
-    margin-left: 6%;
-
-    border-radius: 40% 40% 30% 30%;
+    width: 100%;
+    border-radius: 70% 70% 0% 0%;
     background-color: white;
     display: flex;
     justify-content: center;
@@ -148,19 +148,29 @@ li .sslick-active{
 }
 
 /* responsivity */
-@media only screen and (max-width: 1400px) {
-    .Slide-Testimony .texts {
-        height: 100%;
+@media only screen and (max-width: 1024px) {
+    .Slide-Testimony .Card-body .content .Testimony {
+        height: calc(300 * var(--proportion-mobile));
     }
-    .Slide-Testimony .Card-body .name {
-        height: 50%;
-        width: 100%;
-        margin-left: 0%;
+    .Slide-Testimony .Card-body .content {
+        font-size: calc(16 * var(--proportion-mobile));
     }
 
-}
-@media only screen and (max-width: 1025px) {
-    .Slide-Testimony .Card-body img {
+    .Slide-Testimony  {
+        height: 100%;
+        margin-top: 1%;
+    }
+
+    .Slide-Testimony .Card-body {
+        height: calc(360 * var(--proportion-mobile));
+        width: calc(342 * var(--proportion-mobile));
+        justify-content: space-between;
+        
+    }
+
+    .Slide-Testimony .Card-body .content img {
+        height: calc(100 * var(--proportion-mobile));
+        width: calc(100 * var(--proportion-mobile));
         margin-top: 1%;
     }
     .background-Testimony { 
@@ -176,28 +186,9 @@ li .sslick-active{
             align-items: center;
             flex-direction: column;
         }
-        .Slide-Testimony .texts {
-            height: 50%;
-            margin-top: 1%;
-        }
-}
-@media only screen and (max-width: 800px) {
-    .Slide-Testimony .texts {
-        height: 63%;
-    }
-}
-@media only screen and (max-width: 600px) {
-    .background-Testimony {
-        height: 900px;
-        background-image: url("fundo-mobile.svg");
-        background-repeat: no-repeat;
-        background-size: cover, cover;
-        }
-        .Slide-Testimony .texts {
-            height: 67%;
-        }
 
 }
+
 /* fixing the problem with the slickt arrows*/
 .slick-next:before {
     content: none;
