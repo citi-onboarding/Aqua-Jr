@@ -66,7 +66,7 @@
 }
 .Slide-Testimony .Card-body {
     background-color: #00506E;
-    border-radius: 20%;
+    border-radius: 20% 20% 16% 16%;
     height: 600px;
     width: 500px;
     display: flex;
@@ -79,7 +79,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 67.5%;
+    height: calc(659px * 6/10)
     }
 .Slide-Testimony {
     height: 90%;
@@ -100,7 +100,7 @@
 .Slide-Testimony .Card-body .name {
     height: 25%;
     width: 87%;
-    border-radius: 40% 40% 40% 40%;
+    border-radius: 40% 40% 22% 22%;
     margin-left: 6.5%;
     background-color: white;
     display: flex;
@@ -114,7 +114,16 @@
     content: none;
     display: none;
 }
+
 /* responsivity */
+
+@media only screen and (max-width: 600px) {
+
+        .Slide-Testimony .texts {
+            height: 69%;
+        }
+
+}
 @media only screen and (max-width: 1025px) {
     .background-Testimony { 
         height: 1000px;
@@ -146,7 +155,7 @@
         background-size: cover, cover;
         }
         .Slide-Testimony .texts {
-            height: 71%;
+            height: 69%;
         }
 
 }
