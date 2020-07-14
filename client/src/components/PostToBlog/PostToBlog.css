@@ -1,12 +1,13 @@
 :root{
     --proportion: calc( 100vw / 1920);
+    --proportionM: calc( 100vw / 414 );
 }
 
 .PostToBlog{
     background-image: url('./onda1 (1).svg');
     height: calc( 600 * var(--proportion));
     background-repeat: no-repeat;
-    background-position-y: 185px;
+    background-position-y: calc( 185 * var(--proportion));
 }
 
 .PostToBlogSlick{
@@ -29,18 +30,18 @@
 
 .slick-dots ul{
     background-color: #0000000D; 
-    border-radius: 50px;
-    padding: calc( 10 * var(--proportion)) calc( 7 * var(--proportion)) calc( 11 * var(--proportion))  0;
-    height: calc( 28 * var(--proportion));
+    border-radius: calc( 50 * var(--proportion));
+    padding: calc( 10 * var(--proportion)) calc( 7 * var(--proportion)) calc( 10 * var(--proportion))  0;
+    height: calc( 16 * var(--proportion));
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
-    bottom: 40px;
+    top: calc( 50 * var(--proportion));
 }
 
 
-.Slider .slick-dots li{
+.slick-dots li{
     content: none;
     height: calc( 16.5 * var(--proportion));
     width: calc( 16.5 * var(--proportion));
@@ -66,23 +67,88 @@
 }
 
 .slick-prev, .slick-next{
-    height: calc( 55* var(--proportion));
-    width: calc( 34 * var(--proportion));
+    display: none;
 }
 
-.slick-prev{
-    background: url("./Icon ionic-ios-arrow-back (2).svg") no-repeat center;
-    right: 50px;
+.slick-arrow.slick-prev{
+    display: inline-block;
+    content: url("./ArrowGray.svg");
+    height: calc( 39.34 * var(--proportion));
+    width: calc( 22.49 * var(--proportion));
+    top: calc(215 * var(--proportion));
+    margin-right: calc(150 * var(--proportion));
 }
 
-.slick-next{
-    background: url("./Icon ionic-ios-arrow-back (2).svg") no-repeat center;
+.slick-arrow.slick-prev:hover{
+    content: url("./ArrowBlue.svg");
+
+}
+
+.slick-arrow.slick-next{
+    display: inline-block;
+    content: url("./ArrowBlue.svg");
     transform: rotate(180deg);
+    height: calc( 39.34 * var(--proportion));
+    width: calc( 22.49 * var(--proportion));
+    top: calc(200 * var(--proportion));
+    margin-left: calc(60 * var(--proportion));
 }
 
-.slick-next .slick-active{
-    background: url("./Icon ionic-ios-arrow-back.svg") no-repeat center;
-    transform: rotate(180deg);
+
+
+
+@media(max-width: 1024px){
+
+    .Slider{
+        width: 90%;
+    }
+    
+    .PostToBlog{
+        width: 100%;
+        height: calc( 326.96 * var(--proportionM));
+        background-position-y: calc( 200 * var(--proportionM));
+    }
+
+    .slick-dots ul{
+        height: calc( 28 * var(--proportionM));
+        border-radius: calc( 50 * var(--proportionM));
+        padding-right: calc( 5 * var(--proportionM));
+        padding-left: calc( 5 * var(--proportionM));
+        position: relative;
+        top: calc( 40* var(--proportionM));
+    }
+
+    .slick-dots li{
+        height: calc( 15 * var(--proportionM));
+        width: calc( 15 * var(--proportionM));
+    }
+
+    .slick-arrow.slick-prev, .slick-arrow.slick-next{
+        display: none;
+    }
+    
+    .slick-prev{
+        display: inline-block;
+        height: calc(30 * var(--proportionM));
+        width: calc(17 * var(--proportionM));
+        content: url("./ArrowGray.svg");
+        top:calc(76 * var(--proportionM));
+    }
+
+    .slick-prev:hover{
+        content: url("./ArrowBlue.svg");
+    }
+
+    .slick-next{
+        display: inline-block;
+        height: calc(30 * var(--proportionM));
+        width: calc(17 * var(--proportionM));
+        content: url("./ArrowBlue.svg");
+        transform: rotate(180deg);
+        top:calc(59.5 * var(--proportionM));
+    }
+
+
 }
 
 

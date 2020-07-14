@@ -1,11 +1,23 @@
 import React, { useState, useEffect } from 'react';
-import "bootstrap/dist/css/bootstrap.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import './PostToBlog.css';
 import Slider from 'react-slick';
 import axios from "axios";
 import PostToBlogElement from "../PostToBlogElement";
+
+
+
+
+function NextArrow(props) {
+    return <div className={ props.className } onClick={ props.onClick } />;
+}
+
+function PrevArrow(props) {
+    return <div className= { props.className } onClick={ props.onClick } />;
+}
+
+
 
 function PostToBlog(){
     const [elements, setElements] = useState([]);
@@ -29,9 +41,33 @@ function PostToBlog(){
         slidesToScroll:1,
         appendDots: dots => (
             <div>
+                <PrevArrow 
+                className="slick-prev"
+                onClick={() => {
+                    document.querySelector(".slick-prev.slick-arrow").click();
+                }}
+                />
                 <ul>{ dots }</ul>
+                <NextArrow
+                className="slick-next"
+                onClick={() => {
+                    document.querySelector(".slick-next.slick-arrow").click();
+                }}
+                />
             </div>
-        )
+        ),
+        nextArrow: <NextArrow />,
+        prevArrow: <PrevArrow />,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 1,
+                    centerMode: true,
+                    centerPadding: "-80px",
+                },
+            }
+        ],
     };
     return (
         <main className="PostToBlogSlick">
