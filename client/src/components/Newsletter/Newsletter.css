@@ -1,6 +1,8 @@
 @import url('<link href="https://fonts.googleapis.com/css2?family=Assistant&family=Catamaran:wght@700&display=swap" rel="stylesheet">');
+
 :root{
     --proportion: calc( 100vw / 1920);
+    --mobile: calc(100vw / 414);
 }
 .Body-Newsletter {
     background: url(fundo-newsletter.svg);
@@ -8,7 +10,10 @@
     justify-content: space-between;
     align-items: center;
     height: 26vw;
-    width: calc(1920 * var(--proportion));
+    background-size: cover, cover;
+    background-repeat: no-repeat;
+
+    overflow-x: hidden;
 }
 
 .Body-Newsletter .Text-Newsletter {
@@ -40,4 +45,60 @@
     background-color: #F8F8F8;
     border-radius: 15%;
     border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Catamaran', sans-serif;
+}
+.Form-Newsletter button p {
+    justify-self: center;
+    margin: auto;
+}
+/* responsivity */
+@media only screen and (max-width: 1025px) {
+    .Body-Newsletter {
+        align-items: center;
+        background-size: cover, cover;
+        flex-direction: column;
+        justify-content: center;
+        height: 26vw;
+        background-repeat: no-repeat;
+    }
+    .Form-Newsletter {
+        display: flex;
+        justify-content: space-between;
+    }
+    .Form-Newsletter input {
+        height: 200%;
+    }
+    .Form-Newsletter button {
+        margin-left: 3%;
+        width: 25%;
+        height: 200%;
+        background-color: #F8F8F8;
+        border-radius: 20%;
+        border: none;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .Body-Newsletter {
+        background-size: cover, cover;
+        height: calc(200 * var(--mobile));
+    }
+
+
+    .Form-Newsletter button { 
+        width: 28vw;
+    }
+}
+@media only screen and (max-width: 700px) {
+    .Body-Newsletter {
+        background-size: cover, cover;
+        
+    }
+
+
+    .Form-Newsletter button { 
+        width: 28vw;
+    }
 }
