@@ -1,7 +1,22 @@
 /* importing the fonts*/
 @import url('<link href="https://fonts.googleapis.com/css2?family=Assistant&family=Catamaran:wght@700&display=swap" rel="stylesheet">');
+
 :root{
     --proportion: calc( 100vw / 1920);
+    --proportion-mobile: calc(100vw / 1920);
+}
+
+.slick-dots {
+    display: flex;
+    justify-content: space-between;
+}
+
+.slick-dots ul {
+    background: url('fundo-guia.svg');
+    width: max-content;
+    background-repeat: no-repeat;
+    background-size: cover, cover;
+    padding: 0;
 }
 
 .background-Testimony {
@@ -9,7 +24,7 @@
     background-image: url("fundo.svg");
     background-repeat: no-repeat;
     background-size: cover, cover;
-    }
+}
 
 .Body-Testimony{
     display: flex;
@@ -26,6 +41,7 @@
 	padding: 0 8px;
 	box-sizing: border-box;
  }
+
 /* editing the arrow*/
 .Slide-Testimony .slick-prev {
     content: url('arrow-back.svg');
@@ -35,7 +51,6 @@
     display: inline-block;
     height: calc(30 * var(--proportion));
     width: calc(20 * var(--proportion));
-
 }
 /* editing the arrow*/
 .Slide-Testimony .slick-next {
@@ -48,7 +63,6 @@
     height: calc(39.46 * var(--proportion));
     width: calc(22.56 * var(--proportion));
 }
-
 
 .Body-Testimony .Head-Testimony {
     margin-top: 5%;
@@ -65,29 +79,46 @@
     font-family: 'Assistant', sans-serif;
 }
 .Slide-Testimony .Card-body {
+    overflow: hidden;
     background-color: #00506E;
-    border-radius: 20% 20% 16% 16%;
-    height: 600px;
-    width: 500px;
+    border-radius: 20% 20% 20% 20%;
+    height: calc(601 * var(--proportion));
+    opacity: 0.7;
+    width: calc(535* var(--proportion));
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}¨
+li .sslick-active{
+    color: blue;
+}
+.Slide-Testimony .slick-active .Card-body{
+    opacity: 1;
 }
 .Slide-Testimony .texts {
+    height: 62%;
+    overflow: hidden;
     font-family: 'Assistant', sans-serif;
     display: flex;
+    margin-top: 5%;
     flex-direction: column;
     justify-content: space-between;
-    height: calc(659px * 6/10)
     }
+.Slide-Testimony .texts .Testimony{
+    height: calc(134 * var(--proportion));
+}
+.slick-prev {
+    margin-right: 2%;
+}
+
 .Slide-Testimony {
-    height: 90%;
-    width: 90%;
+    height: 92%;
+    width: 92%;
 }
 .Slide-Testimony .Card-body img {
-    height: 157px;
-    width: 157px;
+    height: calc(157 * var(--proportion));
+    width: calc(157 * var(--proportion));
     border-radius: 50%;
     margin: auto;
     margin-top: 10%;
@@ -100,8 +131,9 @@
 .Slide-Testimony .Card-body .name {
     height: 25%;
     width: 87%;
-    border-radius: 40% 40% 22% 22%;
-    margin-left: 6.5%;
+    margin-left: 6%;
+
+    border-radius: 40% 40% 30% 30%;
     background-color: white;
     display: flex;
     justify-content: center;
@@ -116,15 +148,21 @@
 }
 
 /* responsivity */
-
-@media only screen and (max-width: 600px) {
-
-        .Slide-Testimony .texts {
-            height: 69%;
-        }
+@media only screen and (max-width: 1400px) {
+    .Slide-Testimony .texts {
+        height: 100%;
+    }
+    .Slide-Testimony .Card-body .name {
+        height: 50%;
+        width: 100%;
+        margin-left: 0%;
+    }
 
 }
 @media only screen and (max-width: 1025px) {
+    .Slide-Testimony .Card-body img {
+        margin-top: 1%;
+    }
     .background-Testimony { 
         height: 1000px;
         background-image: url("fundo-mobile.svg");
@@ -139,7 +177,8 @@
             flex-direction: column;
         }
         .Slide-Testimony .texts {
-            height: 61%;
+            height: 50%;
+            margin-top: 1%;
         }
 }
 @media only screen and (max-width: 800px) {

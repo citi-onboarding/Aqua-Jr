@@ -27,11 +27,11 @@ function Testimony() {
 
 
   let settings = {
-    infinite: true, 
+    infinite: false, 
     focusOnSelect: true,
     speed: 500,
     initialSlide: 0,
-    centerPadding: "30%",
+    centerPadding: "35%",
     arrows: true,
     slideToShow: 3,
     slideToScroll: 1,
@@ -73,9 +73,11 @@ function Testimony() {
     ),
 
   };
+
   if(document.querySelector(".slick-prev.slick-arrow")){
     document.querySelector(".slick-prev.slick-arrow").click();
   }
+  
   return (
         <div className="background-Testimony">  
             <div className="Body-Testimony">
@@ -86,23 +88,23 @@ function Testimony() {
 
                 <Slider className= 'Slide-Testimony' {...settings}>
                 {Testimonys?.map(({ _id, text, image, name, occupation }) => (
-                    <div key={_id} className="Card-body">
+                  <div key={_id} className="Card-body">
 
 
                     
                     <img src={image?.url} alt="Imagem de Exemplo"/>
 
                     <div className="texts">
-                    <div className="Testimony">
-                        <p>{text}</p>
-                    </div>
+                      <div className="Testimony">
+                          <p>{text}</p>
+                      </div>
 
-                    <div className="name">
-                        <p>{name}</p>
-                        <p>{occupation}</p>
+                      <div className="name">
+                          <p>{name}</p>
+                          <p>{occupation}</p>
+                      </div>
                     </div>
-                    </div>
-                    </div>
+                  </div>
 
                 ))}
                 </Slider>
