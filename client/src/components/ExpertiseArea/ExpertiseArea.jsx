@@ -10,8 +10,6 @@ import "./ExpertiseArea.css";
 // this let is created outside the function cause I don't want it to be rewritten every time the component is rendered
 let db = [];
 
-let cont = 0;
-
 // Creating the components for the next and previous arrow
 function NextArrow(props) {
   return <div className={props.className} onClick={props.onClick} />;
@@ -38,13 +36,21 @@ const settings = {
   pauseOnHover: false,
   appendDots: (dots) => (
     <div>
-      <PrevArrow className="slick-prev" onClick={()=>{
-        document.querySelector(".slick-prev.slick-arrow").click();
-      }}/>
+      <PrevArrow
+        className="slick-prev"
+        onClick={() => {
+          // when you lick in the arrow from the mobile version, it will simulate a click on the arrow from the web version
+          document.querySelector(".slick-prev.slick-arrow").click();
+        }}
+      />
       <ul className="dot-container"> {dots} </ul>
-      <NextArrow className="slick-next" onClick={()=>{
-        document.querySelector(".slick-next.slick-arrow").click();
-      }}/>
+      <NextArrow
+        className="slick-next"
+        onClick={() => {
+          // when you lick in the arrow from the mobile version, it will simulate a click on the arrow from the web version
+          document.querySelector(".slick-next.slick-arrow").click();
+        }}
+      />
     </div>
   ),
   nextArrow: <NextArrow />,
@@ -55,18 +61,13 @@ const settings = {
       settings: {
         infinite: false,
         centerPadding: "0",
-      }
-    }
-  ]
+      },
+    },
+  ],
 };
-
-if(document.querySelector(".slick-prev.slick-arrow")){
-  document.querySelector(".slick-prev.slick-arrow").click();
-}
 
 // the function that will return this component
 function ExpertiseArea() {
-  cont++;
   const [categories, setCategories] = React.useState([]);
   const [services, setServices] = React.useState([]);
   const [selected, setSelected] = React.useState("");
@@ -115,6 +116,7 @@ function ExpertiseArea() {
       <h2>Áreas de atuação</h2>
       <div className="categories">
         {categories.map((item, index) => {
+          // It will add the selected class if the category is the selected
           return item === selected ? (
             <button
               key={index}
