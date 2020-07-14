@@ -87,6 +87,9 @@ function Testimony() {
                 <Slider className= 'Slide-Testimony' {...settings}>
                 {Testimonys?.map(({ _id, text, image, name, occupation }) => (
                     <div key={_id} className="Card-body">
+
+
+                    
                     <img src={image?.url} alt="Imagem de Exemplo"/>
 
                     <div className="texts">
@@ -100,6 +103,7 @@ function Testimony() {
                     </div>
                     </div>
                     </div>
+
                 ))}
                 </Slider>
                 </div>

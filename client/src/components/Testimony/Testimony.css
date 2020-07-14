@@ -144,7 +144,7 @@
 }
 @media only screen and (max-width: 800px) {
     .Slide-Testimony .texts {
-        height: 65%;
+        height: 63%;
     }
 }
 @media only screen and (max-width: 600px) {
@@ -155,7 +155,7 @@
         background-size: cover, cover;
         }
         .Slide-Testimony .texts {
-            height: 69%;
+            height: 67%;
         }
 
 }
