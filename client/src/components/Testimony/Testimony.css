@@ -28,7 +28,7 @@ body {
 }
 
 .background-Testimony {
-    height: 65vw;
+    height: calc(11339 * var(--proportion));
     background-image: url("fundo.svg");
     background-repeat: no-repeat;
     background-size: 100vw;
@@ -190,7 +190,10 @@ li .sslick-active{
 }
 /* responsivity */
 @media only screen and (max-width: 1024px) {
-
+    .Slide-Testimony .Card-body{
+        width: calc(342 * var(--proportion-mobile));
+        height: calc(360 * var(--proportion-mobile));
+    }
     .Body-Testimony .Head-Testimony h1 {
         font-size: calc(24 * var(--proportion-mobile)) ;
     }
@@ -249,7 +252,7 @@ li .sslick-active{
         text-align: center;
     }
     .background-Testimony { 
-        height: 1000px;
+        height: calc(665 * var(--proportion-mobile));
         background-image: url("fundo-mobile.svg");
         background-repeat: no-repeat;
         background-size: cover, cover;
