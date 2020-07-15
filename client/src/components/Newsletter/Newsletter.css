@@ -24,13 +24,14 @@ body {
 }
 .Body-Newsletter .Text-Newsletter h3 {
     font-family: 'Catamaran', sans-serif;
-    font-size: calc(55 * var(--proportion));
+    font-size: calc(34 * var(--proportion));
     width: calc(900 * var(--proportion));
+    margin-bottom: 0;
 }
 
 .Body-Newsletter .Text-Newsletter p {
     font-family: 'Assistant', sans-serif;
-    font-size: calc( 28 * var(--proportion));
+    font-size: calc( 22 * var(--proportion));
     width: calc(600 * var(--proportion));
 }
 .Form-Newsletter {
@@ -42,11 +43,13 @@ body {
 .Form-Newsletter input {
     border-radius: 4px;
     border: none;
+    padding: calc(25 * var(--proportion));
     width: calc(600 * var(--proportion));
 }
 .Form-Newsletter button {
     margin-left: 3%;
     width: calc(260 * var(--proportion));
+    height: calc(52 * var(--proportion));;
     background-color: #F8F8F8;
     border-radius: 6px;
     border: none;
@@ -56,11 +59,13 @@ body {
     font-family: 'Catamaran', sans-serif;
 }
 .Form-Newsletter button p {
+    margin: 0;
     font-family: 'Catamaran', sans-serif;
     font-weight: bold;
     color: #00222D;
+    align-self: center;
     justify-self: center;
-    margin: auto;
+
 }
 /* responsivity */
 @media only screen and (max-width: 1025px) {
@@ -92,6 +97,7 @@ body {
         margin-bottom: calc(5 * var(--proportion-mobile));
     }
     .Form-Newsletter input {
+        padding: calc(1 * var(--proportion-mobile));
         width: calc(100 * var(--proportion-mobile));
         height: calc(12 * var(--proportion-mobile));
         font-size: calc(6 * var(--proportion-mobile));
