@@ -139,7 +139,7 @@ li .sslick-active{
 .Slide-Testimony .slick-active .Card-body{
     opacity: 1;
     height: calc(601 * var(--proportion));
-    transition: 1s;
+    transition: 0.5s;
 }
 .Slide-Testimony #testimony{
     margin: 0% 3%;
