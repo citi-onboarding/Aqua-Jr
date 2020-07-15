@@ -1,22 +1,26 @@
 /* importing the fonts*/
 @import url('<link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;700&family=Catamaran:wght@700&display=swap" rel="stylesheet">');
-
+.Slide-Testimony .slick-slide {
+    margin-top: 1%;
+}
+.Slide-Testimony .slick-slide.slick-active {
+    margin-top: 0%;
+}
 :root{
     --proportion: calc( 100vw / 1920);
     --proportion-mobile: calc(100vw / 414);
 }
 
-.slick-dots {
+.Slide-Testimony .slick-dots {
     display: flex;
     justify-content: space-between;
 }
 
-.slick-dots ul {
+.Slide-Testimony .slick-dots ul {
     background-color: #CCCCCC;
-    border-radius: 18%;
-    width: max-content;
-    background-repeat: no-repeat;
-    background-size: cover, contain;
+    border-radius: calc(40 * var(--proportion));
+    height: calc(30 * var(--proportion));
+    width: calc(143 * var(--proportion));
     padding: 0;
 }
 
@@ -111,7 +115,6 @@ li .sslick-active{
     height: calc(645 * var(--proportion));
 }
 .Slide-Testimony .Testimony{
-    height: calc(134 * var(--proportion));
     margin: 0% 3%;
 }
 .slick-prev {
@@ -131,7 +134,7 @@ li .sslick-active{
 
 .Slide-Testimony .Card-body .Testimony p{
     color: white;
-    text-align: left;
+    text-align: center;
 }
 
 .Slide-Testimony .Card-body .content .name {
@@ -168,7 +171,8 @@ li .sslick-active{
     padding: 0;
 }
 .Body-Testimony .slick-dots ul li.slick-active {
-    width: calc(10 * var);
+    width: calc(18 * var(--proportion));
+    height: calc(18 * var(--proportion));
     background-color: #00506E;
     box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
     border-radius: 50%;
@@ -178,7 +182,16 @@ li .sslick-active{
 }
 /* responsivity */
 @media only screen and (max-width: 1024px) {
+    .Slide-Testimony .slick-dots ul {
+        width: calc(100 * var(--proportion-mobile));
+        height: calc(20 * var(--proportion-mobile));
+    }
 
+    .Body-Testimony .slick-dots ul li.slick-active {
+
+        width: calc(18 * var(--proportion-mobile));
+        height: calc(18 * var(--proportion-mobile));
+    }
     .Body-Testimony .slick-dots ul li {
         height: calc(16 * var(--proportion-mobile));
         width: calc(16 * var(--proportion-mobile));
@@ -194,8 +207,8 @@ li .sslick-active{
     }
 
     .Slide-Testimony .Card-body .content .Testimony {
-        height: calc(280 * var(--proportion-mobile));
-        font-size: calc(15 * var(--proportion-mobile));
+
+        font-size: calc(14 * var(--proportion-mobile));
     }
 
     .Slide-Testimony .Card-body .content{
@@ -208,21 +221,17 @@ li .sslick-active{
     }
     .Slide-Testimony .slick-active .Card-body{
         opacity: 1;
-        width: calc(400* var(--proportion-mobile));
-        height: calc(605 * var(--proportion-mobile));
-    }
-
-    .Slide-Testimony .Card-body {
+        width: calc(342* var(--proportion-mobile));
         height: calc(360 * var(--proportion-mobile));
-        width: calc(342 * var(--proportion-mobile));
-        justify-content: space-between;
-        
     }
 
     .Slide-Testimony .Card-body .content img {
-        height: calc(100 * var(--proportion-mobile));
-        width: calc(100 * var(--proportion-mobile));
-        margin-top: 1%;
+        height: calc(130 * var(--proportion-mobile));
+        width: calc(130 * var(--proportion-mobile));
+        margin-top: 3%;
+    }
+    .Slide-Testimony .Card-body .content .Testimony p {
+        text-align: center;
     }
     .background-Testimony { 
         height: 1000px;
