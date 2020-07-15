@@ -61,12 +61,12 @@ function Testimony() {
         }}
       >
       <PrevArrow className="slick-prev" onClick={()=>{
-        document.querySelector(".slick-prev.slick-arrow").click();
+        document.querySelector(".Slide-Testimony .slick-prev.slick-arrow").click();
       }}/>
         <ul style={{ margin: "0px" }}> {dots} </ul>
 
         <NextArrow className="slick-next" onClick={()=>{
-        document.querySelector(".slick-next.slick-arrow").click();
+        document.querySelector(".Slide-Testimony .slick-next.slick-arrow").click();
       }}/>
       
       </div>
