@@ -82,7 +82,7 @@ function Testimony() {
         <div className="background-Testimony">  
             <div className="Body-Testimony">
                 <div className="Head-Testimony">
-                    <h1>Depoimentos</h1>
+                    <h2>Depoimentos</h2>
                     <p>Nos conheça por nossos parceiros</p>
                 </div>
 

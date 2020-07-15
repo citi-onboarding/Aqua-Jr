@@ -1,5 +1,8 @@
 /* importing the fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Assistant:wght@400;700&family=Catamaran:wght@700&display=swap');
+h2 {
+    margin: 0;
+}
 body {
     margin: 0;
 }
@@ -28,10 +31,11 @@ body {
 }
 
 .background-Testimony {
-    height: calc(11339 * var(--proportion));
+    height: calc(1113 * var(--proportion));
     background-image: url("fundo.svg");
     background-repeat: no-repeat;
     background-size: 100vw;
+    background-position-x: center;
     padding: 0;
 }
 
@@ -80,7 +84,7 @@ body {
     align-items: center;
     flex-direction: column;
 }
-.Body-Testimony .Head-Testimony h1 {
+.Body-Testimony .Head-Testimony h2 {
     font-family: 'Catamaran', sans-serif;
     font-weight: bold;
     color: #00222D;
@@ -95,19 +99,27 @@ body {
     overflow: hidden;
     background-color: #00506E;
     border-radius: 20% 20% 20% 20%;
-    height: calc(601 * var(--proportion));
+
     opacity: 0.7;
-    width: calc(535* var(--proportion));
+
     display: flex;
     justify-content: space-between;
     flex-direction: column;
 }
 
+.Slide-Testimony .slick-slide>div {
+    width: calc(535 * var(--proportion));
+    height: calc(601 * var(--proportion));
+    margin: auto;
+} 
+
 .Slide-Testimony .Card-body .content {
     display: flex;
     font-family: 'Assistant', sans-serif;
-    height: 100%;
+    height: calc(601 * var(--proportion));
+    width: calc(535 * var(--proportion));
     flex-direction: column;
+    margin: 0;
     justify-content: space-between;
     align-items: center;
     font-size: calc(16 * var(--proportion))
@@ -119,8 +131,8 @@ li .sslick-active{
 
 .Slide-Testimony .slick-active .Card-body{
     opacity: 1;
-    width: calc(400* var(--proportion));
-    height: calc(645 * var(--proportion));
+    height: calc(601 * var(--proportion));
+    transition: 1s;
 }
 .Slide-Testimony .Testimony{
     margin: 0% 3%;
@@ -190,11 +202,12 @@ li .sslick-active{
 }
 /* responsivity */
 @media only screen and (max-width: 1024px) {
+
     .Slide-Testimony .Card-body{
         width: calc(342 * var(--proportion-mobile));
         height: calc(360 * var(--proportion-mobile));
     }
-    .Body-Testimony .Head-Testimony h1 {
+    .Body-Testimony .Head-Testimony h2 {
         font-size: calc(24 * var(--proportion-mobile)) ;
     }
     .Body-Testimony .Head-Testimony p {
