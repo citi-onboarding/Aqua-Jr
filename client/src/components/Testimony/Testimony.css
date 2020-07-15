@@ -12,10 +12,11 @@
 }
 
 .slick-dots ul {
-    background: url('fundo-guia.svg');
+    background-color: #CCCCCC;
+    border-radius: 18%;
     width: max-content;
     background-repeat: no-repeat;
-    background-size: cover, cover;
+    background-size: cover, contain;
     padding: 0;
 }
 
@@ -49,18 +50,18 @@
     transform: scale(1.5) translateY(1px);
     cursor: pointer;
     display: inline-block;
-    height: calc(30 * var(--proportion));
+    height: calc(28 * var(--proportion));
     width: calc(20 * var(--proportion));
 }
 /* editing the arrow*/
 .Slide-Testimony .slick-next {
     content: url('arrow.svg');
-    margin-left: 3%;
+    margin-left: 2%;
     position: static;
     transform: scale(1.5) translateY(1px);
     cursor: pointer;
     display: inline-block;
-    height: calc(39.46 * var(--proportion));
+    height: calc(47 * var(--proportion));
     width: calc(22.56 * var(--proportion));
 }
 
@@ -106,8 +107,8 @@ li .sslick-active{
 
 .Slide-Testimony .slick-active .Card-body{
     opacity: 1;
-    width: calc(600* var(--proportion));
-    height: calc(635 * var(--proportion));
+    width: calc(400* var(--proportion));
+    height: calc(645 * var(--proportion));
 }
 .Slide-Testimony .Testimony{
     height: calc(134 * var(--proportion));
@@ -128,8 +129,9 @@ li .sslick-active{
     margin-top: 10%;
 }
 
-.Slide-Testimony .Card-body .Testimony {
+.Slide-Testimony .Card-body .Testimony p{
     color: white;
+    text-align: left;
 }
 
 .Slide-Testimony .Card-body .content .name {
@@ -176,6 +178,21 @@ li .sslick-active{
 }
 /* responsivity */
 @media only screen and (max-width: 1024px) {
+
+    .Body-Testimony .slick-dots ul li {
+        height: calc(16 * var(--proportion-mobile));
+        width: calc(16 * var(--proportion-mobile));
+    }
+    .Slide-Testimony .slick-prev {
+        height: calc(24 * var(--proportion-mobile));
+        width: calc(22.56 * var(--proportion-mobile));
+    }
+
+    .Slide-Testimony .slick-next {
+        height: calc(29 * var(--proportion-mobile));
+        width: calc(22.56 * var(--proportion-mobile));
+    }
+
     .Slide-Testimony .Card-body .content .Testimony {
         height: calc(280 * var(--proportion-mobile));
         font-size: calc(15 * var(--proportion-mobile));
@@ -188,6 +205,11 @@ li .sslick-active{
     .Slide-Testimony  {
         height: 100%;
         margin-top: 1%;
+    }
+    .Slide-Testimony .slick-active .Card-body{
+        opacity: 1;
+        width: calc(400* var(--proportion-mobile));
+        height: calc(605 * var(--proportion-mobile));
     }
 
     .Slide-Testimony .Card-body {
