@@ -1,11 +1,13 @@
 import React, {useState, useEffect} from 'react';
 import ReactDOM from 'react-dom';
 import axios from 'axios';
+import './index.css';
 
 import {
   CallToBlog,
   ExpertiseArea, 
   Footer,
+  PostToBlog,
 } from './components';
 
 function App() {
@@ -21,6 +23,9 @@ function App() {
   
   return (
     <section className="app">
+      <div className="PostToBlog">
+      <PostToBlog />
+      </div>
       <CallToBlog />
       <ExpertiseArea />
       <div className="FooterComponent">
@@ -36,7 +41,6 @@ function App() {
             />
           );
         })}
-
       </div>
     </section>
   );

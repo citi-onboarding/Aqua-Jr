@@ -1,0 +1,91 @@
+:root{
+    --proportion: calc( 100vw / 1920);
+    --proportionM: calc( 100vw / 414);
+}
+
+
+.PostToBlogElement{
+    background-color: #f8f8f8;
+    border-radius: calc( 48 * var(--proportion));
+    height: calc( 277 * var(--proportion));
+    width: calc( 255 * var(--proportion));
+    margin:calc( 100 * var(--proportion)) calc( 9.6 * var(--proportion)) calc( 15 * var(--proportion)) calc( 9.6 * var(--proportion));
+    z-index: 1;
+    box-shadow: 0 calc( 5 * var(--proportion)) calc( 10 * var(--proportion)) #00222D40;
+    overflow: visible;
+    position: relative;
+
+}
+
+.ElementImage img{
+    height: calc( 160 * var(--proportion));;
+    width: calc( 255 * var(--proportion));
+    z-index: 0;
+    border-radius: calc( 48 * var(--proportion)) calc( 48 * var(--proportion)) 0 0;
+    margin-bottom: 0;
+    overflow: hidden;
+} 
+
+h2{
+    font-family: 'Catamaran', sans-serif;
+    font-weight: 700;
+    color: #00222D;
+    font-size: calc( 24 * var(--proportion));
+    max-height: calc( 27 * var(--proportion));
+    margin-top: 0;
+}
+
+p{
+    font-family: 'Assistant', sans-serif;
+    font-size: calc( 16 * var(--proportion));
+    color: #00222D7E;
+    font-weight: bold;
+    padding-top: calc(12 * var(--proportion));
+    margin-bottom: 0;
+    margin-top: 0;
+
+}
+
+h2,p{
+    padding-left: calc( 27 * var(--proportion));
+    margin: none;
+}
+
+.slick-next{
+    right: calc( -65 * var(--proportion));
+}
+
+.slick-prev{
+    left: calc( -65 * var(--proportion));
+}
+
+
+@media (max-width: 1025px){
+    .PostToBlogElement{
+        height: calc( 226.48 * var(--proportionM));
+        width: calc( 219.45 * var(--proportionM));
+        border-radius: calc( 48 * var(--proportionM));
+    }
+
+    .ElementImage img{
+        height: calc( 117.23 * var(--proportionM));
+        width: calc( 219.45 * var(--proportionM));
+        border-radius: calc( 48 * var(--proportionM)) calc( 48 * var(--proportionM)) 0 0;
+    }
+
+    .PostToBlogElement h2{
+        font-size: calc( 20 * var(--proportionM));
+        max-width: calc( 126 * var(--proportionM));
+        padding-left: calc( 26 * var(--proportionM));
+        margin-top: calc( 5 * var(--proportionM));;
+    }
+
+    .PostToBlogElement p{
+        font-size: calc( 14 * var(--proportionM));
+        padding-top: calc( 15 * var(--proportionM));
+        padding-left: calc( 26 * var(--proportionM));
+        width: calc( 126 * var(--proportionM));;
+    }
+
+
+}
