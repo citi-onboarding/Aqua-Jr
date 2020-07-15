@@ -40,7 +40,7 @@ const settings = {
         className="slick-prev"
         onClick={() => {
           // when you lick in the arrow from the mobile version, it will simulate a click on the arrow from the web version
-          document.querySelector(".slick-prev.slick-arrow").click();
+          document.querySelector(".ExpertiseArea .slick-prev.slick-arrow").click();
         }}
       />
       <ul className="dot-container"> {dots} </ul>
@@ -48,7 +48,7 @@ const settings = {
         className="slick-next"
         onClick={() => {
           // when you lick in the arrow from the mobile version, it will simulate a click on the arrow from the web version
-          document.querySelector(".slick-next.slick-arrow").click();
+          document.querySelector(".ExpertiseArea .slick-next.slick-arrow").click();
         }}
       />
     </div>

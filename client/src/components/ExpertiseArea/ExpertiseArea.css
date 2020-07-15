@@ -51,6 +51,8 @@
     font-size: calc(26 * var(--proportion));
     outline: none;
     border: none;
+    cursor: pointer;
+    transition: 0.5s;
 }
 
 /* Style for when the mouse is on top of the button */
@@ -85,6 +87,8 @@
 /* this is just to take out the arrow from the mobile version */
 .slick-prev, .slick-next{
     display: none;
+    transition: 0.5s;
+    cursor: pointer;
 }
 
 /* Style for the left arrow */
@@ -97,6 +101,11 @@
     content: url("prevArrow.svg");
     padding: 0;
     transform: translate(0);
+}
+
+/* Style for the left arrow hover */
+.ExpertiseArea .services .Slider .slick-arrow.slick-prev:hover{
+    content: url("prevArrowHover.svg");
 }
 
 /* this is just to take off a symbol that is implemented by default*/
@@ -114,6 +123,11 @@
     width: calc(22.56 * var(--proportion));
     content: url("nextArrow.svg");
     transform: translate(0) scale(1.5);
+}
+
+/* Style for the right arrow hover*/
+.ExpertiseArea .services .Slider .slick-arrow.slick-next:hover{
+    opacity: 50%;
 }
 
 /* this is just to take off a symbol that is implemented by default*/
