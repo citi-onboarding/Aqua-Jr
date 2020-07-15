@@ -8,6 +8,8 @@ body {
 }
 .Body-Newsletter {
     background: url(fundo-newsletter.svg);
+    background-color: #EAEAEA;
+    border: none;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -31,6 +33,7 @@ body {
 
 .Body-Newsletter .Text-Newsletter p {
     font-family: 'Assistant', sans-serif;
+    color: white;
     font-size: calc( 22 * var(--proportion));
     width: calc(600 * var(--proportion));
 }
