@@ -17,7 +17,7 @@
 
 }
 
-.ElementImage img{
+.PostToBlogElement .ElementImage img{
     height: calc( 160 * var(--proportion));;
     width: calc( 255 * var(--proportion));
     z-index: 0;
@@ -26,7 +26,7 @@
     overflow: hidden;
 } 
 
-h2{
+.PostToBlogElement h2{
     font-family: 'Catamaran', sans-serif;
     font-weight: 700;
     color: #00222D;
@@ -35,7 +35,7 @@ h2{
     margin-top: 0;
 }
 
-p{
+.PostToBlogElement p{
     font-family: 'Assistant', sans-serif;
     font-size: calc( 16 * var(--proportion));
     color: #00222D7E;
@@ -46,16 +46,16 @@ p{
 
 }
 
-h2,p{
+.PostToBlogElement h2, .PostToBlogElement p{
     padding-left: calc( 27 * var(--proportion));
     margin: none;
 }
 
-.slick-next{
+.PostToBlogElement .slick-next{
     right: calc( -65 * var(--proportion));
 }
 
-.slick-prev{
+.PostToBlogElement .slick-prev{
     left: calc( -65 * var(--proportion));
 }
 
@@ -67,20 +67,20 @@ h2,p{
         border-radius: calc( 48 * var(--proportionM));
     }
 
-    .ElementImage img{
+    .PostToBlogElement .ElementImage img{
         height: calc( 117.23 * var(--proportionM));
         width: calc( 219.45 * var(--proportionM));
         border-radius: calc( 48 * var(--proportionM)) calc( 48 * var(--proportionM)) 0 0;
     }
 
-    .PostToBlogElement h2{
+    .PostToBlogElement .title h2{
         font-size: calc( 20 * var(--proportionM));
         max-width: calc( 126 * var(--proportionM));
         padding-left: calc( 26 * var(--proportionM));
         margin-top: calc( 5 * var(--proportionM));;
     }
 
-    .PostToBlogElement p{
+    .PostToBlogElement .category p{
         font-size: calc( 14 * var(--proportionM));
         padding-top: calc( 15 * var(--proportionM));
         padding-left: calc( 26 * var(--proportionM));
