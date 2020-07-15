@@ -95,7 +95,7 @@ function Testimony() {
                     <img src={image?.url} alt="Imagem de Exemplo"/>
 
 
-                      <div className="Testimony">
+                      <div className="Testimony" id = "testimony">
                           <p>{text}</p>
                       </div>
 

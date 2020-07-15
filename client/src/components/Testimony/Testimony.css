@@ -141,8 +141,9 @@ li .sslick-active{
     height: calc(601 * var(--proportion));
     transition: 1s;
 }
-.Slide-Testimony .Testimony{
+.Slide-Testimony #testimony{
     margin: 0% 3%;
+    height: auto;
 }
 .slick-prev {
     margin-right: 2%;
@@ -158,7 +159,6 @@ li .sslick-active{
     border-radius: 50%;
     margin-top: 10%;
 }
-
 .Slide-Testimony .Card-body .Testimony p{
     color: white;
     text-align: center;
@@ -209,11 +209,13 @@ li .sslick-active{
 }
 /* responsivity */
 @media only screen and (max-width: 1024px) {
-    .Slide-Testimony .slick-slide>div {
+     
+    .Slide-Testimony .slick-active>div {
         width: calc(342 * var(--proportion-mobile));
         height: calc(360 * var(--proportion-mobile));
         margin: auto;
     } 
+    
     .Slide-Testimony .Card-body{
         width: calc(342 * var(--proportion-mobile));
         height: calc(360 * var(--proportion-mobile));
@@ -249,7 +251,9 @@ li .sslick-active{
     }
 
     .Slide-Testimony .Card-body .content .Testimony {
-
+        width: 100%;
+        height: 100%;
+        margin: 0 3%;
         font-size: calc(14 * var(--proportion-mobile));
     }
 
@@ -262,7 +266,6 @@ li .sslick-active{
     .Slide-Testimony  {
         height: 100%;
         margin-top: 1%;
-        
     }
     .Slide-Testimony .slick-active .Card-body{
         opacity: 1;
@@ -277,6 +280,7 @@ li .sslick-active{
     }
     .Slide-Testimony .Card-body .content .Testimony p {
         text-align: center;
+        margin: 0 3%;
     }
     .background-Testimony { 
         height: calc(665 * var(--proportion-mobile));
