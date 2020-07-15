@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@400;700&family=Barlow:wght@400;700&family=Catamaran:wght@700&display=swap');
+
+
+:root{
+    --proportion: calc( 100vw / 1920);
+    --proportionM: calc( 100vw / 414);
+}
+
+.Footer{
+    background-color: #00222D;
+    height: calc(239 * var(--proportion));
+    padding-top: calc(38 * var(--proportion));
+    padding-bottom: calc(45 * var(--proportion));
+    padding-left: calc(140 * var(--proportion));
+    padding-right: calc(140 * var(--proportion));
+}
+
+.TopOne{
+    display: flex;
+    justify-content: space-between;
+    width: calc(820 * var(--proportion));
+    padding-right: calc(200 * var(--proportion));
+}
+
+.TopTwo{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: calc(820 * var(--proportion));
+    padding-left: calc(120 * var(--proportion));
+}
+.Footer .TopLine{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+}
+
+h2{
+    font-family: 'Catamaran', sans-serif;
+    font-size: calc(24 * var(--proportion));
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+.TopLine p{
+    font-family: 'Assistant', sans-serif;
+    font-size: calc(18 * var(--proportion));
+    font-weight: 400;
+    color: #FFFFFF;
+
+}
+
+.BottomLine p{
+    color: #FFFFFF;
+    margin-top: calc(20 * var(--proportion));
+}
+
+.BottomLine{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: baseline;
+    margin-top: calc(70 * var(--proportion));
+}
+.BottomLine .MadeWith{
+    font-family: 'Barlow', sans-serif;
+    font-weight: 400;
+    font-size: calc(20 * var(--proportion));
+}
+.BottomLine .CITiRights{
+    font-family: 'Assistant', sans-serif;
+    font-weight: normal;
+    font-size: calc(16 * var(--proportion));
+}
+
+
+.SocialMedia img{
+    height: calc(37 * var(--proportion));
+    width: calc(37 * var(--proportion));
+    margin-top: calc(20 * var(--proportion));
+}
+
+.SocialMedia{
+    display: flex;
+    justify-content: space-between;
+    width: calc(138 * var(--proportion));
+    padding-bottom: 25px;
+    padding-left: calc(510* var(--proportion));
+}
+
+
+
+
+
+
+
+
+
+
+@media(max-width: 1024px){
+    .Footer{
+        height: calc(239 * var(--proportionM));
+    }
+    
+    .TopOne{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .TopTwo{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: flex-end;
+        padding-right: 0;
+    }
+
+    .TopTwo h2, .TopTwo p{
+        text-align: right;
+    }
+
+    .BottomLine{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: calc(10 * var(--proportionM));
+    }
+
+    .BottomLine p{
+        margin-top: calc(10 * var(--proportionM));
+        margin-bottom: 0;
+    }
+
+    .Footer p{
+        font-size: calc(14 * var(--proportionM));
+        margin-top: calc(8 * var(--proportionM));
+        color: #EAEAEA;
+    }
+    
+    .Footer h2{
+        font-size: calc(16 * var(--proportionM));
+        margin-bottom: 0;
+    }
+
+    .SocialMedia img{
+        height: calc(23 * var(--proportionM));
+        width: calc(23 * var(--proportionM));
+        padding-left: calc(10 * var(--proportionM));
+    }
+
+    .SocialMedia{
+        width: calc(100 * var(--proportionM));
+        padding-right: calc(100 * var(--proportionM));
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: calc(10 * var(--proportionM));
+        padding-bottom: calc(5 * var(--proportionM));
+    }
+
+    .E-mail{
+        padding-top: calc(40 * var(--proportionM));
+    }
+}
+

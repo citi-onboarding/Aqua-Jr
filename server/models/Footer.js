@@ -16,9 +16,9 @@ Footer.add({
     Address: { type: Types.Text, required: true, initial: true},
     Phone: { type: Types.Number, required: true, initial: true},
     Email: {type: Types.Email, required: true, initial: true},
-    SocialMedia1: { type: Types.Url, required: true, initial: true},
-    SocialMedia2: { type: Types.Url, required: true, initial: true},
-    SocialMedia3: { type: Types.Url, required: true, initial: true},
+    Facebook: { type: Types.Url, required: true, initial: true},
+    Instagram: { type: Types.Url, required: true, initial: true},
+    LinkedIn: { type: Types.Url, required: true, initial: true},
 })
 
 Footer.register();
