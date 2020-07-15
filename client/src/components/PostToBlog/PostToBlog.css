@@ -5,9 +5,10 @@
 
 .PostToBlog{
     background-image: url('./onda1 (1).svg');
-    height: calc( 600 * var(--proportion));
+    height: calc( 800 * var(--proportion));
+    width: calc( 1920* var(--proportion));
     background-repeat: no-repeat;
-    background-position-y: calc( 185 * var(--proportion));
+    background-position-y: calc( 280 * var(--proportion));
 }
 
 .PostToBlogSlick{
@@ -16,7 +17,7 @@
 
 
 
-.slick-dots{
+.PostToBlogSlick .slick-dots{
     display: flex;
     justify-content: center;
     width: 100%;
@@ -27,7 +28,7 @@
 
 }
 
-.slick-dots ul{
+.PostToBlogSlick .slick-dots ul{
     background-color: #0000000D; 
     border-radius: calc( 50 * var(--proportion));
     padding: calc( 10 * var(--proportion)) calc( 7 * var(--proportion)) calc( 10 * var(--proportion))  0;
@@ -40,7 +41,7 @@
 }
 
 
-.slick-dots li{
+.PostToBlogSlick .slick-dots li{
     content: none;
     height: calc( 16.5 * var(--proportion));
     width: calc( 16.5 * var(--proportion));
@@ -49,27 +50,27 @@
     box-shadow: 2px 2px 4px #00222D33;
 }
 
-.Slider .slick-dots .slick-active{
+.PostToBlogSlick .Slider .slick-dots .slick-active{
     background-color: #00506E;
     box-shadow: none;
 }
 
-.slick-dots li button:before{
+.PostToBlogSlick .slick-dots li button:before{
     content: none;
 }
 
 
-.slick-slide{
+.PostToBlogSlick .slick-slide{
     overflow: visible;
     width: calc( 255 * var(--proportion));
     overflow: visible;
 }
 
-.slick-prev, .slick-next{
+.PostToBlogSlick .slick-prev, .PostToBlogSlick .slick-next{
     display: none;
 }
 
-.slick-arrow.slick-prev{
+.PostToBlogSlick .slick-arrow.slick-prev{
     display: inline-block;
     content: url("./ArrowGray.svg");
     height: calc( 39.34 * var(--proportion));
@@ -78,12 +79,12 @@
     margin-right: calc(150 * var(--proportion));
 }
 
-.slick-arrow.slick-prev:hover{
+.PostToBlogSlick .slick-arrow.slick-prev:hover{
     content: url("./ArrowBlue.svg");
 
 }
 
-.slick-arrow.slick-next{
+.PostToBlogSlick .slick-arrow.slick-next{
     display: inline-block;
     content: url("./ArrowBlue.svg");
     transform: rotate(180deg);
@@ -110,7 +111,7 @@
         overflow: visible;
     }
 
-    .slick-dots ul{
+    .PostToBlogSlick .slick-dots ul{
         height: calc( 28 * var(--proportionM));
         border-radius: calc( 50 * var(--proportionM));
         padding-right: calc( 5 * var(--proportionM));
@@ -119,16 +120,16 @@
         top: calc( 40* var(--proportionM));
     }
 
-    .slick-dots li{
+    .PostToBlogSlick .slick-dots li{
         height: calc( 15 * var(--proportionM));
         width: calc( 15 * var(--proportionM));
     }
 
-    .slick-arrow.slick-prev, .slick-arrow.slick-next{
+    .PostToBlogSlick .slick-arrow.slick-prev, .PostToBlogSlick .slick-arrow.slick-next{
         display: none;
     }
     
-    .slick-prev{
+    .PostToBlogSlick .slick-prev{
         display: inline-block;
         height: calc(30 * var(--proportionM));
         width: calc(17 * var(--proportionM));
@@ -136,11 +137,11 @@
         top:calc(64 * var(--proportionM));
     }
 
-    .slick-prev:hover{
+    .PostToBlogSlick .slick-prev:hover{
         content: url("./ArrowBlue.svg");
     }
 
-    .slick-next{
+    .PostToBlogSlick .slick-next{
         display: inline-block;
         height: calc(30 * var(--proportionM));
         width: calc(17 * var(--proportionM));
@@ -151,15 +152,3 @@
 
 
 }
-
-
-
-
-
-
-
-
-
-
-
-

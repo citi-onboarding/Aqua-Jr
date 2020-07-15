@@ -8,21 +8,21 @@
 
 .Footer{
     background-color: #00222D;
-    height: calc(239 * var(--proportion));
+    height: calc( 203.45 * var(--proportion));
     padding-top: calc(38 * var(--proportion));
     padding-bottom: calc(45 * var(--proportion));
     padding-left: calc(140 * var(--proportion));
     padding-right: calc(140 * var(--proportion));
 }
 
-.TopOne{
+.Footer .TopOne{
     display: flex;
     justify-content: space-between;
     width: calc(820 * var(--proportion));
     padding-right: calc(200 * var(--proportion));
 }
 
-.TopTwo{
+.Footer .TopTwo{
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
@@ -30,7 +30,7 @@
     padding-left: calc(120 * var(--proportion));
 }
 
-.TopLine{
+.Footer .TopLine{
     display: flex;
     justify-content: space-around;
     flex-direction: row;
@@ -38,14 +38,14 @@
     padding-top: calc(25 * var(--proportion));
 }
 
-h2{
+.Footer h2{
     font-family: 'Catamaran', sans-serif;
     font-size: calc(24 * var(--proportion));
     font-weight: 700;
     color: #FFFFFF;
 }
 
-.TopLine p{
+.Footer .TopLine p{
     font-family: 'Assistant', sans-serif;
     font-size: calc(18 * var(--proportion));
     font-weight: 400;
@@ -53,46 +53,46 @@ h2{
 
 }
 
-.BottomLine p{
+.Footer .BottomLine p{
     color: #FFFFFF;
     margin-top: calc(20 * var(--proportion));
 }
 
-.BottomLine{
+.Footer .BottomLine{
     display: flex;
     justify-content: space-between;
     flex-direction: row;
     align-items: baseline;
-    margin-top: calc(70 * var(--proportion));
+    padding-bottom: 0;
 }
-.BottomLine .MadeWith{
+.Footer .BottomLine .MadeWith{
     font-family: 'Barlow', sans-serif;
     font-weight: 400;
     font-size: calc(20 * var(--proportion));
-    padding-right:calc(131 * var(--proportion));
 }
-.BottomLine .CITiRights{
+.Footer .BottomLine .CITiRights{
     font-family: 'Assistant', sans-serif;
-    font-weight: normal;
+    font-weight: 400;
     font-size: calc(16 * var(--proportion));
-    padding-left:calc(132 * var(--proportion));
 }
 
 
-.SocialMedia img{
+.Footer .SocialMedia img{
     height: calc(37 * var(--proportion));
     width: calc(37 * var(--proportion));
-    margin-top: calc(20 * var(--proportion));
 }
 
-.SocialMedia{
+.Footer .SocialMedia{
     display: flex;
     justify-content: space-between;
     width: calc(138 * var(--proportion));
-    padding-bottom: 25px;
+    padding-bottom: calc( 30 * var(--proportion));
     padding-left: calc(510* var(--proportion));
 }
 
+.Footer .E-mail{
+    padding-top: calc(3 * var(--proportion));
+}
 
 
 
@@ -104,55 +104,55 @@ h2{
 
 @media(max-width: 1024px){
     .Footer{
-        height: calc(239 * var(--proportionM));
+        height: calc(203.45 * var(--proportionM));
+        padding-top: calc(15.55 * var(--proportionM));
+        padding-bottom: calc(20 * var(--proportionM));
     }
     
-    .TopOne{
+    .Footer .TopOne{
         display: flex;
         flex-direction: column;
     }
 
-    .TopTwo{
+    .Footer .TopTwo{
         display: flex;
         flex-direction: column-reverse;
         align-items: flex-end;
         padding-right: 0;
     }
 
-    .TopTwo h2, .TopTwo p{
+    .Footer .TopTwo h2, .Footer .TopTwo p{
         text-align: right;
     }
 
-    .BottomLine{
+    .Footer .BottomLine{
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-top: calc(10 * var(--proportionM));
     }
 
-    .BottomLine p{
-        margin-top: calc(10 * var(--proportionM));
+    .Footer .BottomLine p{
         margin-bottom: 0;
     }
 
-    .Footer p{
+    .Footer .BottomLine p, .Footer .TopOne p, .Footer .TopTwo p{
         font-size: calc(14 * var(--proportionM));
-        margin-top: calc(8 * var(--proportionM));
+        margin-top: 0;
         color: #EAEAEA;
     }
     
     .Footer h2{
         font-size: calc(16 * var(--proportionM));
-        margin-bottom: 0;
+        height: calc(27 * var(--proportionM));
     }
 
-    .SocialMedia img{
+    .Footer .SocialMedia img{
         height: calc(23 * var(--proportionM));
         width: calc(23 * var(--proportionM));
         padding-left: calc(10 * var(--proportionM));
     }
 
-    .SocialMedia{
+    .Footer .SocialMedia{
         width: calc(100 * var(--proportionM));
         padding-right: calc(100 * var(--proportionM));
         padding-left: 0;
@@ -161,8 +161,12 @@ h2{
         padding-bottom: calc(5 * var(--proportionM));
     }
 
-    .E-mail{
+    .Footer .E-mail{
         padding-top: calc(40 * var(--proportionM));
+    }
+
+    .Footer .Phone{
+        padding-top: calc(30 * var(--proportionM));
     }
 }
 
