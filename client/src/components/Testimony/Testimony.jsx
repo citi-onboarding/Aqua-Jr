@@ -31,7 +31,7 @@ function Testimony() {
     focusOnSelect: true,
     speed: 500,
     initialSlide: 0,
-    centerPadding: "35%",
+    centerPadding: "33%",
     arrows: true,
     slideToShow: 3,
     slideToScroll: 1,
@@ -100,8 +100,8 @@ function Testimony() {
                       </div>
 
                       <div className="name">
-                          <p>{name}</p>
-                          <p>{occupation}</p>
+                          <p className= "name-name">{name}</p>
+                          <p className= "ocupattion">{occupation}</p>
                       </div>
                     </div>
                     

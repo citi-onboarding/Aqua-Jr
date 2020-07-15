@@ -1,5 +1,5 @@
 /* importing the fonts*/
-@import url('<link href="https://fonts.googleapis.com/css2?family=Assistant&family=Catamaran:wght@700&display=swap" rel="stylesheet">');
+@import url('<link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;700&family=Catamaran:wght@700&display=swap" rel="stylesheet">');
 
 :root{
     --proportion: calc( 100vw / 1920);
@@ -106,6 +106,8 @@ li .sslick-active{
 
 .Slide-Testimony .slick-active .Card-body{
     opacity: 1;
+    width: calc(600* var(--proportion));
+    height: calc(635 * var(--proportion));
 }
 .Slide-Testimony .Testimony{
     height: calc(134 * var(--proportion));
@@ -139,8 +141,16 @@ li .sslick-active{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    
 }
+.Slide-Testimony .Card-body .content .name .name-name{
+    font-family: 'Assistant', sans-serif;
+    font-weight: bold;
+}
+.Slide-Testimony .Card-body .content .name .ocupattion{
+    font-family: 'Assistant', sans-serif;
+    font-weight: 400;
+}
+
 
 .Slide-Testimony .slick-prev:before{
     content: none;
