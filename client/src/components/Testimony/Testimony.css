@@ -227,6 +227,12 @@ body {
 }
 /* responsivity */
 @media only screen and (max-width: 1024px) {
+    .Slide-Testimony .Card-body .content .name .name-name {
+        font-size: calc(14 * var(--proportion-mobile));
+    }
+    .Slide-Testimony .Card-body .content .name .ocupattion{
+        font-size: calc(14 * var(--proportion-mobile));
+    }
     .Head-Testimony h2 { 
         margin-bottom: calc(28 * var(--proportion-mobile));
     }
