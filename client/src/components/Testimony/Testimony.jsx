@@ -99,7 +99,7 @@ function Testimony() {
                           <p>{text}</p>
                       </div>
 
-                      <div className="name">
+                      <div className="name" id="name">
                           <p className= "name-name">{name}</p>
                           <p className= "ocupattion">{occupation}</p>
                       </div>

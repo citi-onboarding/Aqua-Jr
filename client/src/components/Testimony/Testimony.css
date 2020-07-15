@@ -163,7 +163,6 @@ li .sslick-active{
     color: white;
     text-align: center;
 }
-
 .Slide-Testimony .Card-body .content .name {
     height: 25%;
     width: 100%;
@@ -173,6 +172,7 @@ li .sslick-active{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin: 0;
 }
 .Slide-Testimony .Card-body .content .name .name-name{
     font-family: 'Assistant', sans-serif;
