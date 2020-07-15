@@ -1,10 +1,12 @@
 /* importing the fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Assistant:wght@400;700&family=Catamaran:wght@700&display=swap');
-h2 {
+.Head-Testimony h2 {
     margin: 0;
+    margin-bottom: calc(28 * var(--proportion));
 }
 body {
     margin: 0;
+    overflow-x: hidden;
 }
 .Slide-Testimony .slick-slide {
     margin-top: 1%;
@@ -65,6 +67,11 @@ body {
     height: calc(28 * var(--proportion));
     width: calc(20 * var(--proportion));
 }
+
+.Slide-Testimony .slick-dots ul{
+    top: calc(1 * var(--proportion));
+}
+
 /* editing the arrow*/
 .Slide-Testimony .slick-next {
     content: url('arrow.svg');
@@ -76,7 +83,9 @@ body {
     height: calc(47 * var(--proportion));
     width: calc(22.56 * var(--proportion));
 }
-
+.Slide-Testimony .slick-next:hover {
+    opacity: 0.6;
+}
 .Body-Testimony .Head-Testimony {
     margin-top: 5%;
     display: flex;
@@ -132,7 +141,7 @@ body {
     font-size: calc(16 * var(--proportion))
 }
 
-li .sslick-active{
+.background-Testimony li .slick-active{
     color: blue;
 }
 
@@ -145,7 +154,7 @@ li .sslick-active{
     margin: 0% 3%;
     height: auto;
 }
-.slick-prev {
+.Slide-Testimony .slick-prev {
     margin-right: 2%;
 }
 
@@ -159,9 +168,11 @@ li .sslick-active{
     border-radius: 50%;
     margin-top: 10%;
 }
-.Slide-Testimony .Card-body .Testimony p{
+.Slide-Testimony .Card-body .content .Testimony p{
     color: white;
     text-align: center;
+    font-family: 'Assistant', sans-serif;
+    font-weight: 40;
 }
 .Slide-Testimony .Card-body .content .name {
     height: 25%;
@@ -176,17 +187,25 @@ li .sslick-active{
 }
 .Slide-Testimony .Card-body .content .name .name-name{
     font-family: 'Assistant', sans-serif;
+    color: #00222D;
     font-weight: bold;
 }
 .Slide-Testimony .Card-body .content .name .ocupattion{
     font-family: 'Assistant', sans-serif;
     font-weight: 400;
+    color: #00222D;
 }
 
 
 .Slide-Testimony .slick-prev:before{
     content: none;
     display: none;
+}
+
+.Slide-Testimony .slick-prev:hover {
+    content: url('arrow-back-blue.svg');
+    transition: 1   s;
+
 }
 .Body-Testimony .slick-dots ul li {
     background-color: #F8F8F8;
@@ -195,7 +214,6 @@ li .sslick-active{
     border-radius: 50%;
     margin: 0 calc(8 * var(--proportion));
     box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.5);
-    padding: 0;
 }
 .Body-Testimony .slick-dots ul li.slick-active {
     width: calc(18 * var(--proportion));
@@ -209,7 +227,15 @@ li .sslick-active{
 }
 /* responsivity */
 @media only screen and (max-width: 1024px) {
-     
+    .Slide-Testimony .Card-body .content .name .name-name {
+        font-size: calc(14 * var(--proportion-mobile));
+    }
+    .Slide-Testimony .Card-body .content .name .ocupattion{
+        font-size: calc(14 * var(--proportion-mobile));
+    }
+    .Head-Testimony h2 { 
+        margin-bottom: calc(28 * var(--proportion-mobile));
+    }
     .Slide-Testimony .slick-active>div {
         width: calc(342 * var(--proportion-mobile));
         height: calc(360 * var(--proportion-mobile));
@@ -281,6 +307,9 @@ li .sslick-active{
     .Slide-Testimony .Card-body .content .Testimony p {
         text-align: center;
         margin: 0 3%;
+        font-family: 'Assistant', sans-serif;
+        font-weight: 400;
+        font-size: calc(14 * var(--proportion-mobile));
     }
     .background-Testimony { 
         height: calc(665 * var(--proportion-mobile));

@@ -8,6 +8,8 @@ body {
 }
 .Body-Newsletter {
     background: url(fundo-newsletter.svg);
+    background-color: #EAEAEA;
+    border: none;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -31,7 +33,8 @@ body {
 
 .Body-Newsletter .Text-Newsletter p {
     font-family: 'Assistant', sans-serif;
-    font-size: calc( 22 * var(--proportion));
+    color: white;
+    font-size: calc(22 * var(--proportion));
     width: calc(600 * var(--proportion));
 }
 .Form-Newsletter {
@@ -47,7 +50,9 @@ body {
     width: calc(600 * var(--proportion));
 }
 .Form-Newsletter button {
-    margin-left: 3%;
+    cursor: pointer;
+    margin-left: 4%;
+    margin-right: 4%;
     width: calc(260 * var(--proportion));
     height: calc(52 * var(--proportion));;
     background-color: #F8F8F8;
@@ -59,7 +64,8 @@ body {
     font-family: 'Catamaran', sans-serif;
 }
 .Form-Newsletter button p {
-    margin: 0;
+    padding: 0;
+    margin: auto;
     font-family: 'Catamaran', sans-serif;
     font-weight: bold;
     color: #00222D;
@@ -80,7 +86,7 @@ body {
 
     .Body-Newsletter .Text-Newsletter h3 {
         margin: 0;
-        margin-top: calc(15 * (var(--proportion-mobile)));
+        margin-top: calc(12 * (var(--proportion-mobile)));
         font-family: 'Catamaran', sans-serif;
         font-size: calc(8 * var(--proportion-mobile));
         width: calc(299 * var(--proportion-mobile));

@@ -50,7 +50,7 @@ function Newsletter() {
 
             <input name="Email" type= 'email' onChange= {handleChange} placeholder = "E-mail"/>
 
-            <button type= "submit" > <p>Inscrever-se</p></button>
+            <button type= "submit"> <p>Inscrever-se</p></button>
         </form>
     </div>
     )
