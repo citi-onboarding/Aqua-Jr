@@ -1,5 +1,8 @@
 /* importing the fonts*/
-@import url('<link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;700&family=Catamaran:wght@700&display=swap" rel="stylesheet">');
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@400;700&family=Catamaran:wght@700&display=swap');
+body {
+    margin: 0;
+}
 .Slide-Testimony .slick-slide {
     margin-top: 1%;
 }
@@ -28,7 +31,8 @@
     height: 65vw;
     background-image: url("fundo.svg");
     background-repeat: no-repeat;
-    background-size: cover, cover;
+    background-size: 100vw;
+    padding: 0;
 }
 
 .Body-Testimony{
@@ -78,10 +82,14 @@
 }
 .Body-Testimony .Head-Testimony h1 {
     font-family: 'Catamaran', sans-serif;
+    font-weight: bold;
+    color: #00222D;
+    font-size: calc(44 * var(--proportion));
 }
 
 .Body-Testimony .Head-Testimony p {
     font-family: 'Assistant', sans-serif;
+    font-size: calc(24 * var(--proportion));
 }
 .Slide-Testimony .Card-body {
     overflow: hidden;
@@ -122,8 +130,8 @@ li .sslick-active{
 }
 
 .Slide-Testimony {
-    height: 92%;
-    width: 92%;
+    height: 100%;
+    width: 100%;
 }
 .Slide-Testimony .Card-body .content img {
     height: calc(157 * var(--proportion));
@@ -182,6 +190,13 @@ li .sslick-active{
 }
 /* responsivity */
 @media only screen and (max-width: 1024px) {
+
+    .Body-Testimony .Head-Testimony h1 {
+        font-size: calc(24 * var(--proportion-mobile)) ;
+    }
+    .Body-Testimony .Head-Testimony p {
+        font-size: calc(14 * var(--proportion-mobile))
+    }
     .Slide-Testimony .slick-dots ul {
         width: calc(100 * var(--proportion-mobile));
         height: calc(20 * var(--proportion-mobile));
@@ -189,8 +204,8 @@ li .sslick-active{
 
     .Body-Testimony .slick-dots ul li.slick-active {
 
-        width: calc(18 * var(--proportion-mobile));
-        height: calc(18 * var(--proportion-mobile));
+        width: calc(16 * var(--proportion-mobile));
+        height: calc(16 * var(--proportion-mobile));
     }
     .Body-Testimony .slick-dots ul li {
         height: calc(16 * var(--proportion-mobile));
