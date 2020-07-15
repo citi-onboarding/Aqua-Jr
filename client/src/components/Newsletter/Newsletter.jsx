@@ -26,8 +26,14 @@ function Newsletter() {
     }
 
     const Submit = (e) => {
-        alert(value)
-        alert('E-mail cadastrado! Obrigado.')
+        if(value === ''){
+            alert('Por favor, insira um email válido!')
+        }
+        else{
+            alert(value)
+            alert('E-mail cadastrado! Obrigado.')
+        }
+
     }
     return (
     <div className= "Body-Newsletter">
@@ -40,8 +46,6 @@ function Newsletter() {
             Por ela você irá receber conteúdo exclusivo e terá a possibilidade de receber descontos em nossos serviços!
             </p>
         </div>
-
-
         <form className= "Form-Newsletter" onSubmit= {Submit} >
 
             <input name="Email" type= 'email' onChange= {handleChange} placeholder = "E-mail"/>

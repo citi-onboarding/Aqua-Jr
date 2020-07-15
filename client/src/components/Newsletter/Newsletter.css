@@ -4,14 +4,14 @@ body {
 }
 :root{
     --proportion: calc( 100vw / 1920);
-    --mobile: calc(100vw / 414);
+    --proportion-mobile: calc(100vw / 414);
 }
 .Body-Newsletter {
     background: url(fundo-newsletter.svg);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 26vw;
+    height: calc( 387* var(--proportion));
     background-size: cover, cover;
     background-repeat: no-repeat;
 
@@ -36,7 +36,6 @@ body {
 .Form-Newsletter {
     margin-right: 3%;
     display: flex;
-
     height: 2vw;
 }
 
@@ -66,48 +65,42 @@ body {
 /* responsivity */
 @media only screen and (max-width: 1025px) {
     .Body-Newsletter {
-        align-items: center;
-        background-size: cover, cover;
         flex-direction: column;
-        justify-content: center;
-        height: 26vw;
+        justify-content: start;
+        height: calc( 290* var(--proportion-mobile));
+        width: calc(414 * var(--proportion-mobile));
+        background-size: contain;
         background-repeat: no-repeat;
     }
-    .Form-Newsletter {
-        display: flex;
-        justify-content: space-between;
+
+    .Body-Newsletter .Text-Newsletter h3 {
+        margin: 0;
+        margin-top: calc(15 * (var(--proportion-mobile)));
+        font-family: 'Catamaran', sans-serif;
+        font-size: calc(8 * var(--proportion-mobile));
+        width: calc(299 * var(--proportion-mobile));
+        height: calc(16 * var(--proportion-mobile));
+        text-align: center;
+    }
+    .Body-Newsletter .Text-Newsletter p {
+        font-family: 'Assistant', sans-serif;
+        font-size: calc( 7 * var(--proportion-mobile));
+        width: calc(296 * var(--proportion-mobile));
+        height: calc(18 * var(--proportion-mobile));
+        margin: 0;
+        text-align: center;
+        margin-bottom: calc(5 * var(--proportion-mobile));
     }
     .Form-Newsletter input {
-        height: 200%;
+        width: calc(100 * var(--proportion-mobile));
+        height: calc(12 * var(--proportion-mobile));
+        font-size: calc(6 * var(--proportion-mobile));
     }
     .Form-Newsletter button {
-        margin-left: 3%;
-        width: 25%;
-        height: 200%;
-        background-color: #F8F8F8;
-        border-radius:0 ;
-        border: none;
+        width: calc(50 * var(--proportion-mobile));
+        height: calc(14 * var(--proportion-mobile));
     }
-}
-@media only screen and (max-width: 800px) {
-    .Body-Newsletter {
-        background-size: cover, cover;
-        height: calc(200 * var(--mobile));
-    }
-
-
-    .Form-Newsletter button { 
-        width: 28vw;
-    }
-}
-@media only screen and (max-width: 700px) {
-    .Body-Newsletter {
-        background-size: cover, cover;
-        
-    }
-
-
-    .Form-Newsletter button { 
-        width: 28vw;
+    .Form-Newsletter button p {
+        font-size: calc(4 * var(--proportion-mobile));
     }
 }
