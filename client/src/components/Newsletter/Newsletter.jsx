@@ -33,9 +33,9 @@ function Newsletter() {
     <div className= "Body-Newsletter">
 
         <div className= "Text-Newsletter">
-            <h1>
-                Inscreva-se na nossa Newsletter!
-            </h1>
+            <h3>
+            Inscreva-se já na nossa newsletter!
+            </h3>
             <p>
             Por ela você irá receber conteúdo exclusivo e terá a possibilidade de receber descontos em nossos serviços!
             </p>

@@ -1,5 +1,7 @@
-@import url('<link href="https://fonts.googleapis.com/css2?family=Assistant&family=Catamaran:wght@700&display=swap" rel="stylesheet">');
-
+@import url('https://fonts.googleapis.com/css2?family=Assistant&family=Catamaran:wght@700&display=swap');
+body {
+    margin: 0;
+}
 :root{
     --proportion: calc( 100vw / 1920);
     --mobile: calc(100vw / 414);
@@ -20,12 +22,16 @@
     color: white;
     margin-left: 5%;
 }
-.Body-Newsletter .Text-Newsletter h1 {
+.Body-Newsletter .Text-Newsletter h3 {
     font-family: 'Catamaran', sans-serif;
+    font-size: calc(55 * var(--proportion));
+    width: calc(900 * var(--proportion));
 }
 
 .Body-Newsletter .Text-Newsletter p {
     font-family: 'Assistant', sans-serif;
+    font-size: calc( 28 * var(--proportion));
+    width: calc(600 * var(--proportion));
 }
 .Form-Newsletter {
     margin-right: 3%;
@@ -35,15 +41,15 @@
 }
 
 .Form-Newsletter input {
-    border-radius: 10%;
+    border-radius: 4px;
     border: none;
-    width: calc(536 * var(--proportion));
+    width: calc(600 * var(--proportion));
 }
 .Form-Newsletter button {
     margin-left: 3%;
-    width: 106%;
+    width: calc(260 * var(--proportion));
     background-color: #F8F8F8;
-    border-radius: 15%;
+    border-radius: 6px;
     border: none;
     display: flex;
     justify-content: center;
@@ -51,6 +57,9 @@
     font-family: 'Catamaran', sans-serif;
 }
 .Form-Newsletter button p {
+    font-family: 'Catamaran', sans-serif;
+    font-weight: bold;
+    color: #00222D;
     justify-self: center;
     margin: auto;
 }
@@ -76,7 +85,7 @@
         width: 25%;
         height: 200%;
         background-color: #F8F8F8;
-        border-radius: 20%;
+        border-radius:0 ;
         border: none;
     }
 }
