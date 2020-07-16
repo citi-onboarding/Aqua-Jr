@@ -60,7 +60,8 @@
     opacity: 50%;
     border-color: #CCCCCC;
     border-radius: 12px;
-    padding: 0 5%;
+    padding: 5%;
+    width: 90%;
 }
 
 .Body-contact .forms-text h2 {
@@ -140,7 +141,6 @@
         opacity: 50%;
         border-color: #CCCCCC;
         border-radius: 12px;
-        width: 100%;
         text-align: left;
         height: calc(39 * var(--proportion-mobile));
     }
