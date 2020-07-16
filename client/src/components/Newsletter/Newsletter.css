@@ -79,7 +79,7 @@ body {
     .Body-Newsletter {
         flex-direction: column;
         justify-content: start;
-        height: calc( 290* var(--proportion-mobile));
+        height: calc(100* var(--proportion-mobile));
         width: calc(414 * var(--proportion-mobile));
         background-size: contain;
         background-repeat: no-repeat;
