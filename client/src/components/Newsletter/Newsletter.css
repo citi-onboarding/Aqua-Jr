@@ -78,7 +78,7 @@ body {
 /* responsivity */
 @media only screen and (max-width: 1025px) {
     .Body-Newsletter {
-        background: url('svg-mobile-newsletter.svg');
+        background: url('fundo-newsletter.svg');
         flex-direction: column;
         justify-content: start;
 <<<<<<< HEAD
