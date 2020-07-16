@@ -15,16 +15,21 @@
 }
 
 .Body-contact .forms-text {
-    width: 100%;
+    width: calc(812 * var(--proportion));
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+}
+
+.Body-contact .forms-text>*{
+    margin: 0;
 }
 
 .Body-contact .forms-text .form-contact{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    width: 100%;
 }
 
 .Body-contact .forms-text .form-contact *{
@@ -43,7 +48,7 @@
     opacity: 50%;
     border-color: #CCCCCC;
     border-radius: 12px;
-    width: calc(812 * var(--proportion));
+    width: 100%;
     text-align: left;
     height: calc(50 * var(--proportion));
 }
@@ -95,6 +100,17 @@
 }
 
 @media only screen and (max-width: 1024px) {
+    .Body-contact {
+        height: calc(597 * var(--proportion-mobile));
+    }
+
+    .Body-contact .forms-text .form-contact{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: calc(342 * var(--proportion-mobile));
+    }
+
     .Body-contact .forms-text {
         width: calc(342 * var(--proportion-mobile));
         display: flex;
