@@ -6,7 +6,6 @@
 .Body-Banner {
     height: calc(1218 * var(--proportion));
     display: flex;
-    background-color: chartreuse;
     justify-content: center;
     align-items: center;
 }
