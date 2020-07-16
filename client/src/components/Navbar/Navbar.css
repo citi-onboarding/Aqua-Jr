@@ -4,10 +4,13 @@
     --proportion: calc( 100vw / 1920);
     --proportion-mobile: calc( 100vw / 414);
 }
-
+.Navbar *{
+    transition: 0.5s;
+}
+/* style for the whole navbar */
 .Navbar{
     position: fixed;
-    z-index: 10;
+    z-index: 1;
     background-color: #F8F8F8CB;
     height: calc(122 * var(--proportion));
     width: 100%;
@@ -19,22 +22,33 @@
     font-family: 'Catamaran', sans-serif;
 }
 
+/* style for the logo */
 .Navbar img{
     height: calc(72 * var(--proportion));
 }
 
+/* style for the links and the blog button */
+.Navbar .web-only{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* style for the links */
 .Navbar .links{
     width: calc(803.5 * var(--proportion));
     display: flex;
     justify-content: space-between;
 }
 
-.Navbar a{
+/* style for a individual link */
+.Navbar .links a{
     text-decoration: none;
     font-size: calc(22 * var(--proportion));
     color: #00222D;
 }
 
+/* style for the blog button */
 .Navbar .blog-button{
     height: calc(52 * var(--proportion));
     width: calc(138 * var(--proportion));
@@ -44,30 +58,56 @@
     color: white;
     font-size: calc(24 * var(--proportion));
     outline: none;
+    margin-left: calc(276 * var(--proportion));
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+/* style for the sandwich button */
 .Navbar .sandwich{
     display: none;
 }
 
+/* style fot the side menu */
+.Navbar .side-menu{
+    /* display: none; */
+    visibility: hidden;
+    position: absolute;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 34, 45, 0);
+    top: 0;
+    left: 0;
+    justify-content: flex-end;
+    overflow: hidden;
+    opacity: 0;
+}
+
+
 @media only screen and (max-width: 1024px) {
+    /* style for the whole navbar */
     .Navbar{
+        width: calc(342 * var(--proportion-mobile));
         height: calc(75 * var(--proportion-mobile));
         border-radius: 0 0 calc(12 * var(--proportion-mobile)) calc(12 * var(--proportion-mobile));
+        padding: 0 calc(36 * var(--proportion-mobile));
+        justify-content: space-between;
     }
 
+    /* style for the logo */
     .Navbar img{
         height: calc(43 * var(--proportion-mobile));
     }
 
-    .Navbar .links{
+    /* Style to delete the links and the blog button from the navbar itself */
+    .Navbar .web-only{
         display: none;
     }
 
-    .Navbar .blog-button{
-        display: none;
-    }
-
+    /* Style for the sandwich button */
     .Navbar .sandwich{
         height: calc(23.5 * var(--proportion-mobile));
         width: calc(35.27 * var(--proportion-mobile));
@@ -75,12 +115,101 @@
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
+        z-index: 2;
     }
 
+    /* Style for the lines inside the sandwich button */
     .Navbar .sandwich div{
         background-color: #00222D;
         height: calc(4 * var(--proportion-mobile));
         width: calc(35.27 * var(--proportion-mobile));
         border-radius: calc(3 * var(--proportion-mobile));
+        position: relative;
+    }
+
+    .Navbar .sandwich div:nth-child(1){
+        top: 0;
+    }
+
+    /* style for line 1 when activated */
+    .Navbar .sandwich.active div:nth-child(1){
+        transform: rotate(45deg);
+        top: 42%;
+    }
+
+    /* style for line 2 when activated */
+    .Navbar .sandwich.active div:nth-child(2){
+        opacity: 0;
+    }
+
+    .Navbar .sandwich div:nth-child(3){
+        bottom: 0;
+    }
+
+    /* style for line 3 when activated */
+    .Navbar .sandwich.active div:nth-child(3){
+        transform: rotate(-45deg);
+        bottom: 42%;
+    }
+
+    .Navbar .side-menu.active{
+        visibility: visible;
+        display: flex;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 34, 45, 0.7);
+        position: absolute;
+        top: 0;
+        left: 0;
+        justify-content: flex-end;
+        overflow: hidden;
+        opacity: 1;
+    }
+
+    .Navbar .side-menu .side-menu-container{
+        transform: translateX(500px);
+        background-color: white;
+        width: calc(230 * var(--proportion-mobile));
+        height: 100%;
+        border-radius: calc(12 * var(--proportion-mobile)) 0 0 calc(12 * var(--proportion-mobile));
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .Navbar .side-menu.active .side-menu-container{
+        transform: translateX(0);
+        background-color: white;
+        width: calc(230 * var(--proportion-mobile));
+        height: 100%;
+        border-radius: calc(12 * var(--proportion-mobile)) 0 0 calc(12 * var(--proportion-mobile));
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .Navbar .side-menu .side-menu-container .links{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-end;
+        height: calc(324 * var(--proportion-mobile));
+        margin-top: 20vh;
+    }
+
+    .Navbar .side-menu.active .side-menu-container .links a{
+        font-size: calc(22 * var(--proportion-mobile));
+    }
+
+    .Navbar .side-menu.active .side-menu-container .blog-button{
+        height: calc(52 * var(--proportion-mobile));
+        width: calc(138 * var(--proportion-mobile));
+        border-radius: calc(12 * var(--proportion-mobile));
+        font-size: calc(24 * var(--proportion-mobile));
+        margin: 0;
+        margin-bottom: 20%;
+        margin-top: 20%;
     }
 }
