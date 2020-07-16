@@ -2,7 +2,7 @@ import React, { useState, useEffect }  from 'react';
 import './Contact.css'
 import img from "./contact-img.png"
 
-//onchange{(e) => setA({...a, name: e.target.value})}
+
 
 function Contact() {
     const [form, setForm] = useState({
@@ -12,17 +12,13 @@ function Contact() {
         menssage: '',
     })
     
-    /*
     const Submit = (e) => {
 
-        if(name === '' ){
-            alert('Por favor, insira um email válido!')
-        }
-        else{
-            alert('E-mail cadastrado! Obrigado.')
-        }
-
-    } */
+        alert(form.name)
+        alert(form.email)
+        alert(form.about)
+        alert(form.menssage)
+    }
 
     return (
         <div className= "Body-contact">
@@ -36,27 +32,29 @@ function Contact() {
                     Fale conosco lorem ipsum dolor
                 </p>
 
-                <form className= "form-contact">
+                <form className= "form-contact" onSubmit= {Submit}>
 
                     <div className= "name">
                         <label htmlFor="">Nome</label>
-                        <input type="" name="" id=""/>
+                        <input type="text" name="" id="" onChange={(e) => setForm({...form, name: e.target.value})} />
                     </div>
                     <div className= "email">
                         <label htmlFor="">Email</label>
-                        <input type="" name="" id=""/>
+                        <input type="email" name="" id="" onChange={(e) => setForm({...form, email: e.target.value})} />
                     </div>
+
                     <div className= "assunto">
                         <label htmlFor="">Assunto</label>
-                        <input type="" name="" id=""/>
+                        <input type="text" name="" id="" onChange={(e) => setForm({...form, about: e.target.value})} />
                     </div>
+
                     <div className= "mensagem">
                         <label htmlFor="">Mensagem</label>
-                        <input type="textarea" name="" id=""/>
+                        <textarea name="mensagem" id="mensagem" cols="30" rows="5" onChange={(e) => setForm({...form, menssage: e.target.value})} />
                     </div>
 
                     <button type= "submit"> 
-                        <p>Inscrever-se</p>
+                        Enviar mensagem
                     </button>
 
                 </form>

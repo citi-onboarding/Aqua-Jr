@@ -15,7 +15,13 @@
 }
 
 .Body-contact .forms-text {
-    width: calc(812 * var(--proportion));
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.Body-contact .forms-text .form-contact{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -26,6 +32,10 @@
     flex-direction: column;
     width: 100%;
     font-size: calc(22 * var(--proportion));
+    margin-bottom: calc(10 * var(--proportion));
+    color: #00222D;
+    font-family: 'Assistant', sans-serif;
+    border: none;
 }
 
 .Body-contact .forms-text .form-contact input {
@@ -34,7 +44,15 @@
     border-color: #CCCCCC;
     border-radius: 12px;
     width: calc(812 * var(--proportion));
+    text-align: left;
     height: calc(50 * var(--proportion));
+}
+
+.Body-contact .forms-text .form-contact textarea {
+    background-color: #DEDEDE;   
+    opacity: 50%;
+    border-color: #CCCCCC;
+    border-radius: 12px;
 }
 
 .Body-contact .forms-text h2 {
@@ -46,6 +64,7 @@
     font-family: 'Assistant', sans-serif;
     font-weight: 400;
     font-size: calc(22 * var(--proportion));
+
 }
 
 .Body-contact .Contact-image{
@@ -71,4 +90,28 @@
     color: white;
     font-size: calc(28 * var(--proportion));
     align-self: center;
+    margin-top: calc(41 * var(--proportion));
+    border: none;
+}
+
+@media only screen and (max-width: 1024px) {
+    .Body-contact .forms-text {
+        width: calc(342 * var(--proportion-mobile));
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Body-contact .forms-text .form-contact button{
+        height: calc(45 * var(--proportion-mobile));
+        width: calc(260 * var(--proportion-mobile));
+        border-radius: calc(12 * var(--proportion-mobile));
+        font-size: calc(18 * var(--proportion-mobile));
+    }
+    
+    .Body-contact .Contact-image{
+        display: none;
+    }
+
+
 }
