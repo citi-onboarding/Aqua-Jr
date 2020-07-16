@@ -1,9 +1,12 @@
 import React from "react";
+import logo from "./logo.png"
+
+import "./Navbar.css"
 
 function Navbar(){
     return(
         <nav className="Navbar">
-            <img src="./logo.png" alt="Aqua jr logo"/>
+            <img src={logo} alt="Aqua jr logo"/>
             <div className="links">
                 <a href="#">Início</a>
                 <a href="#">Áreas de atuação</a>
@@ -11,8 +14,12 @@ function Navbar(){
                 <a href="#">Depoimentos</a>
                 <a href="#">Contato</a>
             </div>
-            <button>Blog</button>
-            <div className="sandwich"></div>
+            <button className="blog-button">Blog</button>
+            <button className="sandwich">
+                <div></div>
+                <div></div>
+                <div></div>
+            </button>
         </nav>
     );
 }

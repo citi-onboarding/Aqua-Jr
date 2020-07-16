@@ -1,8 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@700&display=swap');
+
 :root{
     --proportion: calc( 100vw / 1920);
     --proportion-mobile: calc( 100vw / 414);
 }
 
 .Navbar{
+    position: fixed;
+    z-index: 10;
+    background-color: #F8F8F8CB;
+    height: calc(122 * var(--proportion));
+    width: 100%;
+    backdrop-filter: blur(12px);
+    box-shadow: 5px 5px 10px #00222D40;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Catamaran', sans-serif;
+}
 
+.Navbar img{
+    height: calc(72 * var(--proportion));
+}
+
+.Navbar .links{
+    width: calc(803.5 * var(--proportion));
+    display: flex;
+    justify-content: space-between;
+}
+
+.Navbar a{
+    text-decoration: none;
+    font-size: calc(22 * var(--proportion));
+    color: #00222D;
+}
+
+.Navbar .blog-button{
+    height: calc(52 * var(--proportion));
+    width: calc(138 * var(--proportion));
+    background-color: #00506E;
+    box-shadow: 5px 5px 10px #00222D40;
+    border-radius: calc(12 * var(--proportion));
+    color: white;
+    font-size: calc(24 * var(--proportion));
+    outline: none;
+}
+
+.Navbar .sandwich{
+    display: none;
+}
+
+@media only screen and (max-width: 1024px) {
+    .Navbar{
+        height: calc(75 * var(--proportion-mobile));
+        border-radius: 0 0 calc(12 * var(--proportion-mobile)) calc(12 * var(--proportion-mobile));
+    }
+
+    .Navbar img{
+        height: calc(43 * var(--proportion-mobile));
+    }
+
+    .Navbar .links{
+        display: none;
+    }
+
+    .Navbar .blog-button{
+        display: none;
+    }
+
+    .Navbar .sandwich{
+        height: calc(23.5 * var(--proportion-mobile));
+        width: calc(35.27 * var(--proportion-mobile));
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .Navbar .sandwich div{
+        background-color: #00222D;
+        height: calc(4 * var(--proportion-mobile));
+        width: calc(35.27 * var(--proportion-mobile));
+        border-radius: calc(3 * var(--proportion-mobile));
+    }
 }
