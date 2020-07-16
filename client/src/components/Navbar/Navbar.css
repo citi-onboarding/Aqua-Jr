@@ -4,9 +4,13 @@
     --proportion: calc( 100vw / 1920);
     --proportion-mobile: calc( 100vw / 414);
 }
+
+/* NAVBAR */
+/* Style for everything that is inside the nav */
 .Navbar *{
     transition: 0.5s;
 }
+
 /* style for the whole navbar */
 .Navbar{
     position: fixed;
@@ -22,11 +26,13 @@
     font-family: 'Catamaran', sans-serif;
 }
 
+/* LOGO */
 /* style for the logo */
 .Navbar img{
     height: calc(72 * var(--proportion));
 }
 
+/* LINKS AND BUTTON */
 /* style for the links and the blog button */
 .Navbar .web-only{
     display: flex;
@@ -34,6 +40,7 @@
     align-items: center;
 }
 
+/* LINKS */
 /* style for the links */
 .Navbar .links{
     width: calc(803.5 * var(--proportion));
@@ -48,6 +55,7 @@
     color: #00222D;
 }
 
+/* BUTTON */
 /* style for the blog button */
 .Navbar .blog-button{
     height: calc(52 * var(--proportion));
@@ -65,27 +73,18 @@
     align-items: center;
 }
 
+/* SANDWICH */
 /* style for the sandwich button */
 .Navbar .sandwich{
     display: none;
 }
 
+/* SIDE MENU */
 /* style fot the side menu */
 .Navbar .side-menu{
-    /* display: none; */
     visibility: hidden;
     position: absolute;
-    display: flex;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(0, 34, 45, 0);
-    top: 0;
-    left: 0;
-    justify-content: flex-end;
-    overflow: hidden;
-    opacity: 0;
 }
-
 
 @media only screen and (max-width: 1024px) {
     /* style for the whole navbar */
@@ -97,16 +96,17 @@
         justify-content: space-between;
     }
 
-    /* style for the logo */
-    .Navbar img{
-        height: calc(43 * var(--proportion-mobile));
-    }
-
     /* Style to delete the links and the blog button from the navbar itself */
     .Navbar .web-only{
         display: none;
     }
 
+    /* style for the logo */
+    .Navbar img{
+        height: calc(43 * var(--proportion-mobile));
+    }
+
+    /* SANDWICH BUTTON */
     /* Style for the sandwich button */
     .Navbar .sandwich{
         height: calc(23.5 * var(--proportion-mobile));
@@ -127,6 +127,7 @@
         position: relative;
     }
 
+    /* style for line 1 */
     .Navbar .sandwich div:nth-child(1){
         top: 0;
     }
@@ -142,6 +143,7 @@
         opacity: 0;
     }
 
+    /* style for line 3 */
     .Navbar .sandwich div:nth-child(3){
         bottom: 0;
     }
@@ -152,22 +154,29 @@
         bottom: 42%;
     }
 
-    .Navbar .side-menu.active{
-        visibility: visible;
+    /* SIDE MENU */
+    /* style fot the side menu */
+    .Navbar .side-menu{
         display: flex;
         width: 100vw;
         height: 100vh;
         background-color: rgba(0, 34, 45, 0.7);
-        position: absolute;
         top: 0;
         left: 0;
         justify-content: flex-end;
-        overflow: hidden;
+        opacity: 0;
+    }
+
+    /* style for the side menu itself when activated*/
+    .Navbar .side-menu.active{
+        visibility: visible;
         opacity: 1;
     }
 
+    /* WHITE PART */
+    /* style for the white part of the side menu*/
     .Navbar .side-menu .side-menu-container{
-        transform: translateX(500px);
+        transform: translateX(calc(230 * var(--proportion-mobile)));
         background-color: white;
         width: calc(230 * var(--proportion-mobile));
         height: 100%;
@@ -177,19 +186,13 @@
         justify-content: space-between;
         align-items: center;
     }
-
+    
+    /* style for the white part when activated */
     .Navbar .side-menu.active .side-menu-container{
         transform: translateX(0);
-        background-color: white;
-        width: calc(230 * var(--proportion-mobile));
-        height: 100%;
-        border-radius: calc(12 * var(--proportion-mobile)) 0 0 calc(12 * var(--proportion-mobile));
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
     }
 
+    /* style for the links */
     .Navbar .side-menu .side-menu-container .links{
         display: flex;
         flex-direction: column;
@@ -199,11 +202,13 @@
         margin-top: 20vh;
     }
 
-    .Navbar .side-menu.active .side-menu-container .links a{
+    /* style for a single link */
+    .Navbar .side-menu .side-menu-container .links a{
         font-size: calc(22 * var(--proportion-mobile));
     }
 
-    .Navbar .side-menu.active .side-menu-container .blog-button{
+    /* style for the blog button */
+    .Navbar .side-menu .side-menu-container .blog-button{
         height: calc(52 * var(--proportion-mobile));
         width: calc(138 * var(--proportion-mobile));
         border-radius: calc(12 * var(--proportion-mobile));
@@ -212,4 +217,5 @@
         margin-bottom: 20%;
         margin-top: 20%;
     }
+
 }

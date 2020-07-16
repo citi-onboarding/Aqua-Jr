@@ -21,7 +21,12 @@ function Navbar() {
           <a href="#">Depoimentos</a>
           <a href="#">Contato</a>
         </div>
-        <a className="blog-button" href="https://aquajr.wixsite.com/aquajr/blog">Blog</a>
+        <a
+          className="blog-button"
+          href="https://aquajr.wixsite.com/aquajr/blog"
+        >
+          Blog
+        </a>
       </div>
 
       <button className="sandwich" onClick={handleClick}>
@@ -39,10 +44,14 @@ function Navbar() {
             <a href="#">Depoimentos</a>
             <a href="#">Contato</a>
           </div>
-          <a className="blog-button" href="https://aquajr.wixsite.com/aquajr/blog">Blog</a>
+          <a
+            className="blog-button"
+            href="https://aquajr.wixsite.com/aquajr/blog"
+          >
+            Blog
+          </a>
         </div>
       </aside>
-			
     </nav>
   );
 }
