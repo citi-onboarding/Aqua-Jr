@@ -2,13 +2,15 @@
 body {
     margin: 0;
 }
+.gradient {
+    background: linear-gradient(#EAEAEA, #F8F8F8);
+}
 :root{
     --proportion: calc( 100vw / 1920);
     --proportion-mobile: calc(100vw / 414);
 }
 .Body-Newsletter {
     background: url(fundo-newsletter.svg);
-    background-color: #EAEAEA;
     border: none;
     display: flex;
     justify-content: space-between;
@@ -16,7 +18,6 @@ body {
     height: calc( 387* var(--proportion));
     background-size: cover, cover;
     background-repeat: no-repeat;
-
     overflow-x: hidden;
 }
 
@@ -83,6 +84,7 @@ body {
         width: calc(414 * var(--proportion-mobile));
         background-size: contain;
         background-repeat: no-repeat;
+
     }
 
     .Body-Newsletter .Text-Newsletter h3 {
