@@ -18,7 +18,7 @@
     width: calc(812 * var(--proportion));
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .Body-contact .forms-text>*{
@@ -30,6 +30,7 @@
     flex-direction: column;
     align-items: flex-start;
     width: 100%;
+    margin-top: calc(44 * var(--proportion));
 }
 
 .Body-contact .forms-text .form-contact *{
@@ -48,9 +49,10 @@
     opacity: 50%;
     border-color: #CCCCCC;
     border-radius: 12px;
-    width: 100%;
+    width: 90%;
     text-align: left;
     height: calc(50 * var(--proportion));
+    padding: 0 5%;
 }
 
 .Body-contact .forms-text .form-contact textarea {
@@ -58,6 +60,7 @@
     opacity: 50%;
     border-color: #CCCCCC;
     border-radius: 12px;
+    padding: 0 5%;
 }
 
 .Body-contact .forms-text h2 {
@@ -104,18 +107,21 @@
         height: calc(597 * var(--proportion-mobile));
     }
 
-    .Body-contact .forms-text .form-contact{
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        width: calc(342 * var(--proportion-mobile));
-    }
-
     .Body-contact .forms-text {
         width: calc(342 * var(--proportion-mobile));
         display: flex;
         flex-direction: column;
         align-items: center;
+        height: 100%;
+    }
+   
+    .Body-contact .forms-text .form-contact{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-around;
+        width: calc(342 * var(--proportion-mobile));
+        height: 100%;
     }
 
     .Body-contact .forms-text .form-contact button{
@@ -129,5 +135,26 @@
         display: none;
     }
 
+    .Body-contact .forms-text .form-contact input {
+        background-color: #DEDEDE;   
+        opacity: 50%;
+        border-color: #CCCCCC;
+        border-radius: 12px;
+        width: 100%;
+        text-align: left;
+        height: calc(39 * var(--proportion-mobile));
+    }
+
+    .Body-contact .forms-text .form-contact *{
+        font-size: calc(16 * var(--proportion-mobile));
+    }
+
+    .Body-contact .forms-text h2 {
+        font-size: calc(24 * var(--proportion-mobile));
+    }
+    .Body-contact .forms-text p {
+        font-size: calc(14 * var(--proportion-mobile));
+        
+    }
 
 }
