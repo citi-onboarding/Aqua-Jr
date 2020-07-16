@@ -5,6 +5,7 @@ import Footer from './Footer';
 import PostToBlog from './PostToBlog';
 import Newsletter from './Newsletter';
 import Testimony from './Testimony';
+import AboutUs from './AboutUs';
 
 export {
   Example,
@@ -14,4 +15,5 @@ export {
   PostToBlog,
   Newsletter,
   Testimony,
+  AboutUs,
 };

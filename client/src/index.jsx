@@ -10,6 +10,7 @@ import {
   PostToBlog,
   Newsletter,
   Testimony,
+  AboutUs,
 } from './components';
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
       </div>
       <ExpertiseArea />
       <Newsletter />
+      <AboutUs />
       <Testimony />
       <CallToBlog />
       <div className="FooterComponent">
