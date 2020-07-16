@@ -39,6 +39,7 @@
     font-weight: bold;
     font-family: 'Catamaran', sans-serif;
     border-radius: 12px 12px;
+    box-shadow: calc(2 * var(--proportion)) calc(2 * var(--proportion)) #00AEEC40;
     border: none;
 }
 .Body-Banner .Banner-content .Banner-image {
