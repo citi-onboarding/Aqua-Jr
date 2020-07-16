@@ -46,3 +46,49 @@
     width: 20%;
     height: 50%;
 }
+
+@media only screen and (max-width: 1024px) {
+    .Body-Banner {
+        margin: 0;
+        padding: auto;
+        height: calc(540 * var(--proportion-mobile));
+        background: url('photo-banner-mobile.png');
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-position-x: center;
+        background-size: 120%, contain;
+    }
+    .Body-Banner .Banner-content .Banner-texts-button {
+        width: calc(342 * var(--proportion-mobile));
+    }
+    .Body-Banner .Banner-content .Banner-texts-button h4 {
+        color: #F8F8F8;
+        text-align: center;
+        margin-left: calc(25 * var(--proportion-mobile));
+        align-self: center;
+        font-size: calc(28 * var(--proportion-mobile));
+        width: calc(342 * var(--proportion-mobile));
+        height: calc(92 * var(--proportion-mobile));;
+        justify-self: center;
+    }
+    .Body-Banner .Banner-content .Banner-texts-button p {
+        color: white;
+        height: calc(84 * var(--proportion-mobile));;
+        width: calc(342 * var(--proportion-mobile));
+        font-size: calc(16 * var(--proportion-mobile));
+        margin-left: calc(30 * var(--proportion-mobile));
+    }
+    .Body-Banner .Banner-content .Banner-texts-button button{
+        width: calc(260 * var(--proportion-mobile));
+        height: calc(45 * var(--proportion-mobile));
+        background-color: #F8F8F8 ;
+        color: #00222D;
+        font-size: calc(18 * var(--proportion-mobile));
+        margin-left: calc(75 * var(--proportion-mobile));
+        box-shadow: calc(2 * var(--proportion-mobile)) calc(2 * var(--proportion-mobile)) #F8F8F840;
+    }
+    .Body-Banner .Banner-content .Banner-image img{
+        width: 0%;
+        height: 0%;
+    }
+}
