@@ -31,6 +31,17 @@
     font-weight: 400;
     font-family: 'Assistant', sans-serif;
 }
+.Body-Banner .Banner-content .Banner-texts-button button {
+    background-color: #00506E;
+    color: #F8F8F8;
+    width: calc(426 * var(--proportion));
+    height: calc(70 * var(--proportion));
+    font-size: calc(28 * var(--proportion));
+    font-weight: bold;
+    font-family: 'Catamaran', sans-serif;
+    border-radius: 12px 12px;
+    border: none;
+}
 .Body-Banner .Banner-content .Banner-image {
     width: 20%;
     height: 50%;

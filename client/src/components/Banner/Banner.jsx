@@ -1,6 +1,7 @@
 import React, { useState, useEffect} from 'react';
 import axios from 'axios';
 import './Banner.css'
+import photo from './photo-banner.png'
 
 function Banner() {
     const [Banner, setBanner] = useState([]);
@@ -25,7 +26,7 @@ function Banner() {
                     </div>
                 
                     <div className= "Banner-image">
-                        <img src={image?.url} alt=""/>
+                        <img src={photo} alt=""/>
                     </div>
 
                 </div>
