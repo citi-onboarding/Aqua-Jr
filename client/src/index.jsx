@@ -4,6 +4,7 @@ import axios from 'axios';
 import './index.css';
 
 import {
+  Navbar,
   CallToBlog,
   ExpertiseArea, 
   Footer,
@@ -25,6 +26,7 @@ function App() {
   
   return (
     <section className="app">
+      <Navbar />
       <div className="PostToBlog">
       <PostToBlog />
       </div>

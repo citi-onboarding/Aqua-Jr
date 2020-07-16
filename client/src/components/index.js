@@ -5,8 +5,10 @@ import Footer from './Footer';
 import PostToBlog from './PostToBlog';
 import Newsletter from './Newsletter';
 import Testimony from './Testimony';
+import Navbar from "./Navbar";
 
 export {
+  Navbar,
   Example,
   CallToBlog,
   ExpertiseArea,

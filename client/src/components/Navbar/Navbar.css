@@ -1,0 +1,8 @@
+:root{
+    --proportion: calc( 100vw / 1920);
+    --proportion-mobile: calc( 100vw / 414);
+}
+
+.Navbar{
+
+}
