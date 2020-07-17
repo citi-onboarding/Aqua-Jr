@@ -82,9 +82,13 @@ body {
         flex-direction: column;
         justify-content: start;
         width: calc(414 * var(--proportion-mobile));
+        height: calc(105 * var(--proportion-mobile));
         background-size: cover, contain;
         background-repeat: no-repeat;
 
+    }
+    .Body-Newsletter .Text-Newsletter {
+        margin-top: calc(11 * var(--proportion-mobile));
     }
 
     .Body-Newsletter .Text-Newsletter h3 {
