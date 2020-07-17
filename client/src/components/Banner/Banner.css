@@ -15,6 +15,13 @@
 .Body-Banner .Banner-content .Banner-texts-button {
     justify-self: center;
     width: calc(689 * var(--proportion));
+    align-items: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-items: center;
+    justify-content: center;
+    align-content: center;
 }
 .Body-Banner .Banner-content .Banner-texts-button h4 {
     font-size: calc(46 * var(--proportion));
@@ -41,6 +48,7 @@
     border-radius: 12px 12px;
     box-shadow: calc(2 * var(--proportion)) calc(2 * var(--proportion)) #00AEEC40;
     border: none;
+
 }
 .Body-Banner .Banner-content .Banner-image {
     width: 20%;
