@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@700&display=swap');
+
+:root{
+    --proportion: calc( 100vw / 1920);
+    --proportion-mobile: calc( 100vw / 414);
+}
+
+/* NAVBAR */
+/* Style for everything that is inside the nav */
+.Navbar *{
+    transition: 0.5s;
+}
+
+/* style for the whole navbar */
+.Navbar{
+    position: fixed;
+    z-index: 1;
+    background-color: #F8F8F8CB;
+    height: calc(122 * var(--proportion));
+    width: 100%;
+    backdrop-filter: blur(12px);
+    box-shadow: 5px 5px 10px #00222D40;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Catamaran', sans-serif;
+}
+
+/* LOGO */
+/* style for the logo */
+.Navbar img{
+    height: calc(72 * var(--proportion));
+}
+
+/* LINKS AND BUTTON */
+/* style for the links and the blog button */
+.Navbar .web-only{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* LINKS */
+/* style for the links */
+.Navbar .links{
+    width: calc(803.5 * var(--proportion));
+    display: flex;
+    justify-content: space-between;
+}
+
+/* style for a individual link */
+.Navbar .links a{
+    text-decoration: none;
+    font-size: calc(22 * var(--proportion));
+    color: #00222D;
+}
+
+/* BUTTON */
+/* style for the blog button */
+.Navbar .blog-button{
+    height: calc(52 * var(--proportion));
+    width: calc(138 * var(--proportion));
+    background-color: #00506E;
+    box-shadow: 5px 5px 10px #00222D40;
+    border-radius: calc(12 * var(--proportion));
+    color: white;
+    font-size: calc(24 * var(--proportion));
+    outline: none;
+    margin-left: calc(276 * var(--proportion));
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* SANDWICH */
+/* style for the sandwich button */
+.Navbar .sandwich{
+    display: none;
+}
+
+/* SIDE MENU */
+/* style fot the side menu */
+.Navbar .side-menu{
+    visibility: hidden;
+    position: absolute;
+}
+
+@media only screen and (max-width: 1024px) {
+    /* style for the whole navbar */
+    .Navbar{
+        width: calc(342 * var(--proportion-mobile));
+        height: calc(75 * var(--proportion-mobile));
+        border-radius: 0 0 calc(12 * var(--proportion-mobile)) calc(12 * var(--proportion-mobile));
+        padding: 0 calc(36 * var(--proportion-mobile));
+        justify-content: space-between;
+    }
+
+    /* Style to delete the links and the blog button from the navbar itself */
+    .Navbar .web-only{
+        display: none;
+    }
+
+    /* style for the logo */
+    .Navbar img{
+        height: calc(43 * var(--proportion-mobile));
+    }
+
+    /* SANDWICH BUTTON */
+    /* Style for the sandwich button */
+    .Navbar .sandwich{
+        height: calc(23.5 * var(--proportion-mobile));
+        width: calc(35.27 * var(--proportion-mobile));
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        z-index: 2;
+    }
+
+    /* Style for the lines inside the sandwich button */
+    .Navbar .sandwich div{
+        background-color: #00222D;
+        height: calc(4 * var(--proportion-mobile));
+        width: calc(35.27 * var(--proportion-mobile));
+        border-radius: calc(3 * var(--proportion-mobile));
+        position: relative;
+    }
+
+    /* style for line 1 */
+    .Navbar .sandwich div:nth-child(1){
+        top: 0;
+    }
+
+    /* style for line 1 when activated */
+    .Navbar .sandwich.active div:nth-child(1){
+        transform: rotate(45deg);
+        top: 42%;
+    }
+
+    /* style for line 2 when activated */
+    .Navbar .sandwich.active div:nth-child(2){
+        opacity: 0;
+    }
+
+    /* style for line 3 */
+    .Navbar .sandwich div:nth-child(3){
+        bottom: 0;
+    }
+
+    /* style for line 3 when activated */
+    .Navbar .sandwich.active div:nth-child(3){
+        transform: rotate(-45deg);
+        bottom: 42%;
+    }
+
+    /* SIDE MENU */
+    /* style fot the side menu */
+    .Navbar .side-menu{
+        display: flex;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 34, 45, 0.7);
+        top: 0;
+        left: 0;
+        justify-content: flex-end;
+        opacity: 0;
+    }
+
+    /* style for the side menu itself when activated*/
+    .Navbar .side-menu.active{
+        visibility: visible;
+        opacity: 1;
+    }
+
+    /* WHITE PART */
+    /* style for the white part of the side menu*/
+    .Navbar .side-menu .side-menu-container{
+        transform: translateX(calc(230 * var(--proportion-mobile)));
+        background-color: white;
+        width: calc(230 * var(--proportion-mobile));
+        height: 100%;
+        border-radius: calc(12 * var(--proportion-mobile)) 0 0 calc(12 * var(--proportion-mobile));
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    /* style for the white part when activated */
+    .Navbar .side-menu.active .side-menu-container{
+        transform: translateX(0);
+    }
+
+    /* style for the links */
+    .Navbar .side-menu .side-menu-container .links{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-end;
+        height: calc(324 * var(--proportion-mobile));
+        margin-top: 20vh;
+    }
+
+    /* style for a single link */
+    .Navbar .side-menu .side-menu-container .links a{
+        font-size: calc(22 * var(--proportion-mobile));
+    }
+
+    /* style for the blog button */
+    .Navbar .side-menu .side-menu-container .blog-button{
+        height: calc(52 * var(--proportion-mobile));
+        width: calc(138 * var(--proportion-mobile));
+        border-radius: calc(12 * var(--proportion-mobile));
+        font-size: calc(24 * var(--proportion-mobile));
+        margin: 0;
+        margin-bottom: 20%;
+        margin-top: 20%;
+    }
+
+}

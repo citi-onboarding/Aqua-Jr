@@ -6,8 +6,10 @@ import PostToBlog from './PostToBlog';
 import Newsletter from './Newsletter';
 import Testimony from './Testimony';
 import AboutUs from './AboutUs';
+import Navbar from "./Navbar";
 
 export {
+  Navbar,
   Example,
   CallToBlog,
   ExpertiseArea,
