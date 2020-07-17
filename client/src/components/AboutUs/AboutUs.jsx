@@ -39,36 +39,32 @@ function AboutUs(){
     useEffect(() => {
         loadValuesElements();
     }, []);
-
+console.log(AboutUsElements);
     return(
         <div className="aboutUsSection">
-            { AboutUsElements?.map(({text, image1, image2}) =>(
-                <div className="aboutUsInfo">
+                <div className="aboutUsImages">
+                    <img className="image2" src={AboutUsElements[0]?.image2.url} alt="Ilustação Sobre Nós" />
+                    <img className="image1" src={AboutUsElements[0]?.image1.url} alt="Ilustação Sobre Nós" />
+                </div>
+                <div className="aboutUsRight">
                     <div className="aboutUsText">
                         <h1>Sobre nós</h1>
-                        <p>{text}</p>
+                        <p>{AboutUsElements[0]?.text}</p>
                     </div>
-                    <div className="aboutUsImages">
-                        <img src={image1?.url} alt="Ilustação Sobre Nós" />
-                        <img src={image2?.url} alt="Ilustação Sobre Nós" />
-                    </div>
-                </div>
-            ))}
-                <div className="values">
-                    <div className="valuesTitle">
-                        <h2>Nossos valores</h2>
-                    </div>
-                    <div className="valuesInfoBlock">
-                    { ValuesElements?.map(({title, image}) =>(
-                        <div className="valuesInfo">
-                            <img src={image?.url} alt="Ilustração valores" />
-                            <h3>{title}</h3>
+                    <div className="values">
+                        <div className="valuesTitle">
+                            <h2>Nossos valores</h2>
                         </div>
-                     ))}
+                        <div className="valuesInfoBlock">
+                        { ValuesElements?.map(({title, image}) =>(
+                            <div className="valuesInfo">
+                                <img src={image?.url} alt="Ilustração valores" />
+                                <h3>{title}</h3>
+                            </div>
+                        ))}
+                        </div>
                     </div>
                 </div>
-
-        
         </div>
     )
 }
