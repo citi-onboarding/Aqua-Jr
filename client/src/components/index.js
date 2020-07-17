@@ -6,15 +6,15 @@ import PostToBlog from './PostToBlog';
 import Newsletter from './Newsletter';
 import Testimony from './Testimony';
 <<<<<<< HEAD
+<<<<<<< HEAD
 import AboutUs from './AboutUs';
 =======
 <<<<<<< HEAD
 >>>>>>> a095050... (reabse/Banner-front): fixed the conflits
-import Navbar from "./Navbar";
-
 =======
+>>>>>>> b27b10f... (reabse/Banner-front): fixed the conflits
+import Navbar from "./Navbar";
 import Banner from './Banner'
->>>>>>> 66421ab... (feature/Banner-front): created the base for the project
 export {
   Navbar,
   Example,
