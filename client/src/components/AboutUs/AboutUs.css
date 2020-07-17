@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@400;700&family=Barlow:wght@400;700&family=Catamaran:wght@700&display=swap');
+
+:root{
+    --proportion: calc( 100vw / 1920);
+    --proportionM: calc( 100vw / 414);
+}
+
+.aboutUsSection{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #F8F8F8;
+    height: calc( 950 * var(--proportion));
+    padding-bottom: calc( 50 * var(--proportion));
+
+}
+
+.aboutUsSection .aboutUsImages .image1{
+    position: relative;
+    height: calc( 413.65 * var(--proportion));
+    width: calc( 495.17 * var(--proportion));
+    left: calc( 250 * var(--proportion));
+    bottom: calc( 130 * var(--proportion));
+}
+
+.aboutUsSection .aboutUsImages .image2{
+    position: relative;
+    height: calc( 342.86 * var(--proportion));
+    width: calc( 414 * var(--proportion));
+    left: calc( 530 * var(--proportion));
+    top: calc( 550 * var(--proportion));
+    z-index: 1;
+}
+
+.aboutUsSection .aboutUsRight{
+    position: relative;
+    top: calc( 80 * var(--proportion));
+}
+
+.aboutUsSection .aboutUsRight h1{
+    font-family: 'Catamaran', sans-serif;
+    font-weight: 700;
+    font-size: calc( 46 * var(--proportion));
+    color: #00222D;
+    position: relative;
+    margin-left: calc( 30 * var(--proportion));
+}
+
+.aboutUsSection .aboutUsRight p{
+    font-family: 'Assistant', sans-serif;
+    font-weight: 400;
+    font-size: calc( 22 * var(--proportion));
+    color: #00222D;
+    width: calc( 812 * var(--proportion));
+    margin-right: calc( 278 * var(--proportion));
+}
+
+.aboutUsSection .values .valuesTitle h2{
+    font-family: 'Catamaran', sans-serif;
+    font-weight: 700;
+    font-size: calc( 34 * var(--proportion));
+    text-align: center;
+    color: #00222D;
+    background-image: url('./linha.svg');
+    background-repeat: no-repeat;
+    background-position-x: left;
+    background-position-y: bottom;
+    background-size: 96%;
+    width: calc( 240 * var(--proportion));
+    height: calc( 70 * var(--proportion));
+    margin-bottom: calc( 30 * var(--proportion));
+    margin-right: calc( 50 * var(--proportion));
+
+}
+
+.aboutUsSection .aboutUsRight .values{
+    width: calc( 650 * var(--proportion));
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    left: calc( 200 * var(--proportion));
+}
+
+.aboutUsSection .values .valuesInfo{
+    padding-right:calc( 20 * var(--proportion));
+    padding-left: calc( 20 * var(--proportion));
+    height: calc( 150 * var(--proportion));
+}
+
+.aboutUsSection .values .valuesInfo h3{
+    font-family: 'Assistant', sans-serif;
+    font-weight: bold;
+    font-size: calc( 18 * var(--proportion));
+    margin-top: calc( 15 * var(--proportion));
+    color: #00222D;
+    text-align: center;
+    width: calc( 170 * var(--proportion));
+}
+
+.aboutUsSection .values .valuesInfo img{
+    height: calc( 65 * var(--proportion));
+    width: 50%;
+    margin-left: calc( 34 * var(--proportion));
+
+}
+
+.aboutUsSection .values .valuesInfoBlock{
+    width: calc( 700 * var(--proportion));
+    height: calc( 265.19 * var(--proportion));
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+
+
+
+
+
+
+/*@media screen and (max-width: 1024px){
+    .aboutUsSection{
+        padding-top: calc( 16.5 * var(--proportionM));
+    }
+    
+    .aboutUsSection .aboutUsImages{
+        display: none;
+    }
+    .aboutUsSection h1{
+        font-size: calc( 24 * var(--proportionM));
+        text-align: center;
+        margin-bottom: calc( 16.5 * var(--proportionM));
+        margin-right: 0;
+        width: calc( 104 * var(--proportionM));
+    }
+    .aboutUsSection p{
+        font-size: calc( 14 * var(--proportionM));
+        text-align: left;
+        width: calc( 343 * var(--proportionM));
+        padding: 0 calc( 36 * var(--proportionM)) 0 calc( 35 * var(--proportionM));
+        margin-top: 0;
+    }
+    
+    .aboutUsSection .values .valuesTitle{
+        width: calc( 200 * var(--proportionM));
+    }
+    
+    .aboutUsSection .values .valuesTitle h2{
+        font-size: calc( 20 * var(--proportionM));
+        text-align: left;
+        margin-top: 0;
+        padding-left: calc( 35 * var(--proportionM));
+        background-size: 80%;
+        width: calc( 130 * var(--proportionM));
+    }
+
+    .aboutUsSection .values .valuesInfoBlock{
+        width: calc( 336 * var(--proportionM));
+        height: calc( 209.34 * var(--proportionM));
+        padding-left: calc( 42 * var(--proportionM));
+        padding-right: calc( 36 * var(--proportionM));
+        display:flex;
+    }
+
+    .aboutUsSection .values .valuesInfo h3{
+        font-size: calc( 14 * var(--proportionM));
+        width: calc( 112 * var(--proportionM));
+    }
+
+    .aboutUsSection .values .valuesInfo img{
+        height: calc( 50 * var(--proportionM));
+        margin-left:calc( 20 * var(--proportionM));
+    }
+
+
+}*/
+
+@media screen and (max-width: 1024px){
+    .aboutUsSection{
+        height: calc(714 * var(--proportionM));
+    }
+    
+    .aboutUsSection .aboutUsImages{
+        display: none;
+    }
+
+    .aboutUsSection .aboutUsRight h1{
+        font-size: calc(24 * var(--proportionM));
+        text-align: center;
+    }
+
+    .aboutUsSection .aboutUsRight p{
+        width: calc(343 * var(--proportionM));
+        font-size: calc(14 * var(--proportionM));
+        margin-left: calc(37 * var(--proportionM));
+        margin-right: calc(35 * var(--proportionM));
+    }
+
+    .aboutUsSection .aboutUsRight .values{
+        position: relative;
+        right:calc(30 * var(--proportionM)) ;
+    }
+    
+    .aboutUsSection .values .valuesTitle h2{
+        font-size: calc(20 * var(--proportionM));
+        width: calc(150 * var(--proportionM));
+        height: calc(35 * var(--proportionM));
+    }
+
+    .aboutUsSection .values .valuesInfoBlock{
+        width: calc(336 * var(--proportionM));
+        height: calc(209 * var(--proportionM));
+        margin-top: calc(20 * var(--proportionM));
+        row-gap: calc(10 * var(--proportionM));    
+    }
+
+    .aboutUsSection .values .valuesInfo{
+        width: calc(104 * var(--proportionM));
+        height: calc(73.38 * var(--proportionM));
+    }
+
+    .aboutUsSection .values .valuesInfo img{
+        height: calc(50 * var(--proportionM));
+        margin-left: calc( 25 * var(--proportionM));
+    }
+
+    .aboutUsSection .values .valuesInfo h3{
+        font-size: calc(14 * var(--proportionM));
+        text-align: center;
+        width: calc(100 * var(--proportionM));
+    }
+}

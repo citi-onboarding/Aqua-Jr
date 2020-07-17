@@ -5,6 +5,7 @@ import Footer from './Footer';
 import PostToBlog from './PostToBlog';
 import Newsletter from './Newsletter';
 import Testimony from './Testimony';
+import AboutUs from './AboutUs';
 import Navbar from "./Navbar";
 
 export {
@@ -16,4 +17,5 @@ export {
   PostToBlog,
   Newsletter,
   Testimony,
+  AboutUs,
 };
