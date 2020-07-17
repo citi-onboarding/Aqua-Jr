@@ -10,6 +10,7 @@ const Testimony = keystone.list("Testimonies");
 const Value = keystone.list("Values");
 const request = require("request");
 
+require('dotenv').config();
 
 
 module.exports = (app) => {
@@ -79,8 +80,9 @@ module.exports = (app) => {
     });
   });
 
-  app.post("/Newsletter", (req,res)=>{
-    const email = req.body.Email;
+  app.post("/api/newsletter", (req,res)=>{
+    const email = req.body.email;
+
     console.log(email);
 
     const mcData ={
@@ -98,13 +100,17 @@ module.exports = (app) => {
       url: "https://us10.api.mailchimp.com/3.0/lists/ee6a0df7de",
       method: "POST",
       headers:{
-        Authorization: "auth 6ed6941adfd20880588528df7ae7864b-us10"
+        Authorization: process.env.AUTHORIZATION
       },
       body: mcDataPost
     }
 
     request(options, (err, response, body)=>{
-      console.log("entrou");
+      if(!err){
+        res.sendStatus(200);
+      }else{
+        res.sendStatus(500);
+      }
     });
 
   })
