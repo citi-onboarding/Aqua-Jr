@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant&family=Catamaran:wght@700&display=swap');
+
+:root{
+    --proportion: calc( 100vw / 1920);
+    --proportion-mobile: calc( 100vw / 414);
+}
+
+.Body-contact {
+    height: calc(1012 * var(--proportion));
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #F8F8F8;
+}
+
+.Body-contact .forms-text {
+    width: calc(812 * var(--proportion));
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.Body-contact .forms-text>*{
+    margin: 0;
+}
+
+.Body-contact .forms-text .form-contact{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    margin-top: calc(44 * var(--proportion));
+}
+
+.Body-contact .forms-text .form-contact *{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-size: calc(22 * var(--proportion));
+    margin-bottom: calc(10 * var(--proportion));
+    color: #00222D;
+    font-family: 'Assistant', sans-serif;
+    border: none;
+}
+
+.Body-contact .forms-text .form-contact input {
+    background-color: #DEDEDE;   
+    opacity: 50%;
+    border-color: #CCCCCC;
+    border-radius: 12px;
+    width: 90%;
+    text-align: left;
+    height: calc(50 * var(--proportion));
+    padding: 0 5%;
+}
+
+.Body-contact .forms-text .form-contact textarea {
+    background-color: #DEDEDE;   
+    opacity: 50%;
+    border-color: #CCCCCC;
+    border-radius: 12px;
+    padding: 5%;
+    width: 90%;
+}
+
+.Body-contact .forms-text h2 {
+    font-family: 'Catamaran', sans-serif;
+    font-weight: bold;
+    font-size: calc(44 * var(--proportion));
+}
+.Body-contact .forms-text p {
+    font-family: 'Assistant', sans-serif;
+    font-weight: 400;
+    font-size: calc(22 * var(--proportion));
+
+}
+
+.Body-contact .Contact-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Body-contact .Contact-image img{
+    width: calc(690 * var(--proportion));
+    height: auto;
+}
+
+.Body-contact .forms-text .form-contact button{
+    background-color: #00506E;
+    outline: none;
+    height: calc(63 * var(--proportion));
+    width: calc(398 * var(--proportion));
+    border-radius: calc(12 * var(--proportion));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: calc(28 * var(--proportion));
+    align-self: center;
+    margin-top: calc(41 * var(--proportion));
+    border: none;
+}
+
+@media only screen and (max-width: 1024px) {
+    .Body-contact {
+        height: calc(597 * var(--proportion-mobile));
+    }
+
+    .Body-contact .forms-text {
+        width: calc(342 * var(--proportion-mobile));
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+    }
+   
+    .Body-contact .forms-text .form-contact{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-around;
+        width: calc(342 * var(--proportion-mobile));
+        height: 100%;
+    }
+
+    .Body-contact .forms-text .form-contact button{
+        height: calc(45 * var(--proportion-mobile));
+        width: calc(260 * var(--proportion-mobile));
+        border-radius: calc(12 * var(--proportion-mobile));
+        font-size: calc(18 * var(--proportion-mobile));
+    }
+    
+    .Body-contact .Contact-image{
+        display: none;
+    }
+
+    .Body-contact .forms-text .form-contact input {
+        background-color: #DEDEDE;   
+        opacity: 50%;
+        border-color: #CCCCCC;
+        border-radius: 12px;
+        text-align: left;
+        height: calc(39 * var(--proportion-mobile));
+    }
+
+    .Body-contact .forms-text .form-contact *{
+        font-size: calc(16 * var(--proportion-mobile));
+    }
+
+    .Body-contact .forms-text h2 {
+        font-size: calc(24 * var(--proportion-mobile));
+    }
+    .Body-contact .forms-text p {
+        font-size: calc(14 * var(--proportion-mobile));
+        
+    }
+
+}

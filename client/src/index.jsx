@@ -11,8 +11,15 @@ import {
   PostToBlog,
   Newsletter,
   Testimony,
+<<<<<<< HEAD
   AboutUs,
+<<<<<<< HEAD
   Banner
+=======
+=======
+  Contact,
+>>>>>>> a618f6c... (feature/contact-front): created the base for the issue
+>>>>>>> 83dd641... (rebase/rebase-front): fix the conflits
 } from './components';
 
 function App() {
@@ -37,6 +44,7 @@ function App() {
       <Newsletter />
       <AboutUs />
       <Testimony />
+      <Contact />
       <CallToBlog />
       <div className="FooterComponent">
         { footerInfo.map ((FooterComponent) =>{

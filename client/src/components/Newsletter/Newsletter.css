@@ -78,11 +78,15 @@ body {
 /* responsivity */
 @media only screen and (max-width: 1025px) {
     .Body-Newsletter {
+        background: url('fundo-newsletter.svg');
         flex-direction: column;
         justify-content: start;
+<<<<<<< HEAD
         height: calc(100* var(--proportion-mobile));
+=======
+>>>>>>> d5411a6... (hotfix/Newsletter-front): fix the height of the newsletter
         width: calc(414 * var(--proportion-mobile));
-        background-size: contain;
+        background-size: cover, contain;
         background-repeat: no-repeat;
 
     }

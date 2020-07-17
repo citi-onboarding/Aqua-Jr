@@ -1,39 +1,13 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 import './Newsletter.css';
 let value = ''
 function Newsletter() {
-
-    const handleChange = (e) => {
-      
-        // verify the code of the key
-      var key = e.keyCode || e.charCode;
-
-      console.log(key)
-      // verifing if the key is a backspace
-      const backspace = (e) => {
-        if  (key === 8 || key === 46 ){
-        return false;
-        }
-      }
-      // if is, i will delete the last char of the string inputed.
-      if( backspace){
-        value = value.substr(0,( value.length -1));
-      }
-      
-      value = e.target.value;
-      console.log(value)
-    }
-
+    const [newsletterEmail, setnewsletterEmail] = useState({
+        email: '',
+    })
     const Submit = (e) => {
-        if(value === ''){
-            alert('Por favor, insira um email válido!')
-        }
-        else{
-            alert(value)
-            alert('E-mail cadastrado! Obrigado.')
-        }
-
+        alert(newsletterEmail.email)
     }
     return (
     <div className="gradient">
@@ -50,7 +24,7 @@ function Newsletter() {
         </div>
         <form className= "Form-Newsletter" onSubmit= {Submit} >
 
-            <input name="Email" type= 'email' onChange= {handleChange} placeholder = "E-mail"/>
+            <input name="Email" type= 'email' onChange={(e) => setnewsletterEmail({...newsletterEmail, email: e.target.value})}  placeholder = "E-mail"/>
 
             <button type= "submit"> <p>Inscrever-se</p></button>
         </form>
