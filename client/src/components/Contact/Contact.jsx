@@ -21,7 +21,7 @@ function Contact() {
     }
 
     return (
-        <div className= "Body-contact">
+        <div className= "Body-contact" id="contact">
             <div className="forms-text">
 
                 <h2>
