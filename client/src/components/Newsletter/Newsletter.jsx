@@ -36,6 +36,8 @@ function Newsletter() {
 
     }
     return (
+    <div className="gradient">
+           
     <div className= "Body-Newsletter">
 
         <div className= "Text-Newsletter">
@@ -52,6 +54,7 @@ function Newsletter() {
 
             <button type= "submit"> <p>Inscrever-se</p></button>
         </form>
+    </div>
     </div>
     )
 }

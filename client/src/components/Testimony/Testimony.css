@@ -254,7 +254,7 @@ body {
     }
     .Slide-Testimony .slick-dots ul {
         width: calc(100 * var(--proportion-mobile));
-        height: calc(20 * var(--proportion-mobile));
+        height: calc(24 * var(--proportion-mobile));
     }
 
     .Body-Testimony .slick-dots ul li.slick-active {
