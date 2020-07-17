@@ -6,11 +6,8 @@ import PostToBlog from './PostToBlog';
 import Newsletter from './Newsletter';
 import Testimony from './Testimony';
 import AboutUs from './AboutUs';
-
 import Navbar from "./Navbar";
 import Banner from './Banner'
-
-
 import Contact from './Contact';
 
 export {
@@ -23,4 +20,6 @@ export {
   Newsletter,
   Testimony,
   Contact,
+  AboutUs,
+  Banner,
 };
