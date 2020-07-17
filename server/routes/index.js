@@ -8,6 +8,7 @@ const Footer = keystone.list('Footers');
 const About = keystone.list("AboutUs");
 const Testimony = keystone.list("Testimonies");
 const Value = keystone.list("Values");
+const nodemailer = require('nodemailer');
 
 
 
@@ -78,5 +79,39 @@ module.exports = (app) => {
     });
   });
 
+  app.post('/api/sendmail', (req, res) => {
+    const{
+      name,
+      email,
+      about,
+      menssage,
+    } = req.body;
+
+    const transporter = nodemailer.createTransport({
+      service: 'gmail',
+      port: 587,
+      secure: false,
+      auth: {
+        user: process.env.TRANSPORTER_EMAIL,
+        pass: process.env.TRANSPORTER_PASSWORD,
+      },
+      tls: { rejectUnauthorized: false},
+    });
+    
+    const mailOptions = {
+      from: `"${name}" <${email}>`,
+      to: 'aquajr.onepage@gmail.com',
+      about,
+      text: `${name} <${email}> \n\n${menssage}`,
+    };
+    
+    transporter.sendMail(mailOptions, (error) => {
+      if (error) {
+        res.status(500).send(error);
+      } else {
+        res.status(200).send('Email enviado :)');
+      }
+    });
+  });
 };
 
