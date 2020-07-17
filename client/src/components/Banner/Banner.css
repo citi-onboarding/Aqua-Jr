@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@400;700&family=Catamaran:wght@700&display=swap');
+:root{
+    --proportion: calc( 100vw / 1920);
+    --proportion-mobile: calc(100vw / 414);
+}
+.Body-Banner {
+    height: calc(1218 * var(--proportion));
+    display: flex;
+    background-color: chartreuse;
+    justify-content: center;
+    align-items: center;
+}
+.Body-Banner .Banner-content {
+    display: flex;
+}
+.Body-Banner .Banner-content .Banner-texts-button {
+    justify-self: center;
+    width: calc(689 * var(--proportion));
+}
+.Body-Banner .Banner-content .Banner-texts-button h4 {
+    font-size: calc(46 * var(--proportion));
+    font-weight: bold;
+    font-family: 'Catamaran', sans-serif;
+    color: #00222D;
+    height: calc(114 * var(--proportion));
+}
+.Body-Banner .Banner-content .Banner-texts-button p {
+    height: calc(140 * var(--proportion));
+    font-size: calc(28 * var(--proportion));
+    color: #00222D;
+    font-weight: 400;
+    font-family: 'Assistant', sans-serif;
+}
+.Body-Banner .Banner-content .Banner-image {
+    width: 20%;
+    height: 50%;
+}

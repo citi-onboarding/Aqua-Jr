@@ -15,7 +15,22 @@ function Banner() {
     }, []);
 
     return (
-        <div>Test</div>
+        <div className= "Body-Banner">
+            {Banner?.map(({ title, text, image}) => (
+                <div className="Banner-content">
+                    <div className= "Banner-texts-button">
+                        <h4>{title}</h4>
+                        <p>{text}</p>
+                        <button>Entre em contato conosco</button>
+                    </div>
+                
+                    <div className= "Banner-image">
+                        <img src={image?.url} alt=""/>
+                    </div>
+
+                </div>
+            ))}
+        </div>
     )
 }
 export default Banner;
