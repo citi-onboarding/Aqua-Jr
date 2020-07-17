@@ -14,7 +14,7 @@
 }
 .Body-Banner .Banner-content .Banner-texts-button {
     justify-self: center;
-    width: calc(689 * var(--proportion));
+    width: calc(610 * var(--proportion));
     align-items: center;
     display: flex;
     align-items: center;
@@ -51,8 +51,8 @@
 
 }
 .Body-Banner .Banner-content .Banner-image {
-    width: 20%;
-    height: 50%;
+    width: calc(812 * var(--proportion));
+    height: calc(777 * var(--proportion));
 }
 
 @media only screen and (max-width: 1024px) {
