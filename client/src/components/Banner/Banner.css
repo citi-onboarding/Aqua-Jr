@@ -4,7 +4,8 @@
     --proportion-mobile: calc(100vw / 414);
 }
 .Body-Banner {
-    height: calc(1218 * var(--proportion));
+    height: calc(800 * var(--proportion));
+    padding-top: calc(150 * var(--proportion));
     display: flex;
     justify-content: center;
     align-items: center;
@@ -14,7 +15,7 @@
 }
 .Body-Banner .Banner-content .Banner-texts-button {
     justify-self: center;
-    width: calc(610 * var(--proportion));
+    width: calc(555 * var(--proportion));
     align-items: center;
     display: flex;
     align-items: center;
