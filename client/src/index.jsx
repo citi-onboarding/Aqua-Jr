@@ -11,15 +11,8 @@ import {
   PostToBlog,
   Newsletter,
   Testimony,
-<<<<<<< HEAD
   AboutUs,
-<<<<<<< HEAD
-  Banner
-=======
-=======
   Contact,
->>>>>>> a618f6c... (feature/contact-front): created the base for the issue
->>>>>>> 83dd641... (rebase/rebase-front): fix the conflits
 } from './components';
 
 function App() {
@@ -36,7 +29,6 @@ function App() {
   return (
     <section className="app">
       <Navbar />
-      <Banner />
       <div className="PostToBlog">
       <PostToBlog />
       </div>
