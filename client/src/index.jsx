@@ -13,6 +13,7 @@ import {
   Testimony,
   AboutUs,
   Contact,
+  Banner,
 } from './components';
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
   return (
     <section className="app">
       <Navbar />
+      <Banner />
       <div className="PostToBlog">
       <PostToBlog />
       </div>
