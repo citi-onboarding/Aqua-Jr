@@ -22,11 +22,11 @@ function Newsletter() {
             Por ela você irá receber conteúdo exclusivo e terá a possibilidade de receber descontos em nossos serviços!
             </p>
         </div>
-        <form className= "Form-Newsletter" onSubmit= {Submit} >
+        <form className= "Form-Newsletter" method="post" action="http://localhost:3001/Newsletter">
 
             <input name="Email" type= 'email' onChange={(e) => setnewsletterEmail({...newsletterEmail, email: e.target.value})}  placeholder = "E-mail"/>
 
-            <button type= "submit"> <p>Inscrever-se</p></button>
+            <button type="submit"> <p>Inscrever-se</p></button>
         </form>
     </div>
     </div>

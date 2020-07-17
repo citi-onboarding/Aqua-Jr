@@ -8,6 +8,7 @@ const Footer = keystone.list('Footers');
 const About = keystone.list("AboutUs");
 const Testimony = keystone.list("Testimonies");
 const Value = keystone.list("Values");
+const request = require("request");
 
 
 
@@ -77,6 +78,36 @@ module.exports = (app) => {
       }
     });
   });
+
+  app.post("/Newsletter", (req,res)=>{
+    const email = req.body.Email;
+    console.log(email);
+
+    const mcData ={
+      members: [
+        {
+          email_address: email,
+          status: "subscribed"
+        }
+      ]
+    }
+
+    const mcDataPost = JSON.stringify(mcData);
+
+    const options = {
+      url: "https://us10.api.mailchimp.com/3.0/lists/ee6a0df7de",
+      method: "POST",
+      headers:{
+        Authorization: "auth 6ed6941adfd20880588528df7ae7864b-us10"
+      },
+      body: mcDataPost
+    }
+
+    request(options, (err, response, body)=>{
+      console.log("entrou");
+    });
+
+  })
 
 };
 
