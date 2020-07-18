@@ -52,9 +52,13 @@
     border: none;
 
 }
-.Body-Banner .Banner-content .Banner-image  img{
-    width: calc(800 * var(--proportion));
-    height: calc(800 * var(--proportion));
+.Body-Banner .Banner-content .Banner-texts-button button a {
+    color: white;
+    text-decoration: none;
+}
+.Body-Banner .Banner-content .Banner-image {
+    width: 20%;
+    height: 50%;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -96,6 +100,9 @@
         color: #00222D;
         font-size: calc(18 * var(--proportion-mobile));
         box-shadow: calc(2 * var(--proportion-mobile)) calc(2 * var(--proportion-mobile)) #F8F8F840;
+    }
+    .Body-Banner .Banner-content .Banner-texts-button button a {
+        color: #00222D;
     }
     .Body-Banner .Banner-content .Banner-image {
         display: none;
