@@ -4,7 +4,8 @@
     --proportion-mobile: calc(100vw / 414);
 }
 .Body-Banner {
-    height: calc(1218 * var(--proportion));
+    height: calc(800 * var(--proportion));
+    padding-top: calc(150 * var(--proportion));
     display: flex;
     justify-content: center;
     align-items: center;
@@ -14,7 +15,7 @@
 }
 .Body-Banner .Banner-content .Banner-texts-button {
     justify-self: center;
-    width: calc(689 * var(--proportion));
+    width: calc(645 * var(--proportion));
     align-items: center;
     display: flex;
     align-items: center;
@@ -42,17 +43,18 @@
     color: #F8F8F8;
     width: calc(426 * var(--proportion));
     height: calc(70 * var(--proportion));
+    margin-top: calc(50 * var(--proportion));
     font-size: calc(28 * var(--proportion));
     font-weight: bold;
     font-family: 'Catamaran', sans-serif;
     border-radius: 12px 12px;
-    box-shadow: calc(2 * var(--proportion)) calc(2 * var(--proportion)) #00AEEC40;
+    box-shadow: calc(200 * var(--proportion)) calc(200 * var(--proportion)) #00AEEC40 10px;
     border: none;
 
 }
-.Body-Banner .Banner-content .Banner-image {
-    width: 20%;
-    height: 50%;
+.Body-Banner .Banner-content .Banner-image  img{
+    width: calc(800 * var(--proportion));
+    height: calc(800 * var(--proportion));
 }
 
 @media only screen and (max-width: 1024px) {
@@ -68,12 +70,11 @@
     }
     .Body-Banner .Banner-content .Banner-texts-button {
         width: calc(342 * var(--proportion-mobile));
-        margin-left: calc(15 * var(--proportion-mobile));
     }
     .Body-Banner .Banner-content .Banner-texts-button h4 {
         color: #F8F8F8;
         text-align: center;
-        margin-left: calc(25 * var(--proportion-mobile));
+        margin-left: calc(1 * var(--proportion-mobile));
         align-self: center;
         font-size: calc(28 * var(--proportion-mobile));
         width: calc(342 * var(--proportion-mobile));
@@ -96,8 +97,7 @@
         font-size: calc(18 * var(--proportion-mobile));
         box-shadow: calc(2 * var(--proportion-mobile)) calc(2 * var(--proportion-mobile)) #F8F8F840;
     }
-    .Body-Banner .Banner-content .Banner-image img{
-        width: 0%;
-        height: 0%;
+    .Body-Banner .Banner-content .Banner-image {
+        display: none;
     }
 }

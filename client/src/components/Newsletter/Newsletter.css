@@ -49,10 +49,12 @@ body {
     border: none;
     padding: calc(25 * var(--proportion));
     width: calc(600 * var(--proportion));
+    font-size: calc(18 * var(--proportion));
 }
 .Form-Newsletter button {
     cursor: pointer;
     margin-left: 4%;
+    font-size: calc(18 * var(--proportion));
     margin-right: 4%;
     width: calc(260 * var(--proportion));
     height: calc(52 * var(--proportion));;
@@ -82,9 +84,13 @@ body {
         flex-direction: column;
         justify-content: start;
         width: calc(414 * var(--proportion-mobile));
+        height: calc(105 * var(--proportion-mobile));
         background-size: cover, contain;
         background-repeat: no-repeat;
 
+    }
+    .Body-Newsletter .Text-Newsletter {
+        margin-top: calc(11 * var(--proportion-mobile));
     }
 
     .Body-Newsletter .Text-Newsletter h3 {
