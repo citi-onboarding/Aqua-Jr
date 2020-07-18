@@ -52,8 +52,8 @@
     border: none;
 
 }
-.Body-Banner .Banner-content .Banner-image {
-    width: calc(900 * var(--proportion));
+.Body-Banner .Banner-content .Banner-image  img{
+    width: calc(800 * var(--proportion));
     height: calc(800 * var(--proportion));
 }
 
