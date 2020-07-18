@@ -22,7 +22,7 @@ function Banner() {
                     <div className= "Banner-texts-button">
                         <h4>{title}</h4>
                         <p>{text}</p>
-                        <button>Entre em contato conosco</button>
+                        <button> <a href="#contact">Entre em contato conosco </a> </button>
                     </div>
                 
                     <div className= "Banner-image">
