@@ -102,11 +102,15 @@
 
 
 
-@media(max-width: 1024px){
+@media screen and (max-width: 1024px){
     .Footer{
         height: calc(203.45 * var(--proportionM));
-        padding-top: calc(15.55 * var(--proportionM));
+        padding-top: 0;
         padding-bottom: calc(20 * var(--proportionM));
+    }
+    
+    .Footer .TopLine{
+        padding-top: 0;
     }
     
     .Footer .TopOne{
@@ -129,6 +133,8 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        position: relative;
+        bottom: calc(30 * var(--proportionM));
     }
 
     .Footer .BottomLine p{
@@ -144,6 +150,7 @@
     .Footer h2{
         font-size: calc(16 * var(--proportionM));
         height: calc(27 * var(--proportionM));
+        margin-bottom: calc(5 * var(--proportionM));
     }
 
     .Footer .SocialMedia img{
@@ -162,11 +169,13 @@
     }
 
     .Footer .E-mail{
-        padding-top: calc(40 * var(--proportionM));
+        padding-top: calc(15 * var(--proportionM));
     }
 
     .Footer .Phone{
-        padding-top: calc(30 * var(--proportionM));
+        padding-top: calc(15 * var(--proportionM));
+        position: relative;
+        bottom: calc(26 * var(--proportionM));
     }
 }
 
