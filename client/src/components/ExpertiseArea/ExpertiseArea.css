@@ -202,6 +202,8 @@
     /* style for the whole component */
     .ExpertiseArea{
         min-height: calc(591 * var(--proportion-mobile));
+        background-color: #EAEAEA;
+        padding-bottom: calc(50 * var(--proportion-mobile));
     }
 
     /* TITLE */

@@ -14,13 +14,14 @@
         width: 100vw;
         height: calc(460 * var(--proportion-mobile));
         background-color: rgb(29, 175, 233);
-        background-image: url("ilustracao.svg");
+        background-image: url("sofia.svg");
         background-repeat: no-repeat;
         background-position-y: bottom;
         background-size: contain;
         color: #F8F8F8;
         align-items: center;
         justify-content: center;
+        margin-bottom: -5px;
     }
 
     .CallToBlog .CallToBlog-container{

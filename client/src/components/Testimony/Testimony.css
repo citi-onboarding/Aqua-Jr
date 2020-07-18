@@ -237,7 +237,7 @@ body {
         font-size: calc(14 * var(--proportion-mobile));
     }
     .Head-Testimony h2 { 
-        margin-bottom: calc(28 * var(--proportion-mobile));
+        margin-top: calc(50 * var(--proportion-mobile));
     }
     .Slide-Testimony .slick-active>div {
         width: calc(342 * var(--proportion-mobile));
@@ -319,6 +319,7 @@ body {
         background-image: url("fundo-mobile.svg");
         background-repeat: no-repeat;
         background-size: cover, cover;
+        background-position-y:calc(40 * var(--proportion-mobile));
         }
         .Body-Testimony .Head-Testimony {
             margin-top: 10%;
