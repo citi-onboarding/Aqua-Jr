@@ -112,69 +112,6 @@
 
 }
 
-
-
-
-
-
-
-/*@media screen and (max-width: 1024px){
-    .aboutUsSection{
-        padding-top: calc( 16.5 * var(--proportionM));
-    }
-    
-    .aboutUsSection .aboutUsImages{
-        display: none;
-    }
-    .aboutUsSection h1{
-        font-size: calc( 24 * var(--proportionM));
-        text-align: center;
-        margin-bottom: calc( 16.5 * var(--proportionM));
-        margin-right: 0;
-        width: calc( 104 * var(--proportionM));
-    }
-    .aboutUsSection p{
-        font-size: calc( 14 * var(--proportionM));
-        text-align: left;
-        width: calc( 343 * var(--proportionM));
-        padding: 0 calc( 36 * var(--proportionM)) 0 calc( 35 * var(--proportionM));
-        margin-top: 0;
-    }
-    
-    .aboutUsSection .values .valuesTitle{
-        width: calc( 200 * var(--proportionM));
-    }
-    
-    .aboutUsSection .values .valuesTitle h2{
-        font-size: calc( 20 * var(--proportionM));
-        text-align: left;
-        margin-top: 0;
-        padding-left: calc( 35 * var(--proportionM));
-        background-size: 80%;
-        width: calc( 130 * var(--proportionM));
-    }
-
-    .aboutUsSection .values .valuesInfoBlock{
-        width: calc( 336 * var(--proportionM));
-        height: calc( 209.34 * var(--proportionM));
-        padding-left: calc( 42 * var(--proportionM));
-        padding-right: calc( 36 * var(--proportionM));
-        display:flex;
-    }
-
-    .aboutUsSection .values .valuesInfo h3{
-        font-size: calc( 14 * var(--proportionM));
-        width: calc( 112 * var(--proportionM));
-    }
-
-    .aboutUsSection .values .valuesInfo img{
-        height: calc( 50 * var(--proportionM));
-        margin-left:calc( 20 * var(--proportionM));
-    }
-
-
-}*/
-
 @media screen and (max-width: 1024px){
     .aboutUsSection{
         height: calc(714 * var(--proportionM));

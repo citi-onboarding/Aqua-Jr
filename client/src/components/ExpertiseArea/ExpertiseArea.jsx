@@ -112,7 +112,7 @@ function ExpertiseArea() {
   }, [selected]);
 
   return (
-    <section className="ExpertiseArea">
+    <section className="ExpertiseArea" id="ExpertiseArea">
       <h2>Áreas de atuação</h2>
       <div className="categories">
         {categories.map((item, index) => {
