@@ -5,6 +5,11 @@
     --proportion-mobile: calc( 100vw / 414);
 }
 
+.nav-placeholder{
+    height: calc(122 * var(--proportion));
+    width: 100%;
+}
+
 /* NAVBAR */
 /* Style for everything that is inside the nav */
 .Navbar *{
@@ -14,7 +19,7 @@
 /* style for the whole navbar */
 .Navbar{
     position: fixed;
-    z-index: 1;
+    z-index: 10;
     background-color: #F8F8F8CB;
     height: calc(122 * var(--proportion));
     width: 100%;
@@ -87,6 +92,9 @@
 }
 
 @media only screen and (max-width: 1024px) {
+    .nav-placeholder{
+        height: calc(75 * var(--proportion-mobile));
+    }
     /* style for the whole navbar */
     .Navbar{
         width: calc(342 * var(--proportion-mobile));
@@ -111,11 +119,13 @@
     .Navbar .sandwich{
         height: calc(23.5 * var(--proportion-mobile));
         width: calc(35.27 * var(--proportion-mobile));
+        padding: 0;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
-        z-index: 2;
+        z-index: 11;
+        background-color: rgba(0, 0, 0, 0);
     }
 
     /* Style for the lines inside the sandwich button */
@@ -135,7 +145,7 @@
     /* style for line 1 when activated */
     .Navbar .sandwich.active div:nth-child(1){
         transform: rotate(45deg);
-        top: 42%;
+        top: calc(10 * var(--proportion-mobile));
     }
 
     /* style for line 2 when activated */
@@ -151,7 +161,7 @@
     /* style for line 3 when activated */
     .Navbar .sandwich.active div:nth-child(3){
         transform: rotate(-45deg);
-        bottom: 42%;
+        bottom: calc(10 * var(--proportion-mobile));
     }
 
     /* SIDE MENU */

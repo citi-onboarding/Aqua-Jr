@@ -41,7 +41,7 @@ function AboutUs(){
     }, []);
 console.log(AboutUsElements);
     return(
-        <div className="aboutUsSection">
+        <div className="aboutUsSection" id="about-us">
                 <div className="aboutUsImages">
                     <img className="image2" src={AboutUsElements[0]?.image2.url} alt="Ilustação Sobre Nós" />
                     <img className="image1" src={AboutUsElements[0]?.image1.url} alt="Ilustação Sobre Nós" />
