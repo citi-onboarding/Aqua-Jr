@@ -70,12 +70,11 @@
     }
     .Body-Banner .Banner-content .Banner-texts-button {
         width: calc(342 * var(--proportion-mobile));
-        margin-left: calc(180 * var(--proportion-mobile));
     }
     .Body-Banner .Banner-content .Banner-texts-button h4 {
         color: #F8F8F8;
         text-align: center;
-        margin-left: calc(25 * var(--proportion-mobile));
+        margin-left: calc(1 * var(--proportion-mobile));
         align-self: center;
         font-size: calc(28 * var(--proportion-mobile));
         width: calc(342 * var(--proportion-mobile));
