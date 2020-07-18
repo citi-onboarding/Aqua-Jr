@@ -8,8 +8,10 @@ const Footer = keystone.list('Footers');
 const About = keystone.list("AboutUs");
 const Testimony = keystone.list("Testimonies");
 const Value = keystone.list("Values");
+const request = require("request");
 const nodemailer = require('nodemailer');
 
+require('dotenv').config();
 
 
 module.exports = (app) => {
@@ -79,6 +81,41 @@ module.exports = (app) => {
     });
   });
 
+  app.post("/api/newsletter", (req,res)=>{
+    const email = req.body.email;
+
+    console.log(email);
+
+    const mcData ={
+      members: [
+        {
+          email_address: email,
+          status: "subscribed"
+        }
+      ]
+    }
+
+    const mcDataPost = JSON.stringify(mcData);
+
+    const options = {
+      url: "https://us10.api.mailchimp.com/3.0/lists/ee6a0df7de",
+      method: "POST",
+      headers:{
+        Authorization: process.env.AUTHORIZATION
+      },
+      body: mcDataPost
+    }
+
+    request(options, (err, response, body)=>{
+      if(!err){
+        res.sendStatus(200);
+      }else{
+        res.sendStatus(500);
+      }
+    });
+
+  });
+
   app.post('/api/sendmail', (req, res) => {
     const{
       name,
@@ -113,5 +150,6 @@ module.exports = (app) => {
       }
     });
   });
+
 };
 
