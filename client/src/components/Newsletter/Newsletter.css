@@ -80,12 +80,13 @@ body {
 /* responsivity */
 @media only screen and (max-width: 1025px) {
     .Body-Newsletter {
-        background: url('fundo-newsletter.svg');
+        background: url('background-newsletter.svg');
+        display: flex;
+        justify-content: center;
         flex-direction: column;
-        justify-content: start;
         width: calc(414 * var(--proportion-mobile));
-        height: calc(105 * var(--proportion-mobile));
-        background-size: cover, contain;
+        height: calc(237.33 * var(--proportion-mobile));
+        background-size: contain;
         background-repeat: no-repeat;
 
     }
@@ -95,34 +96,45 @@ body {
 
     .Body-Newsletter .Text-Newsletter h3 {
         margin: 0;
-        margin-top: calc(12 * (var(--proportion-mobile)));
         font-family: 'Catamaran', sans-serif;
-        font-size: calc(8 * var(--proportion-mobile));
-        width: calc(299 * var(--proportion-mobile));
-        height: calc(16 * var(--proportion-mobile));
-        text-align: center;
+        font-size: calc(20 * var(--proportion-mobile));
+        width: calc(340 * var(--proportion-mobile));
+        height: calc(40 * var(--proportion-mobile));
+        text-align: left;
+        position: relative;
+        bottom: calc(30 * var(--proportion-mobile));
     }
     .Body-Newsletter .Text-Newsletter p {
         font-family: 'Assistant', sans-serif;
-        font-size: calc( 7 * var(--proportion-mobile));
-        width: calc(296 * var(--proportion-mobile));
-        height: calc(18 * var(--proportion-mobile));
+        font-size: calc( 14 * var(--proportion-mobile));
+        width: calc(340 * var(--proportion-mobile));
+        height: calc(40 * var(--proportion-mobile));
         margin: 0;
-        text-align: center;
+        text-align: left;
         margin-bottom: calc(5 * var(--proportion-mobile));
+        position: relative;
+        bottom: calc(25 * var(--proportion-mobile));
     }
     .Form-Newsletter input {
-        padding: calc(1 * var(--proportion-mobile));
-        width: calc(100 * var(--proportion-mobile));
-        height: calc(12 * var(--proportion-mobile));
-        font-size: calc(6 * var(--proportion-mobile));
+        width: calc(230 * var(--proportion-mobile));
+        height: calc(25 * var(--proportion-mobile));
+        font-size: calc(12 * var(--proportion-mobile));
+        border-radius: calc(12 * var(--proportion-mobile));
+        position: relative;
+        bottom: calc(15 * var(--proportion-mobile));
+        left: calc(15 * var(--proportion-mobile));
     }
     .Form-Newsletter button {
-        width: calc(50 * var(--proportion-mobile));
-        height: calc(14 * var(--proportion-mobile));
+        width: calc(98 * var(--proportion-mobile));
+        height: calc(33 * var(--proportion-mobile));
         box-shadow: calc(2 * var(--proportion-mobile)) calc(2 * var(--proportion-mobile)) #00222D40;
+        border-radius: calc(12 * var(--proportion-mobile));
+        position: relative;
+        bottom: calc(15 * var(--proportion-mobile));
+        left: calc(15 * var(--proportion-mobile));
+
     }
     .Form-Newsletter button p {
-        font-size: calc(4 * var(--proportion-mobile));
+        font-size: calc(12 * var(--proportion-mobile));
     }
 }

@@ -39,8 +39,8 @@ function App() {
       <Newsletter />
       <AboutUs />
       <Testimony />
-      <Contact />
       <CallToBlog />
+      <Contact />
       <div className="FooterComponent">
         { footerInfo.map ((FooterComponent) =>{
           return(

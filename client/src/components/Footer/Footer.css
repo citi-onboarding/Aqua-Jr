@@ -80,6 +80,7 @@
 .Footer .SocialMedia img{
     height: calc(37 * var(--proportion));
     width: calc(37 * var(--proportion));
+    margin-left: calc(20 * var(--proportion));
 }
 
 .Footer .SocialMedia{

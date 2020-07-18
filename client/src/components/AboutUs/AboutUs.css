@@ -115,6 +115,7 @@
 @media screen and (max-width: 1024px){
     .aboutUsSection{
         height: calc(714 * var(--proportionM));
+        margin-bottom: calc(-60 * var(--proportionM));
     }
     
     .aboutUsSection .aboutUsImages{
