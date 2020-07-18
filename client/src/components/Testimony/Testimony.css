@@ -14,6 +14,9 @@ body {
 .Slide-Testimony .slick-slide.slick-active {
     margin-top: 0%;
 }
+.color {
+    background: #F8F8F8;
+}
 :root{
     --proportion: calc( 100vw / 1920);
     --proportion-mobile: calc(100vw / 414);

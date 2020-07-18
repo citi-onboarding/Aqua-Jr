@@ -79,7 +79,10 @@ function Testimony() {
   }
   
   return (
-        <div className="background-Testimony" id="testimony">  
+      <div className="color">
+
+      
+        <div className="background-Testimony">  
             <div className="Body-Testimony">
                 <div className="Head-Testimony">
                     <h2>Depoimentos</h2>
@@ -110,7 +113,8 @@ function Testimony() {
                 ))}
                 </Slider>
                 </div>
-        </div>  
+        </div> 
+        </div> 
   );
 }
 
