@@ -20,7 +20,6 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    opacity: 50%;
     transition: 1s;
     margin-left: 8vw;
 }
@@ -65,7 +64,6 @@
         height: calc(364 * var(--proportion-mobile));
         width: calc(342 * var(--proportion-mobile));
         border-radius: calc(60 * var(--proportion-mobile));
-        opacity: 100%;
     }
 
     .Service h3{

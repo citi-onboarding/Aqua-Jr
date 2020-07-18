@@ -7,7 +7,7 @@ function Banner() {
     const [Banner, setBanner] = useState([]);
   
     const loadBanner = async () => {
-      const res = await axios.get('http://localhost:3001/api/banners');
+      const res = await axios.get('https://aqua-jr.herokuapp.com/api/banners');
       setBanner(res.data);
     };
   
@@ -22,7 +22,7 @@ function Banner() {
                     <div className= "Banner-texts-button">
                         <h4>{title}</h4>
                         <p>{text}</p>
-                        <button> <a href="#contact">Entre em contato conosco </a> </button>
+                        <button name= "Entre em contato"> <a href="#contact">Entre em contato conosco </a> </button>
                     </div>
                 
                     <div className= "Banner-image">

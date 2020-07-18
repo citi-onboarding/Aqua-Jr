@@ -10,7 +10,7 @@ function CallToBlog() {
         <p>
           Aprenda mais sobre lorem ipsum dolor sit amet, consectetur adipiscing
         </p>
-        <button>Visitar blog</button>
+        <button name= "Visitar o blog">Visitar blog</button>
       </div>
     </section>
   );

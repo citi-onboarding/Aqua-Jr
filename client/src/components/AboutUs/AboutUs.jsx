@@ -8,7 +8,7 @@ import './linha.svg';
     const [AboutUsElements, setAboutUsElements] = useState([]);
   
     const loadAboutUsElements = async () => {
-      const res = await axios.get('http://localhost:3001/api/aboutus');
+      const res = await axios.get('https://aqua-jr.herokuapp.com/api/aboutus');
       setAboutUsElements(res.data);
     };
   
@@ -22,7 +22,7 @@ import './linha.svg';
 function AboutUs(){
     const [AboutUsElements, setAboutUsElements] = useState([]);
     const loadAboutUsElements = async () => {
-        const res = await axios.get('http://localhost:3001/api/aboutus');
+        const res = await axios.get('https://aqua-jr.herokuapp.com/api/aboutus');
         setAboutUsElements(res.data);
     };
 
@@ -32,7 +32,7 @@ function AboutUs(){
 
     const [ValuesElements, setValuesElements] = useState([]);
     const loadValuesElements = async () => {
-        const res = await axios.get('http://localhost:3001/api/values');
+        const res = await axios.get('https://aqua-jr.herokuapp.com/api/values');
         setValuesElements(res.data);
     };
 

@@ -9,7 +9,7 @@ function Testimony() {
   const [Testimonys, setTestimonys] = useState([]);
 
   const loadTestimonys = async () => {
-    const res = await axios.get('http://localhost:3001/api/testimony');
+    const res = await axios.get('https://aqua-jr.herokuapp.com/api/testimony');
     setTestimonys(res.data);
   };
 
@@ -82,7 +82,7 @@ function Testimony() {
       <div className="color">
 
       
-        <div className="background-Testimony">  
+        <div className="background-Testimony" id = "testimony">  
             <div className="Body-Testimony">
                 <div className="Head-Testimony">
                     <h2>Depoimentos</h2>
@@ -98,7 +98,7 @@ function Testimony() {
                     <img src={image?.url} alt="Imagem de Exemplo"/>
 
 
-                      <div className="Testimony" id = "testimony">
+                      <div className="Testimony">
                           <p>{text}</p>
                       </div>
 

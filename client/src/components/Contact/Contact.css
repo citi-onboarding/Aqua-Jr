@@ -46,7 +46,7 @@
 
 .Body-contact .forms-text .form-contact input {
     background-color: #DEDEDE;   
-    opacity: 50%;
+
     border-color: #CCCCCC;
     border-radius: 12px;
     width: 90%;
@@ -57,7 +57,7 @@
 
 .Body-contact .forms-text .form-contact textarea {
     background-color: #DEDEDE;   
-    opacity: 50%;
+
     border-color: #CCCCCC;
     border-radius: 12px;
     padding: 5%;
@@ -139,7 +139,6 @@
 
     .Body-contact .forms-text .form-contact input {
         background-color: #DEDEDE;   
-        opacity: 50%;
         border-color: #CCCCCC;
         border-radius: 12px;
         text-align: left;
