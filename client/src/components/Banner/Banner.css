@@ -98,8 +98,7 @@
         font-size: calc(18 * var(--proportion-mobile));
         box-shadow: calc(2 * var(--proportion-mobile)) calc(2 * var(--proportion-mobile)) #F8F8F840;
     }
-    .Body-Banner .Banner-content .Banner-image img{
-        width: 0%;
-        height: 0%;
+    .Body-Banner .Banner-content .Banner-image {
+        display: none;
     }
 }
