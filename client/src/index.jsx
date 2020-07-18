@@ -29,6 +29,7 @@ function App() {
   
   return (
     <section className="app">
+      <meta name="Description" content="One page Aqua Jr."/>
       <Navbar />
       <Banner />
       <div className="PostToBlog">

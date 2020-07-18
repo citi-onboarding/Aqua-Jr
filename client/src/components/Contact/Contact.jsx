@@ -44,21 +44,21 @@ function Contact() {
 
                     <div className= "name">
                         <label htmlFor="">Nome</label>
-                        <input type="text" name="" id="" onChange={(e) => setForm({...form, name: e.target.value})} />
+                        <input type="text" name="name" id="" onChange={(e) => setForm({...form, name: e.target.value})} />
                     </div>
                     <div className= "email">
                         <label htmlFor="">Email</label>
-                        <input type="email" name="" id="" onChange={(e) => setForm({...form, email: e.target.value})} />
+                        <input type="email" name="email" id="" onChange={(e) => setForm({...form, email: e.target.value})} />
                     </div>
 
                     <div className= "assunto">
                         <label htmlFor="">Assunto</label>
-                        <input type="text" name="" id="" onChange={(e) => setForm({...form, about: e.target.value})} />
+                        <input type="text" name="assunto" id="" onChange={(e) => setForm({...form, about: e.target.value})} />
                     </div>
 
                     <div className= "mensagem">
                         <label htmlFor="">Mensagem</label>
-                        <textarea name="mensagem" id="mensagem" cols="30" rows="5" onChange={(e) => setForm({...form, menssage: e.target.value})} />
+                        <textarea name="mensagem" name="mensagem" id="mensagem" cols="30" rows="5" onChange={(e) => setForm({...form, menssage: e.target.value})} />
                     </div>
 
                     <button type= "submit"> 
