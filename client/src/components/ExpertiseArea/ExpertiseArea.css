@@ -16,7 +16,8 @@
     align-items: center;
     justify-content: space-between;
     width: 100vw;
-    height: calc(810 * var(--proportion));
+    height: calc(850 * var(--proportion));
+    padding-top: calc(150 * var(--proportion));
     overflow: hidden;
 }
 

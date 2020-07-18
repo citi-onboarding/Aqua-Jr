@@ -34,7 +34,7 @@ function PostToBlog(){
     let settings = {
         arrows: true,
         dots: true,
-        infinite: true,
+        infinite: false,
         speed: 500,
         arrow: true,
         slidesToShow: 3,

@@ -101,6 +101,7 @@
     align-self: center;
     margin-top: calc(41 * var(--proportion));
     border: none;
+    cursor: pointer;
 }
 
 @media only screen and (max-width: 1024px) {

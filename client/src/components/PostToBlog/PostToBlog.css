@@ -5,10 +5,11 @@
 
 .PostToBlog{
     background-image: url('./onda1 (1).svg');
-    height: calc( 800 * var(--proportion));
-    width: calc( 1920* var(--proportion));
+    height: calc( 430 * var(--proportion));
+    width: 100vw;
     background-repeat: no-repeat;
-    background-position-y: calc( 280 * var(--proportion));
+    background-position-y: calc( 150 * var(--proportion));
+    background-size: cover;
 }
 
 .PostToBlogSlick{

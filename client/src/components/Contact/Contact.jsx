@@ -1,6 +1,7 @@
 import React, { useState, useEffect }  from 'react';
-import './Contact.css'
-import img from "./contact-img.png"
+import './Contact.css';
+import img from "./contact-img.png";
+import axios from 'axios';
 
 
 
@@ -12,12 +13,19 @@ function Contact() {
         menssage: '',
     })
     
-    const Submit = (e) => {
-
-        alert(form.name)
-        alert(form.email)
-        alert(form.about)
-        alert(form.menssage)
+    const Submit = async(e) => {
+       try {
+        e.preventDefault();
+        await axios.post('http://localhost:3001/api/sendmail', form)
+        setForm({
+            name: '',
+            email: '',
+            about: '',
+            menssage: '',
+        })
+       } catch (error) {
+           console.log(error)
+       }
     }
 
     return (
