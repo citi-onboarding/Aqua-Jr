@@ -31,7 +31,7 @@ function Navbar() {
           </a>
         </div>
 
-        <button className="sandwich" onClick={handleClick}>
+        <button className="sandwich" name="navbar-menu" onClick={handleClick}>
           <div></div>
           <div></div>
           <div></div>

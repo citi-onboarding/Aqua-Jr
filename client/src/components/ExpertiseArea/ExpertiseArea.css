@@ -144,9 +144,7 @@
 }
 
 /* style for the service card that is in the middle */
-.ExpertiseArea .services .Slider .slick-list .slick-current .Service{
-    opacity: 100%;
-}
+
 
 /* DOTS */
 /* style for the div that contains both the dots and the dot container */

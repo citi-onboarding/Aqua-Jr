@@ -16,7 +16,7 @@ function Contact() {
     const Submit = async(e) => {
        try {
         e.preventDefault();
-        await axios.post('http://localhost:3001/api/sendmail', form)
+        await axios.post('https://aqua-jr.herokuapp.com/api/sendmail', form)
         setForm({
             name: '',
             email: '',
