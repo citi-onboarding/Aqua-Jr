@@ -9,7 +9,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: calc(100* var(--proportion));
+    margin-bottom: calc(5* var(--proportion));
 }
 .Body-Banner .Banner-content {
     display: flex;
