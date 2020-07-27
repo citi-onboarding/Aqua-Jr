@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Assistant:wght@400;700&family=Catamaran:wght@700&display=swap');
 .Head-Testimony h2 {
     margin: 0;
-    margin-bottom: calc(28 * var(--proportion));
+    margin-top: calc(35 * var(--proportion));
 }
 body {
     margin: 0;
@@ -104,6 +104,7 @@ body {
 }
 
 .Body-Testimony .Head-Testimony p {
+    color: #00222D;
     font-family: 'Assistant', sans-serif;
     font-size: calc(24 * var(--proportion));
 }
