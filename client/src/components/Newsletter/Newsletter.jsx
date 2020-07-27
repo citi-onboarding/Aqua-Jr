@@ -9,7 +9,7 @@ function Newsletter() {
   const Submit = async (e) => {
     try {
       e.preventDefault();
-      await axios.post("https://aqua-jr.herokuapp.com/api/newsletter", {
+      await axios.post("http://localhost:3001/api/newsletter", {
         email: newsletterEmail,
       });
       setnewsletterEmail("");
@@ -34,7 +34,7 @@ function Newsletter() {
         <form
           className="Form-Newsletter"
           method="post"
-          action="https://aqua-jr.herokuapp.com/Newsletter"
+          action="http://localhost:3001/Newsletter"
           onSubmit={Submit}
         >
           <input

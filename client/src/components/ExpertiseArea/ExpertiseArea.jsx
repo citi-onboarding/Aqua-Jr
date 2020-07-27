@@ -74,7 +74,7 @@ function ExpertiseArea() {
 
   const loadDb = async () => {
     // get the data from the db
-    const res = await axios.get("https://aqua-jr.herokuapp.com/api/areas");
+    const res = await axios.get("http://localhost:3001/api/areas");
     db = res.data;
     // if the db has at least one item...
     if (db) {
