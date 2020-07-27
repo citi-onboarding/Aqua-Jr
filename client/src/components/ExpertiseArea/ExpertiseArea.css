@@ -19,6 +19,7 @@
     height: calc(850 * var(--proportion));
     padding-top: calc(250 * var(--proportion));
     overflow: hidden;
+    padding-bottom: calc(120 *var(--proportion));
 
 }
 
