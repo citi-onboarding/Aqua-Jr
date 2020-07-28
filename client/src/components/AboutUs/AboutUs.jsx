@@ -3,22 +3,6 @@ import axios from 'axios';
 import './AboutUs.css';
 import './linha.svg';
 
-/*function AboutUs(
-) {
-    const [AboutUsElements, setAboutUsElements] = useState([]);
-  
-    const loadAboutUsElements = async () => {
-      const res = await axios.get('https://aqua-jr.herokuapp.com/api/aboutus');
-      setAboutUsElements(res.data);
-    };
-  
-    useEffect(() => {
-      loadAboutUsElements();
-    }, []);
-
-    {Testimonys?.map(({ _id, text, image, name, occupation }) => (
-}*/
-
 function AboutUs(){
     const [AboutUsElements, setAboutUsElements] = useState([]);
     const loadAboutUsElements = async () => {
@@ -39,7 +23,6 @@ function AboutUs(){
     useEffect(() => {
         loadValuesElements();
     }, []);
-console.log(AboutUsElements);
     return(
         <div className="aboutUsSection" id="about-us">
                 <div className="aboutUsImages">
