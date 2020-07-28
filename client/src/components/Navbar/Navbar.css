@@ -224,8 +224,8 @@
         border-radius: calc(12 * var(--proportion-mobile));
         font-size: calc(24 * var(--proportion-mobile));
         margin: 0;
-        margin-bottom: 20%;
-        margin-top: 20%;
+        margin-bottom: 40%;
+        margin-top: 10%;
     }
 
 }
