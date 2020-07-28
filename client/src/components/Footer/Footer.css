@@ -167,7 +167,7 @@
         width: calc(100 * var(--proportionM));
         padding-right: calc(100 * var(--proportionM));
         padding-left: 0;
-        padding-right: 0;
+        padding-right: calc(11 * var(--proportionM));
         padding-bottom: calc(30 * var(--proportionM));
     }
 
