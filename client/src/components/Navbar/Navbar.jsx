@@ -14,7 +14,9 @@ function handleClick(e) {
 
     let scrollY = document.getElementById(id).offsetTop - window.pageYOffset;
 
-    scrollY -= 100;
+    scrollY -= document.querySelector(".Navbar").clientHeight + 50;
+
+    console.log(scrollY)
 
     window.scrollBy(0, scrollY);
     
