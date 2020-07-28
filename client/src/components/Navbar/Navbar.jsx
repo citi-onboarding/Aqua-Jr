@@ -3,10 +3,25 @@ import logo from "./logo.png";
 
 import "./Navbar.css";
 
-function handleClick() {
+function handleClick(e) {
+  e.preventDefault();
   document.querySelector(".Navbar .side-menu").classList.toggle("active");
   document.querySelector(".sandwich").classList.toggle("active");
+
+  if(e.target.innerText !== ""){
+    let id = e.target.href.split("#");
+    id = id[1];
+
+    let scrollY = document.getElementById(id).offsetTop - window.pageYOffset;
+
+    scrollY -= 100;
+
+    window.scrollBy(0, scrollY);
+    
+  }
+
 }
+
 
 function Navbar() {
   return (
@@ -16,11 +31,11 @@ function Navbar() {
 
         <div className="web-only">
           <div className="links">
-            <a href="#banner">Início</a>
-            <a href="#ExpertiseArea">Áreas de atuação</a>
-            <a href="#about-us">Sobre nós</a>
-            <a href="#testimony">Depoimentos</a>
-            <a href="#contact">Contato</a>
+            <a href="#banner" onClick={handleClick}>Início</a>
+            <a href="#ExpertiseArea" onClick={handleClick}>Áreas de atuação</a>
+            <a href="#about-us" onClick={handleClick}>Sobre nós</a>
+            <a href="#testimony" onClick={handleClick}>Depoimentos</a>
+            <a href="#contact" onClick={handleClick}>Contato</a>
           </div>
           <a
             className="blog-button"
