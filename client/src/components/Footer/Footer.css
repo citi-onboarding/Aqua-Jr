@@ -88,7 +88,8 @@
     justify-content: space-between;
     width: calc(138 * var(--proportion));
     padding-bottom: calc( 30 * var(--proportion));
-    padding-left: calc(510* var(--proportion));
+    padding-left: calc(175* var(--proportion));
+    padding-top: calc(15* var(--proportion));
 }
 
 .Footer .E-mail{
