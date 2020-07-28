@@ -22,7 +22,7 @@ function Footer(){
                         <p>{ footerInfo[0]?.Address }</p>
                         </div>
                         <div className="Phone">
-                            <h2>Telefone</h2>c
+                            <h2>Telefone</h2>
                             <p>{ footerInfo[0]?.Phone }</p>  
                         </div>
                     </div>
