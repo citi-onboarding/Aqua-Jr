@@ -14,9 +14,7 @@ function handleClick(e) {
 
     let scrollY = document.getElementById(id).offsetTop - window.pageYOffset;
 
-    scrollY -= document.querySelector(".Navbar").clientHeight + 50;
-
-    console.log(scrollY)
+    scrollY -= document.querySelector(".Navbar").clientHeight;
 
     window.scrollBy(0, scrollY);
     
@@ -24,6 +22,57 @@ function handleClick(e) {
 
 }
 
+document.addEventListener("scroll", ()=>{
+  const expertiseAreaPosition = document.getElementById("ExpertiseArea").offsetTop - document.querySelector(".Navbar").clientHeight - 100;
+  const aboutPosition = document.getElementById("about-us").offsetTop - document.querySelector(".Navbar").clientHeight - 100;
+  const testimonyPosition = document.getElementById("testimony").offsetTop - document.querySelector(".Navbar").clientHeight - 100;
+  const contactPosition = document.getElementById("contact").offsetTop - document.querySelector(".Navbar").clientHeight - 100;
+
+  if(window.pageYOffset >= 50){
+    document.querySelector(".Navbar").classList.add("active");
+  }else{
+    document.querySelector(".Navbar").classList.remove("active");
+  }
+
+  if(window.pageYOffset <= expertiseAreaPosition){
+    document.querySelectorAll(".links a").forEach((element)=>{
+      element.classList.remove("active");
+    });
+    document.querySelectorAll("a[href='#banner']").forEach((element)=>{
+      element.classList.add("active");
+    });
+  }else if(window.pageYOffset <= aboutPosition){
+    document.querySelectorAll(".links a").forEach((element)=>{
+      element.classList.remove("active");
+    });
+    document.querySelectorAll("a[href='#ExpertiseArea']").forEach((element)=>{
+      element.classList.add("active");
+    });
+  }else if(window.pageYOffset <= testimonyPosition){
+    document.querySelectorAll(".links a").forEach((element)=>{
+      element.classList.remove("active");
+    });
+    document.querySelectorAll("a[href='#about-us']").forEach((element)=>{
+      element.classList.add("active");
+    });
+  }else if(window.pageYOffset <= contactPosition){
+    document.querySelectorAll(".links a").forEach((element)=>{
+      element.classList.remove("active");
+    });
+    document.querySelectorAll("a[href='#testimony']").forEach((element)=>{
+      element.classList.add("active");
+    });
+  }else{
+    document.querySelectorAll(".links a").forEach((element)=>{
+      element.classList.remove("active");
+    });
+    document.querySelectorAll("a[href='#contact']").forEach((element)=>{
+      element.classList.add("active");
+    });
+  }
+
+
+})
 
 function Navbar() {
   return (
@@ -33,7 +82,7 @@ function Navbar() {
 
         <div className="web-only">
           <div className="links">
-            <a href="#banner" onClick={handleClick}>Início</a>
+            <a className="active" href="#banner" onClick={handleClick}>Início</a>
             <a href="#ExpertiseArea" onClick={handleClick}>Áreas de atuação</a>
             <a href="#about-us" onClick={handleClick}>Sobre nós</a>
             <a href="#testimony" onClick={handleClick}>Depoimentos</a>

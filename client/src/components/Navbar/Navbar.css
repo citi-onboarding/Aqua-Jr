@@ -20,15 +20,19 @@
 .Navbar{
     position: fixed;
     z-index: 10;
-    background-color: #F8F8F8CB;
     height: calc(122 * var(--proportion));
     width: 100%;
-    backdrop-filter: blur(12px);
-    box-shadow: 5px 5px 10px #00222D40;
     display: flex;
     justify-content: space-around;
     align-items: center;
     font-family: 'Catamaran', sans-serif;
+    transition: 0.5s;
+}
+
+.Navbar.active{
+    background-color: #F8F8F8CB;
+    backdrop-filter: blur(12px);
+    box-shadow: 5px 5px 10px #00222D40;
 }
 
 /* LOGO */
@@ -58,6 +62,12 @@
     text-decoration: none;
     font-size: calc(22 * var(--proportion));
     color: #00222D;
+    border-bottom: 2.5px solid #00506E00;
+}
+
+.links a.active{
+    color: #00506E;
+    border-bottom: 2.5px solid #00506E;
 }
 
 /* BUTTON */
