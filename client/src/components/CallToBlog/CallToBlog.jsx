@@ -10,7 +10,7 @@ function CallToBlog() {
         <p>
           Aprenda mais sobre lorem ipsum dolor sit amet, consectetur adipiscing
         </p>
-        <button name= "Visitar o blog">Visitar blog</button>
+        <a href="https://aquajr.wixsite.com/aquajr/blog" target="_blank" name= "Visitar o blog">Visitar blog</a>
       </div>
     </section>
   );
