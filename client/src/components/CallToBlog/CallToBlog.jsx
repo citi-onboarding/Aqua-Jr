@@ -1,6 +1,6 @@
 import React from "react";
-
 import "./CallToBlog.css";
+import onda1 from "./onda1 (3).svg";
 
 function CallToBlog() {
   return (

@@ -4,6 +4,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import './Testimony.css';
+import onda1 from '../CallToBlog/onda1 (3).svg'
 
 function Testimony() {
   const [Testimonys, setTestimonys] = useState([]);
@@ -114,6 +115,9 @@ function Testimony() {
                 </Slider>
                 </div>
         </div> 
+        <div className='bottomWave'>
+          <img src={onda1}/>
+        </div>
         </div> 
   );
 }

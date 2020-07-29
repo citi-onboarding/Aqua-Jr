@@ -13,16 +13,28 @@
         display: flex;
         width: 100vw;
         height: calc(460 * var(--proportion-mobile));
-        background-color: rgb(29, 175, 233);
-        background-image: url("sofia3.png");
-        background-repeat: no-repeat;
-        background-position-y: bottom;
-        background-size: 100vw;
+        /*background-color: rgb(29, 175, 233);*/
+        background-image: url('./fundo (3).svg');
+        border-top: solid;
+        border-top-color: #EAEAEA;
         overflow: hidden;
         color: #F8F8F8;
         align-items: center;
         justify-content: center;
         margin-bottom: -5px;
+        position: relative;
+    }
+
+    .CallToBlog .onda1{
+        position: relative;
+        bottom: calc( 200* var(--proportion-mobile));
+        background-color: #EAEAEA;
+        overflow: visible;
+    }
+
+    .CallToBlog .onda1 img{
+        position: relative;
+        top: calc( 50* var(--proportion-mobile));
     }
 
     .CallToBlog .CallToBlog-container{

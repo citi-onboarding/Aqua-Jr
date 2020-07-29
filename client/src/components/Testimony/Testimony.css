@@ -228,6 +228,10 @@ body {
 .slick-dots li button::before {
     content: none;
 }
+
+.color .bottomWave{
+    display: none;
+}
 /* responsivity */
 @media only screen and (max-width: 1024px) {
     .Slide-Testimony .Card-body .content .name .name-name {
@@ -328,6 +332,18 @@ body {
             align-items: center;
             flex-direction: column;
         }
+    .color .bottomWave{
+        display: block;
+        position: relative;
+        background-color: #eaeaea;
+        overflow: hidden visible;
+        z-index: 2;
+    }
+
+    .color .bottomWave img{
+        position: relative;
+        top: calc(200 * var(--proportion-mobile));
+    }
 
 }
 
