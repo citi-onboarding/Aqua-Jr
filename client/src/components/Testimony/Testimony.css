@@ -335,14 +335,19 @@ body {
     .color .bottomWave{
         display: block;
         position: relative;
-        background-color: #eaeaea;
-        overflow: hidden visible;
-        z-index: 2;
+        overflow-y:visible;
     }
 
     .color .bottomWave img{
         position: relative;
-        top: calc(200 * var(--proportion-mobile));
+        bottom: calc(20 * var(--proportion-mobile));
+    }
+
+    .color{
+        position: relative;
+        z-index: 3;
+        overflow-y: visible;
+        height: calc(690 * var(--proportion-mobile));
     }
 
 }
