@@ -111,6 +111,8 @@
 @media only screen and (max-width: 1024px) {
     .Body-contact {
         height: calc(597 * var(--proportion-mobile));
+        position: relative;
+        z-index: 2;
     }
 
     .Body-contact .forms-text {
@@ -162,21 +164,30 @@
         
     }
 
-    .contactSection .ondaTop{
+    .ondaTop{
         display: block;
         overflow-y: visible;
+        position: relative;
+        z-index: 2;
+        height: calc(40* var(--proportion-mobile));
+        width: 100vw;
+        background-color: #F8F8F8;
     }
 
     .ondaTop img{
         display: block;
         position: relative;
-        bottom: calc( 50* var(--proportion-mobile));
+        bottom: calc(40* var(--proportion-mobile));
+        right: calc(50* var(--proportion-mobile));
+        width: 130vw;
     }
 
     .contactSection{
         position: relative;
-        z-index: 4;
+        z-index: 3;
         overflow-y: visible;
+        bottom: calc(20* var(--proportion-mobile));
+        
     }
 
 }

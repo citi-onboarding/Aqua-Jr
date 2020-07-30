@@ -63,5 +63,6 @@
     .CallToBlog .OndasAzuis img{
         width: 100vw;
         position: relative;
+        z-index: -1;
     }
 }

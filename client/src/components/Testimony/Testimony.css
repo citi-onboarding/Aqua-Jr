@@ -336,11 +336,14 @@ body {
         display: block;
         position: relative;
         overflow-y:visible;
+        background-color: #eaeaea ;
+        height: 0;
     }
 
     .color .bottomWave img{
         position: relative;
-        bottom: calc(20 * var(--proportion-mobile));
+        right: calc(50* var(--proportion-mobile));
+        width: 130vw;
     }
 
     .color{
