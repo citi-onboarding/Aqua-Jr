@@ -104,6 +104,10 @@
     cursor: pointer;
 }
 
+.contactSection .ondaTop, .ondaTop img{
+    display: none;
+}
+
 @media only screen and (max-width: 1024px) {
     .Body-contact {
         height: calc(597 * var(--proportion-mobile));
@@ -152,9 +156,27 @@
     .Body-contact .forms-text h2 {
         font-size: calc(24 * var(--proportion-mobile));
     }
+    
     .Body-contact .forms-text p {
         font-size: calc(14 * var(--proportion-mobile));
         
+    }
+
+    .contactSection .ondaTop{
+        display: block;
+        overflow-y: visible;
+    }
+
+    .ondaTop img{
+        display: block;
+        position: relative;
+        bottom: calc( 50* var(--proportion-mobile));
+    }
+
+    .contactSection{
+        position: relative;
+        z-index: 4;
+        overflow-y: visible;
     }
 
 }

@@ -1,7 +1,6 @@
 import React from "react";
 import "./CallToBlog.css";
 import ondasAzuis from './ilustracao (2).svg';
-import onda2 from './onda2 (4).svg';
 
 function CallToBlog() {
   return (
@@ -15,9 +14,6 @@ function CallToBlog() {
           Aprenda mais sobre lorem ipsum dolor sit amet, consectetur adipiscing
         </p>
         <button name= "Visitar o blog">Visitar blog</button>
-      </div>
-      <div className="OndaBottom">
-        <img src={onda2}/>
       </div>
     </section>
   );

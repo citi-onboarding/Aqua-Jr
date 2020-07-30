@@ -10,16 +10,13 @@
 
 @media only screen and (max-width: 1024px) {
     .CallToBlog{
-        /*display: flex;*/
         display: block;
         width: 100vw;
         height: calc(460 * var(--proportion-mobile));
-        /*background-color: rgb(29, 175, 233);*/
+        background-color: rgb(29, 175, 233);
         background-image: url('./fundo (3).svg');
         overflow: hidden;
         color: #F8F8F8;
-        /*align-items: center;
-        justify-content: center;*/
         margin-bottom: -5px;
         position: relative;
         z-index: 1;
