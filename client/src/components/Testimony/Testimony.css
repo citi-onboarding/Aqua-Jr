@@ -1,9 +1,5 @@
 /* importing the fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Assistant:wght@400;700&family=Catamaran:wght@700&display=swap');
-.Head-Testimony h2 {
-    margin: 0;
-    margin-bottom: calc(28 * var(--proportion));
-}
 body {
     margin: 0;
     overflow-x: hidden;
@@ -100,12 +96,16 @@ body {
     font-family: 'Catamaran', sans-serif;
     font-weight: bold;
     color: #00222D;
+    margin: 0;
+    margin-top: calc(100 * var(--proportion));
     font-size: calc(44 * var(--proportion));
 }
 
 .Body-Testimony .Head-Testimony p {
+    color: #00222D;
     font-family: 'Assistant', sans-serif;
     font-size: calc(24 * var(--proportion));
+    margin: 0;
 }
 .Slide-Testimony .Card-body {
     overflow: hidden;
