@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/static/css/main.afd86b2b.chunk.css",
+    "main.js": "/static/js/main.dfae1f11.chunk.js",
+    "main.js.map": "/static/js/main.dfae1f11.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.09b85ec0.js",
+    "runtime-main.js.map": "/static/js/runtime-main.09b85ec0.js.map",
+    "static/css/2.bf0413c3.chunk.css": "/static/css/2.bf0413c3.chunk.css",
+    "static/js/2.3489cb4c.chunk.js": "/static/js/2.3489cb4c.chunk.js",
+    "static/js/2.3489cb4c.chunk.js.map": "/static/js/2.3489cb4c.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.65a1b87567246a53fa416594f871ee84.js": "/precache-manifest.65a1b87567246a53fa416594f871ee84.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.bf0413c3.chunk.css.map": "/static/css/2.bf0413c3.chunk.css.map",
+    "static/css/main.afd86b2b.chunk.css.map": "/static/css/main.afd86b2b.chunk.css.map",
+    "static/js/2.3489cb4c.chunk.js.LICENSE.txt": "/static/js/2.3489cb4c.chunk.js.LICENSE.txt",
+    "static/media/PostToBlog.css": "/static/media/onda1 (1).29af5e09.svg",
+    "static/media/Icon awesome-facebook-square (2).svg": "/static/media/Icon awesome-facebook-square (2).789cbc49.svg",
+    "static/media/Icon awesome-instagram.svg": "/static/media/Icon awesome-instagram.30aa613f.svg",
+    "static/media/Icon awesome-linkedin.svg": "/static/media/Icon awesome-linkedin.ed892fc7.svg",
+    "static/media/Testimony.css": "/static/media/fundo.fc166c47.svg",
+    "static/media/Newsletter.css": "/static/media/fundo-newsletter.0013782d.svg",
+    "static/media/contact-img.png": "/static/media/contact-img.abeee720.png",
+    "static/media/AboutUs.css": "/static/media/linha.ec311f92.svg",
+    "static/media/logo.png": "/static/media/logo.535e7fa8.png",
+    "static/media/ExpertiseArea.css": "/static/media/prevArrowHover.c98279bc.svg",
+    "static/media/Banner.css": "/static/media/photo-banner-mobile.0ba9e304.png",
+    "static/media/photo-banner.png": "/static/media/photo-banner.7d1ac7f5.png",
+    "static/media/slick-theme.css": "/static/media/slick.f97e3bbf.svg",
+    "static/media/CallToBlog.css": "/static/media/sofia3.f314559d.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.09b85ec0.js",
+    "static/css/2.bf0413c3.chunk.css",
+    "static/js/2.3489cb4c.chunk.js",
+    "static/css/main.afd86b2b.chunk.css",
+    "static/js/main.dfae1f11.chunk.js"
+  ]
+}
