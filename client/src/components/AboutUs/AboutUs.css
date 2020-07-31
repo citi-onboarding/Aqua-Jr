@@ -37,7 +37,7 @@
     top: calc( 80 * var(--proportion));
 }
 
-.aboutUsSection .aboutUsRight h1{
+.aboutUsSection .aboutUsRight .about-us-title{
     font-family: 'Catamaran', sans-serif;
     font-weight: 700;
     font-size: calc( 46 * var(--proportion));
@@ -122,7 +122,7 @@
         display: none;
     }
 
-    .aboutUsSection .aboutUsRight h1{
+    .aboutUsSection .aboutUsRight .about-us-title{
         font-size: calc(24 * var(--proportionM));
         text-align: center;
     }

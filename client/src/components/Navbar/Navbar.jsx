@@ -12,7 +12,17 @@ function handleClick(e) {
     let id = e.target.href.split("#");
     id = id[1];
 
-    let scrollY = document.getElementById(id).offsetTop - window.pageYOffset;
+    let scrollY;
+
+    console.log(id);
+
+    if(id === "banner"){
+      scrollY = document.querySelector("#" + id).offsetTop - window.pageYOffset;
+    }else if(id === "about-us"){
+      scrollY = document.querySelector(".aboutUsRight").offsetTop - window.pageYOffset;
+    }else{
+      scrollY = document.querySelector("#" + id + " h2").offsetTop - window.pageYOffset;
+    }
 
     scrollY -= document.querySelector(".Navbar").clientHeight;
 
@@ -23,10 +33,10 @@ function handleClick(e) {
 }
 
 document.addEventListener("scroll", ()=>{
-  const expertiseAreaPosition = document.getElementById("ExpertiseArea").offsetTop - document.querySelector(".Navbar").clientHeight - 100;
-  const aboutPosition = document.getElementById("about-us").offsetTop - document.querySelector(".Navbar").clientHeight - 100;
-  const testimonyPosition = document.getElementById("testimony").offsetTop - document.querySelector(".Navbar").clientHeight - 100;
-  const contactPosition = document.getElementById("contact").offsetTop - document.querySelector(".Navbar").clientHeight - 100;
+  const expertiseAreaPosition = document.getElementById("ExpertiseArea").offsetTop - document.querySelector(".Navbar").clientHeight - 200;
+  const aboutPosition = document.getElementById("about-us").offsetTop - document.querySelector(".Navbar").clientHeight - 200;
+  const testimonyPosition = document.getElementById("testimony").offsetTop - document.querySelector(".Navbar").clientHeight - 200;
+  const contactPosition = document.getElementById("contact").offsetTop - document.querySelector(".Navbar").clientHeight - 200;
 
   if(window.pageYOffset >= 50){
     document.querySelector(".Navbar").classList.add("active");
