@@ -26,6 +26,7 @@ function Navbar() {
             className="blog-button"
             href="https://aquajr.wixsite.com/aquajr/blog"
             target="_blank"
+            rel="noopener noreferrer"
           >
             Blog
           </a>
@@ -50,6 +51,7 @@ function Navbar() {
               className="blog-button"
               href="https://aquajr.wixsite.com/aquajr/blog"
               target="_blank"
+              rel="noopener noreferrer"
             >
               Blog
             </a>
