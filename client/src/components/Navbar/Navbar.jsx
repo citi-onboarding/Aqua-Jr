@@ -14,8 +14,6 @@ function handleClick(e) {
 
     let scrollY;
 
-    console.log(id);
-
     if(id === "banner"){
       scrollY = document.querySelector("#" + id).offsetTop - window.pageYOffset;
     }else if(id === "about-us"){
