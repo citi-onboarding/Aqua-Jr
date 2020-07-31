@@ -9,7 +9,7 @@ function Testimony() {
   const [Testimonys, setTestimonys] = useState([]);
 
   const loadTestimonys = async () => {
-    const res = await axios.get('http://localhost:3001/api/testimony');
+    const res = await axios.get('https://aqua-jr.herokuapp.com/api/testimony');
     setTestimonys(res.data);
   };
 

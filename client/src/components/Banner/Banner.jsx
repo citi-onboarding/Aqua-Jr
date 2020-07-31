@@ -7,7 +7,7 @@ function Banner() {
     const [Banner, setBanner] = useState([]);
   
     const loadBanner = async () => {
-      const res = await axios.get('http://localhost:3001/api/banners');
+      const res = await axios.get('https://aqua-jr.herokuapp.com/api/banners');
       setBanner(res.data);
     };
   

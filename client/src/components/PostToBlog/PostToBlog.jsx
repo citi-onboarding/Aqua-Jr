@@ -22,7 +22,7 @@ function PrevArrow(props) {
 function PostToBlog(){
     const [elements, setElements] = useState([]);
     const LoadPostToBlog = async() => {
-        const answer = await axios.get('http://localhost:3001/api/posttoblog');
+        const answer = await axios.get('https://aqua-jr.herokuapp.com/api/posttoblog');
         setElements(answer.data);
     };
     

@@ -5,7 +5,7 @@ import axios from 'axios';
 function Footer(){
     const [footerInfo, setFooterInfo] = useState([]);
     const LoadFooter = async() => {
-      const answer = await axios.get('http://localhost:3001/api/footers');
+      const answer = await axios.get('https://aqua-jr.herokuapp.com/api/footers');
       setFooterInfo(answer.data);
     };
     
