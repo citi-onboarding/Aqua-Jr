@@ -59,6 +59,10 @@
     left: calc( -65 * var(--proportion));
 }
 
+.PostToBlogElement a{
+    text-decoration: none;
+}
+
 
 @media (max-width: 1025px){
     .PostToBlogElement{

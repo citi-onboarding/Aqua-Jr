@@ -79,6 +79,7 @@ function PostToBlog(){
                                     title = {PostToBlogCard.title}
                                     category = {PostToBlogCard.category}
                                     image = {PostToBlogCard.image}
+                                    link = {PostToBlogCard.link}
                                 /> 
                         );
 
