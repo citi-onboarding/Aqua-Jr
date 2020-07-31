@@ -73,13 +73,14 @@ function PostToBlog(){
         <main className="PostToBlogSlick">
             <div className="PostToBlogCard">
                 <Slider {...settings} className="Slider">  
-                    {elements.map((PostToBlogCard) =>{
+                    {elements.map((PostToBlogCard, index) =>{
                         return(
                                 <PostToBlogElement
                                     title = {PostToBlogCard.title}
                                     category = {PostToBlogCard.category}
                                     image = {PostToBlogCard.image}
                                     link = {PostToBlogCard.link}
+                                    key = {index}
                                 /> 
                         );
 
