@@ -17,7 +17,7 @@ function Banner() {
 
     return (
         <div className= "Body-Banner" id="banner">
-            {Banner?.map(({_id ,title, text, image}) => (
+            {Banner?.map(({_id ,title, text}) => (
                 <div key= {_id} className="Banner-content">
                     <div className= "Banner-texts-button">
                         <h4>{title}</h4>
