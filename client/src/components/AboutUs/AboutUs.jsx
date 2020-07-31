@@ -31,7 +31,7 @@ function AboutUs(){
                 </div>
                 <div className="aboutUsRight">
                     <div className="aboutUsText">
-                        <h1>Sobre nós</h1>
+                        <h2 className="about-us-title">Sobre nós</h2>
                         <p>{AboutUsElements[0]?.text}</p>
                     </div>
                     <div className="values">
