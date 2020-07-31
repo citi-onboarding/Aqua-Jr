@@ -39,8 +39,8 @@ function AboutUs(){
                             <h2>Nossos valores</h2>
                         </div>
                         <div className="valuesInfoBlock">
-                        { ValuesElements?.map(({title, image}) =>(
-                            <div className="valuesInfo">
+                        { ValuesElements?.map(({_id ,title, image}) =>(
+                            <div key= {_id}className="valuesInfo">
                                 <img src={image?.url} alt="Ilustração valores" />
                                 <h3>{title}</h3>
                             </div>
