@@ -58,7 +58,7 @@ function Contact() {
 
                     <div className= "mensagem">
                         <label htmlFor="">Mensagem</label>
-                        <textarea name="mensagem" name="mensagem" id="mensagem" cols="30" rows="5" onChange={(e) => setForm({...form, menssage: e.target.value})} />
+                        <textarea name="mensagem" id="mensagem" cols="30" rows="5" onChange={(e) => setForm({...form, menssage: e.target.value})} />
                     </div>
 
                     <button type= "submit"> 
