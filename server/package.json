@@ -26,7 +26,7 @@
     "mongoose": "^5.9.18",
     "request": "^2.88.2",
     "nodemailer": "^6.4.10",
-    "underscore": "^1.9.1"
+    "underscore": "^1.12.1"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
